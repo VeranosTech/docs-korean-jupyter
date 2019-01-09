@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/contributor/content-contributor.rst:2
+msgid "Contributor Guides"
+msgstr ""
+
+#: ../../source/contributor/content-contributor.rst:12
+msgid ""
+"Whether you are a new, returning, or current contributor to Project "
+"Jupyter's subprojects or IPython, **we welcome you**."
+msgstr ""
+
+#: ../../source/contributor/content-contributor.rst:15
+msgid ""
+"Project Jupyter has seen steady growth over the past several years, and "
+"it is wonderful to see the many ways people are using these projects. As "
+"a result of this rapid expansion, our project maintainers are balancing "
+"many requirements, needs, and resources. We ask contributors to take some"
+" time to become familiar with our contribution guides and spend some time"
+" learning about our project communication and workflow."
+msgstr ""
+
+#: ../../source/contributor/content-contributor.rst:22
+msgid ""
+"The Contributor Guides and individual project documentation offer "
+"guidance. If you have a question, please ask us. `Community Resources "
+"<https://jupyter.org/community.html>`_ provides information on our "
+"commonly used communication methods."
+msgstr ""
+
+#: ../../source/contributor/content-contributor.rst:27
+msgid ""
+"We are very pleased to have you as a contributor, and we hope you will "
+"find valuable your impact on the projects. **Thank you** for sharing your"
+" interests, ideas, and skills with us."
+msgstr ""
+

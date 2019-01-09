@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/projects/jupyter-command.rst:4
+msgid "The :command:`jupyter` Command"
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:9
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:16
+msgid "Description"
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:18
+msgid ""
+"Commands like ``jupyter notebook`` start Jupyter applications. The "
+"``jupyter`` command is primarily a namespace for subcommands. A command "
+"like ``jupyter-foo`` found on your :envvar:`PATH` will be available as a "
+"subcommand ``jupyter foo``."
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:23
+msgid ""
+"The :command:`jupyter` command can also be used to do actions other than "
+"starting a Jupyter application."
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:27
+msgid "Command options"
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:31
+msgid "Show help information, including available subcommands."
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:35
+msgid "Show the location of the config directory."
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:39
+#: ../../source/projects/jupyter-command.rst:43
+msgid "Show the location of the data directory."
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:47
+msgid "Show all Jupyter directories and search paths."
+msgstr ""
+
+#: ../../source/projects/jupyter-command.rst:51
+msgid "Print directories and search paths in machine-readable JSON format."
+msgstr ""
+

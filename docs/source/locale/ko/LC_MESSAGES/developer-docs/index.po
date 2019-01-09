@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/developer-docs/index.rst:3
+msgid "Developer Guide"
+msgstr ""
+
+#: ../../source/developer-docs/index.rst:5
+msgid "**Contents**"
+msgstr ""
+
+#: ../../source/developer-docs/index.rst:16
+msgid ""
+"Whether you are a new contributor or a seasoned developer, we're pleased "
+"that you are working on Jupyter. We hope you find the Developer Guide is "
+"useful. Please suggest changes or ask questions about the contents. "
+"Thanks!"
+msgstr ""
+
+#: ../../source/developer-docs/index.rst:20
+msgid ""
+"If you are interested in installing a specific project from source, each "
+"project has documentation on ReadTheDocs. For example, IPython "
+"documentation can be found on `ReadTheDocs "
+"<http://ipython.readthedocs.io/en/latest/install/install.html"
+"#installation-from-source>`_. Most of our packages can be installed from "
+"the source directory like any other Python package, by running:"
+msgstr ""
+
+#: ../../source/developer-docs/index.rst:30
+msgid ""
+"The Jupyter notebook needs some extra pieces to build Javascript "
+"components; the information about that is in the `notebook contributor "
+"documentation <http://jupyter-"
+"notebook.readthedocs.io/en/latest/contributing.html#setting-up-a"
+"-development-environment>`_."
+msgstr ""
+

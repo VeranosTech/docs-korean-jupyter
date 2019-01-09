@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/py3compat.rst:4
+msgid "Python 3 Compatibility Module"
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:9
+msgid ""
+"The ``IPython.utils.py3compat`` module provides a number of functions to "
+"make it easier to write code for Python 2 and 3. We also use 2to3 in the "
+"setup process to change syntax, and the ``io.open()`` function, which is "
+"essentially the built in open function from Python 3."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:11
+msgid "The names provided are:"
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:13
+msgid "**PY3**: True in Python 3, False in Python 2."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:16
+msgid "Unicode related"
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:17
+msgid ""
+"**decode**, **encode**: Shortcuts to decode or encode strings, using "
+"``sys.stdin.encoding`` by default, and using replacement characters on "
+"errors."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:18
+msgid ""
+"**str_to_unicode**, **unicode_to_str**, **str_to_bytes**, "
+"**bytes_to_str**: Convert to/from the platform's standard ``str`` type "
+"(bytes in Python 2, unicode in Python 3). Each function is a no-op on one"
+" of the two platforms."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:19
+msgid ""
+"**cast_unicode**, **cast_bytes**: Accept unknown unicode or byte strings,"
+" and convert them accordingly."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:20
+msgid ""
+"**cast_bytes_py2**: Casts unicode to byte strings on Python 2, but "
+"doesn't do anything on Python 3."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:23
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:24
+msgid ""
+"**input**: Refers to ``raw_input`` on Python 2, ``input`` on Python 3 "
+"(needed because 2to3 only converts calls to raw_input, not assignments to"
+" other names)."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:25
+msgid ""
+"**builtin_mod_name**: The string name you import to get the builtins "
+"(``__builtin__`` --> ``builtins``)."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:26
+msgid "**isidentifier**: Checks if a string is a valid Python identifier."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:27
+msgid ""
+"**open**: Simple wrapper for Python 3 unicode-enabled open. Similar to "
+"``codecs.open``, but allows universal newlines. The current "
+"implementation only supports the very simplest use."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:28
+msgid ""
+"**MethodType**: ``types.MethodType`` from Python 3. Takes only two "
+"arguments: function, instance. The class argument for Python 2 is filled "
+"automatically."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:29
+msgid ""
+"**doctest_refactor_print**: Can be called on a string or a function (or "
+"used as a decorator). In Python 3, it converts print statements in "
+"doctests to print() calls. 2to3 does this for real doctests, but we need "
+"it in several other places. It simply uses a regex, which is good enough "
+"for the current cases."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:30
+msgid ""
+"**u_format**: Where tests use the repr() of a unicode string, it should "
+"be written ``'{u}\"thestring\"'``, and fed to this function, which will "
+"produce ``'u\"thestring\"'`` for Python 2, and ``'\"thestring\"'`` for "
+"Python 3. Can also be used as a decorator, to work on a docstring."
+msgstr ""
+
+#: ../../source/development_guide/py3compat.rst:31
+msgid ""
+"**execfile**: Makes a return on Python 3 (where it's no longer a "
+"builtin), and upgraded to handle Unicode filenames on Python 2."
+msgstr ""
+

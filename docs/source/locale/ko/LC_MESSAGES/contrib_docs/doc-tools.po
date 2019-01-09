@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/contrib_docs/doc-tools.rst:2
+msgid "Tools for documentation"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:8
+msgid "Packages"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:9
+msgid ""
+"For user documentation, contributor guides, and communications content, "
+"we use:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:12
+msgid "`Sphinx <http://www.sphinx-doc.org/en/stable>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:14
+msgid ""
+"For developer API documentation (especially for JupyterLab js repos), we "
+"use:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:16
+msgid "`swagger <http://swagger.io/>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:19
+msgid "Source file formats"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:20
+msgid ""
+"We use the following input source file formats when developing Sphinx "
+"documentation:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:23
+msgid "reStructuredText (``.rst``)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:24
+msgid "Markdown (``.md``)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:25
+msgid "Notebook (``.ipynb``)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:27
+msgid ""
+"A modern code editor should be used. Many are available including Atom, "
+"SublimeText, gedit, vim, emacs. `Atom <https://atom.io/>`_ is a good "
+"choice for new contributors."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:32
+msgid "Sphinx themes"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:33
+msgid "Our projects use the following themes:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:35
+msgid "sphinx_rtd_theme (currently used by Jupyter projects)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:36
+msgid "jupyter_sphinx_theme (used by ipywidgets)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:39
+msgid "Git and Github Resources"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:40
+msgid ""
+"If this is your first time working with Github or git, you can leverage "
+"the following resources to learn about the tools."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:43
+msgid "`Try Git  <https://try.github.io/levels/1/challenges/1>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:44
+msgid "`Github Guides  <https://guides.github.com>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:45
+msgid "`Git Real  <https://www.codeschool.com/courses/git-real>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:46
+msgid "`Git Documentation <https://git-scm.com/documentation>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:47
+msgid ""
+"`Git Rebase <https://github.com/pydata/pandas/wiki/Git-Workflows#user-"
+"content-git-rebase>`_"
+msgstr ""
+

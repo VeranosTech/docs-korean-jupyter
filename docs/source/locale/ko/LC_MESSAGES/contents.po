@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../source/contents.rst:3
 msgid "Project Jupyter and IPython"
-msgstr ""
+msgstr "프로젝트 Jupyter와 IPython"
 
 #: ../../source/contents.rst:5
 msgid "**Table of Contents**"
-msgstr ""
+msgstr "**목차**"
 
 #: ../../source/contents.rst:67
 msgid "Indices and tables"
-msgstr ""
+msgstr "색인과 표"
 
 #: ../../source/contents.rst:69
 msgid ":ref:`genindex`"
@@ -44,19 +44,19 @@ msgstr ""
 
 #: ../../source/contents.rst:74
 msgid "**Resources:**"
-msgstr ""
+msgstr "**리소스:**"
 
 #: ../../source/contents.rst:1
 msgid "Site"
-msgstr ""
+msgstr "웹사이트"
 
 #: ../../source/contents.rst:1
 msgid "Description"
-msgstr ""
+msgstr "설명"
 
 #: ../../source/contents.rst:1
 msgid "`Jupyter website <https://jupyter.org>`_"
-msgstr ""
+msgstr "`Jupyter 웹사이트 <https://jupyter.org>`_"
 
 #: ../../source/contents.rst:1
 msgid "Keep up to date on Jupyter"

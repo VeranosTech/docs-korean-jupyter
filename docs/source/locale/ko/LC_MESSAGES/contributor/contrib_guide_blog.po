@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/contributor/contrib_guide_blog.rst:3
+msgid "Communications Guide"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:6
+msgid "Contents"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:9
+msgid "Blog"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:11
+msgid ""
+"We publish our blog at `<https://blog.jupyter.org>`_. We welcome ideas "
+"for posts or guest posts to the Jupyter blog. If you have a suggestion "
+"for a future post, please feel free to share your idea with us. We would "
+"like to discuss the idea with you."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:16
+msgid ""
+"Do you enjoy writing? Please contact us about becoming a guest blogger. "
+"We can help guide you through the process of creating a post."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:20
+msgid "Technical overview"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:22
+msgid ""
+"Jupyter's blog uses the Ghost blog platform for its contributor "
+"flexibility and ease of use. Jupyter's blog is deployed at "
+"`<https://blog.jupyter.org>`_."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:26
+msgid "Basic workflow from blog idea to published post"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:28
+msgid ""
+"There are several major steps in the workflow from blog idea to a "
+"published post including:"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:31
+msgid "Be inspired to write a post"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:32
+msgid ""
+"Send us a message on the Jupyter mailing list and ask us for an author "
+"account on our blog"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:33
+#: ../../source/contributor/contrib_guide_blog.rst:42
+msgid "Creating a draft"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:34
+msgid "Draft Review"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:35
+#: ../../source/contributor/contrib_guide_blog.rst:99
+msgid "Editorial acceptance"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:36
+#: ../../source/contributor/contrib_guide_blog.rst:102
+msgid "Publishing the post"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:38
+msgid ""
+"We'll cover each of these as well as how to update a post once it has "
+"been published."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:45
+msgid "Title and metadata"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:47
+msgid ""
+"Alway check in the metadata fields that a blog post has a title and a "
+"canonical URL. It is possible to put the date in the canonical URL, in "
+"particular for events like jupyter-day, that can occur several times. The"
+" date of the event can differ from the date of the blog post."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:52
+msgid ""
+"Once a post is published, **never** change the post's title or the url. "
+"These changes will break links of tweets and RSS feeds that have already "
+"referenced the existing, published URL. Keep in mind that when publishing"
+" some platforms cache the url immediately; as a result changing the title"
+" will direct people to a 404 page."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:58
+msgid ""
+"Title and metadata can always be refined after the actual content of the "
+"blog is written, but should not be changed after publication. As a guest "
+"you do not have to worry about metadata, the editor or admins will take "
+"care of that."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:63
+msgid "Working with images"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:65
+msgid ""
+"Try not to link to external images. If you want to put an image in the "
+"post, insert ``![]()`` in the editor view and drag and drop an image from"
+" your desktop into the newly created field in the preview. External "
+"images can change, and can break the blog post if they are taken down. "
+"This cannot append if you drag and drop images. Moreover, these images  "
+"will be served from the same CDN (Content Delivery Network) as the blog, "
+"which will insure the best overall experience for our readers."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:73
+msgid ""
+"The featured image you see at the top of a blog posts is set from within "
+"the metadata field, not using the `![]()`. The featured image is treated "
+"differently than inlined images by many feedreaders (especially on "
+"mobile) and allows a user on a slow connection to read the content of the"
+" blog earlier, which is a much better experience for the user than "
+"waiting for the featured image to render."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:80
+msgid "Links"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:82
+msgid ""
+"Do not use minified links when possible. The multiple redirects of "
+"minified links degrades the mobile browsing experience. If you need "
+"analytics of the number of page views, this information is tracked by "
+"Google Analytics."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:87
+msgid "Draft review"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:90
+msgid "Ask for a review"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:92
+msgid ""
+"Once you think you are done, ask someone else to reread your post, and "
+"check the various parameters that you might have forgotten before "
+"publishing. You are not on your own, this is teamwork, we are here to "
+"help you. If we do things in a hurry you will probably spend more time "
+"fixing mistakes that actually doing things right in a first place."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:104
+msgid ""
+"Usually an editor or admin will take care of publishing the post. The "
+"task of the Editor/Admin is to check all metadata are correctly set, that"
+" no external images are used, as well as all other quality check describe"
+" before."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:108
+msgid "It is then just a matter of making th post visible to everyone."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:111
+msgid "Changing an existing post"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:114
+msgid "Posts Updates"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:116
+msgid ""
+"Blog subscribers may receive notification at every update. So use updates"
+" and fixes parsimoniously. It is OK to wait a few hours to fix a typo."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:119
+msgid ""
+"If some substantial updates have to be made, like change of location, "
+"time etc, please insert an `[Update]` section at top (or bottom of the "
+"blog post depending on importance) with the Date/Time of the update. If "
+"the information in the body of the blog is wrong, try not to replace it, "
+"and just use strike-through to mark it as obsolete. This would help "
+"reader determine which information is correct when dealing with multiple "
+"source giving different informations."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:128
+msgid "Newsletter"
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:130
+#: ../../source/contributor/contrib_guide_blog.rst:136
+msgid "Documentation in progress."
+msgstr ""
+
+#: ../../source/contributor/contrib_guide_blog.rst:134
+msgid "Website"
+msgstr ""
+

@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/use-cases/narrative-other.rst:2
+msgid "Narratives - Building blocks"
+msgstr ""
+
+#: ../../source/use-cases/narrative-other.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../source/use-cases/narrative-other.rst:8
+msgid "Description"
+msgstr ""
+
+#: ../../source/use-cases/narrative-other.rst:10
+msgid ""
+"This section presents some examples of integrating different projects "
+"together. These projects form the foundation of innovative services and "
+"provide building blocks for future applications."
+msgstr ""
+
+#: ../../source/use-cases/narrative-other.rst:15
+msgid "Narrative examples"
+msgstr ""
+
+#: ../../source/use-cases/narrative-other.rst:17
+msgid "A Narrative about Creating Dashboards"
+msgstr ""
+
+#: ../../source/use-cases/narrative-other.rst:18
+msgid "A Narrative about Thebe"
+msgstr ""
+
+#: ../../source/use-cases/narrative-other.rst:19
+msgid "A Narrative about Hydrogen"
+msgstr ""
+
+#: ../../source/use-cases/narrative-other.rst:23
+msgid ""
+"We're actively working on this section of the documentation to improve it"
+" for you. Thanks for your patience."
+msgstr ""
+

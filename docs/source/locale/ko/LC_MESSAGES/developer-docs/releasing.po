@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/developer-docs/releasing.rst:5
+msgid "Basic template for releasing a Jupyter project"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:7
+msgid ""
+"Jupyter consists of a bunch of small projects, and a few larger ones. "
+"This lays out the basic process of releasing a smaller project, which "
+"should also apply to larger projects, though they may have some added "
+"steps."
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:14
+msgid "Milestones"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:16
+msgid ""
+"Most Jupyter projects use a GitHub milestone system for marking issues "
+"and pull requests in releases. Each release should have a milestone "
+"associated with it. The first step in preparing for a release is to make "
+"sure that every issue and pull request has the right milestone."
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:20
+msgid ""
+"Go through any **open** Issues and Pull Requests marked with the current "
+"milestone. If there are any, they need to be resolved or bumped to the "
+"next milestone. It's fine to bump issues - they are typically marked with"
+" the earliest feasible milestone, but many such optimistically marked "
+"tasks aren't complete when it's time to release. There's always next "
+"time!"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:25
+msgid ""
+"Check **closed** Issues and Pull Requests, using the milestone filter "
+"\"Issues with no milestone\". There should never be any closed issues or "
+"pull requests without a milestone. If you find any, go through and mark "
+"them with the current milestone or \"no action\" as appropriate."
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:31
+msgid ""
+"A release may be ready to go when it has zero open issues or pull "
+"requests."
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:35
+msgid "Release notes"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:37
+msgid ""
+"Once all of the issues and pull requests are dealt with, it's time to "
+"make release notes. The smaller projects generally have a "
+":file:`changelog.rst` in the docs directory, where you can add a section "
+"for the new release. Look through the pull requests merged for the "
+"current milestone (this is why we use milestones), and write a short "
+"summary of the highlights of the changes in this release. There should "
+"generally be a link to the milestone itself for more details."
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:45
+msgid ""
+"Make a pull requests with these notes. It's a good idea to cc @willingc "
+"for review of this PR. Make sure to mark this PR with your release's "
+"milestone!"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:51
+msgid "Making the release"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:53
+msgid ""
+"Now that your changelog is merged, we can actually build and publish the "
+"release. We'll assume that ``V`` has been declared as a shell variable "
+"containing the release version::"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:58
+msgid ""
+"Start by making sure you have a clean checkout of master, with no extra "
+"files::"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:63
+msgid ""
+"First, update the version of the package, often in the file "
+":file:`<pkg>/_version.py` or similar."
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:65
+msgid "Commit that change::"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:71
+msgid ""
+"At this point, I like to run the tests just to be sure that setting the "
+"version didn't confuse anything."
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:74
+msgid "Build the distributions::"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:79
+msgid "Tag the commit::"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:83
+msgid ""
+"And finally, publish everything, to github and PyPI using `twine "
+"<https://github.com/pypa/twine>`_::"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:89
+msgid ""
+"We have a release! You can now bump the version to the next '.dev' "
+"version, by editing :file:`<pkg>/_version.py` (or similar) again, and "
+"commit::"
+msgstr ""
+
+#: ../../source/developer-docs/releasing.rst:97
+msgid ""
+"The pushes assume that `origin` points to the main jupyter/ipython repo. "
+"Depending how you use git, this could be `upstream` or something else."
+msgstr ""
+

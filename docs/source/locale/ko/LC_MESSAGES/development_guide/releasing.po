@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/releasing.rst:4
+msgid "Steps for Releasing IPython"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:9
+msgid ""
+"This document contains notes about the process that is used to release "
+"IPython. Our release process is currently not very formal and could be "
+"improved."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:13
+msgid ""
+"Most of the release process is automated by the ``release`` script in the"
+" ``tools`` directory of our main repository. This document is just a "
+"handy reminder for the release manager."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:18
+msgid "0. Environment variables"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:20
+msgid ""
+"You can set some env variables to note previous release tag and current "
+"release milestone, version, and git tag:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:31
+msgid ""
+"These will be used later if you want to copy/paste, or you can just type "
+"the appropriate command when the time comes. These variables are not used"
+" by scripts (hence no ``export``)."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:36
+msgid "1. Finish release notes"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:38
+msgid "If a major release:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:40
+msgid "merge any pull request notes into what's new:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:46
+msgid ""
+"update ``docs/source/whatsnew/development.rst``, to ensure it covers the "
+"major points."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:48
+msgid "move the contents of ``development.rst`` to ``versionX.rst``"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:49
+msgid "generate summary of GitHub contributions, which can be done with:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:55
+msgid ""
+"which may need some manual cleanup. Add the cleaned up result and add it "
+"to ``docs/source/whatsnew/github-stats-X.rst`` (make a new file, or add "
+"it to the top, depending on whether it is a major release). You can use:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:63
+msgid ""
+"to find duplicates and update ``.mailmap``. Before generating the GitHub "
+"stats, verify that all closed issues and pull requests :ref:`have "
+"appropriate milestones <github_workflow_milestones>`. `This search "
+"<https://github.com/ipython/ipython/issues?q=is%3Aclosed+no%3Amilestone+is%3Aissue>`__"
+" should return no results."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:71
+msgid "2. Run the ``tools/build_release`` script"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:73
+msgid ""
+"This does all the file checking and building that the real release script"
+" will do. This will let you do test installations, check that the build "
+"procedure runs OK, etc. You may want to also do a test build of the docs."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:79
+msgid "3. Create and push the new tag"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:81
+msgid "Edit ``IPython/core/release.py`` to have the current version."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:83
+msgid "Commit the changes to release.py and jsversion:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:90
+msgid "Create and push the tag:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:97
+msgid "Update release.py back to ``x.y-dev`` or ``x.y-maint``, and push:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:105
+msgid "4. Get a fresh clone of the tag for building the release:"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:113
+msgid "5. Run the ``release`` script"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:119
+msgid ""
+"This makes the tarballs, zipfiles, and wheels. It posts them to "
+"archive.ipython.org and registers the release with PyPI."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:122
+msgid "This will require that you have current wheel, Python 3.4 and Python 2.7."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:126
+msgid "7. Update the IPython website"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:128
+msgid "release announcement (news, announcements)"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:129
+msgid "update current version and download links"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:130
+msgid "(If major release) update links on the documentation page"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:133
+msgid "8. Drafting a short release announcement"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:135
+msgid ""
+"This should include i) highlights and ii) a link to the html version of "
+"the *What's new* section of the documentation."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:138
+msgid "Post to mailing list, and link from Twitter."
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:141
+msgid "9. Update milestones on GitHub"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:143
+msgid "close the milestone you just released"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:144
+msgid "open new milestone for (x, y+1), if it doesn't exist already"
+msgstr ""
+
+#: ../../source/development_guide/releasing.rst:147
+msgid "10. Celebrate!"
+msgstr ""
+

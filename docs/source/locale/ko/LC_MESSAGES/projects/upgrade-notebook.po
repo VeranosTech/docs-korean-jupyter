@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/projects/upgrade-notebook.rst:2
+msgid "Upgrading Jupyter Notebook"
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:8
+msgid "Upgrading Jupyter Notebook using Anaconda"
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:9
+#: ../../source/projects/upgrade-notebook.rst:28
+msgid "If using **Anaconda**, update Jupyter using ``conda``:"
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:15
+#: ../../source/projects/upgrade-notebook.rst:42
+msgid "See :ref:`Run the Notebook <running>` for running the Jupyter Notebook."
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:21
+msgid "Upgrading IPython Notebook to Jupyter Notebook"
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:23
+msgid ""
+"The Jupyter Notebook used to be called the IPython Notebook. If you are "
+"running an older version of the IPython Notebook (version 3 or earlier) "
+"you can use the following to upgrade to the latest version of the Jupyter"
+" Notebook."
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:34
+msgid "*or*"
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:36
+msgid "If using :term:`pip`:"
+msgstr ""
+
+#: ../../source/projects/upgrade-notebook.rst:46
+msgid ""
+"The :ref:`migrating <migrating>` document has additional information "
+"about migrating from IPython 3 to Jupyter."
+msgstr ""
+

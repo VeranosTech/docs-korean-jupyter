@@ -1,0 +1,511 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/js_events.rst:4
+msgid "JavaScript Events"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:9
+msgid "(Note: this page is not currently consistent with IPython/Jupyter master)"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:11
+msgid ""
+"Javascript events are used to notify unrelated parts of the notebook "
+"interface when something happens. For example, if the kernel is busy "
+"executing code, it may send an event announcing as such, which can then "
+"be picked up by other services, like the notification area. For details "
+"on how the events themselves work, see the `JQuery documentation "
+"<http://api.jquery.com/on/>`__."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:18
+msgid ""
+"This page documents the core set of events, and explains when and why "
+"they are triggered."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:22
+msgid "Cell-related events"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:24
+msgid "`command\\_mode.Cell <#command_modecell>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:25
+msgid "`create.Cell <#createcell>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:26
+msgid "`delete.Cell <#deletecell>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:27
+msgid "`edit\\_mode.Cell <#edit_modecell>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:28
+msgid "`select.Cell <#selectcell>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:29
+msgid "`output\\_appended.OutputArea <#output_appendedoutputarea>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:32
+msgid "CellToolbar-related events"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:34
+msgid "`preset\\_activated.CellToolbar <#preset_activatedcelltoolbar>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:35
+msgid "`preset\\_added.CellToolbar <#preset_addedcelltoolbar>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:38
+msgid "Dashboard-related events"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:40
+msgid "`app\\_initialized.DashboardApp <#app_initializeddashboardapp>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:41
+msgid "`sessions\\_loaded.Dashboard <#sessions_loadeddashboard>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:44
+msgid "app\\_initialized.DashboardApp"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:46
+msgid ""
+"When the Jupyter Notebook browser window opens for the first time and "
+"initializes the Dashboard App. The Dashboard App lists the files and "
+"notebooks in the current directory. Additionally, it lets you create and "
+"open new Jupyter Notebooks."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:52
+msgid "Kernel-related events"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:54
+msgid "`execution\\_request.Kernel <#execution_requestkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:55
+msgid "`input\\_reply.Kernel <#input_replykernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:56
+msgid "`kernel\\_autorestarting.Kernel <#kernel_autorestartingkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:57
+msgid "`kernel\\_busy.Kernel <#kernel_busykernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:58
+msgid "`kernel\\_connected.Kernel <#kernel_connectedkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:59
+msgid "`kernel\\_connection\\_failed.Kernel <#kernel_connection_failedkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:60
+msgid "`kernel\\_created.Kernel <#kernel_createdkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:61
+msgid "`kernel\\_created.Session <#kernel_createdsession>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:62
+msgid "`kernel\\_dead.Kernel <#kernel_deadkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:63
+msgid "`kernel\\_dead.Session <#kernel_deadsession>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:64
+msgid "`kernel\\_disconnected.Kernel <#kernel_disconnectedkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:65
+msgid "`kernel\\_idle.Kernel <#kernel_idlekernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:66
+msgid "`kernel\\_interrupting.Kernel <#kernel_interruptingkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:67
+msgid "`kernel\\_killed.Kernel <#kernel_killedkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:68
+msgid "`kernel\\_killed.Session <#kernel_killedsession>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:69
+msgid "`kernel\\_ready.Kernel <#kernel_readykernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:70
+msgid "`kernel\\_reconnecting.Kernel <#kernel_reconnectingkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:71
+msgid "`kernel\\_restarting.Kernel <#kernel_restartingkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:72
+msgid "`kernel\\_starting.Kernel <#kernel_startingkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:73
+msgid "`send\\_input\\_reply.Kernel <#send_input_replykernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:74
+msgid "`shell\\_reply.Kernel <#shell_replykernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:75
+msgid "`spec\\_changed.Kernel <#spec_changedkernel>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:78
+msgid "kernel\\_created.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:80
+msgid ""
+"The kernel has been successfully created or re-created through "
+"``/api/kernels``, but a connection to it has not necessarily been "
+"established yet."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:85
+msgid "kernel\\_created.Session"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:87
+msgid ""
+"The kernel has been successfully created or re-created through "
+"``/api/sessions``, but a connection to it has not necessarily been "
+"established yet."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:92
+msgid "kernel\\_reconnecting.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:94
+msgid ""
+"An attempt is being made to reconnect (via websockets) to the kernel "
+"after having been disconnected."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:98
+msgid "kernel\\_connected.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:100
+msgid ""
+"A connection has been established to the kernel. This is triggered as "
+"soon as all websockets (e.g. to the shell, iopub, and stdin channels) "
+"have been opened. This does not necessarily mean that the kernel is ready"
+" to do anything yet, though."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:106
+msgid "kernel\\_starting.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:108
+msgid ""
+"The kernel is starting. This is triggered once when the kernel process is"
+" starting up, and can be sent as a message by the kernel, or may be "
+"triggered by the frontend if it knows the kernel is starting (e.g., it "
+"created the kernel and is connected to it, but hasn't been able to "
+"communicate with it yet)."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:115
+msgid "kernel\\_ready.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:117
+msgid ""
+"Like kernel\\_idle.Kernel, but triggered after the kernel has fully "
+"started up."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:121
+msgid "kernel\\_restarting.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:123
+msgid ""
+"The kernel is restarting. This is triggered at the beginning of an "
+"restart call to ``/api/kernels``."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:127
+msgid "kernel\\_autorestarting.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:129
+msgid ""
+"The kernel is restarting on its own, which probably also means that "
+"something happened to cause the kernel to die. For example, running the "
+"following code in the notebook would cause the kernel to autorestart:"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:139
+msgid "kernel\\_interrupting.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:141
+msgid ""
+"The kernel is being interrupted. This is triggered at the beginning of a "
+"interrupt call to ``/api/kernels``."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:145
+msgid "kernel\\_disconnected.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:147
+msgid "The connection to the kernel has been lost."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:150
+msgid "kernel\\_connection\\_failed.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:152
+msgid ""
+"Not only was the connection lost, but it was lost due to an error (i.e., "
+"we did not tell the websockets to close)."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:156
+msgid "kernel\\_idle.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:158
+msgid "The kernel's execution state is 'idle'."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:161
+msgid "kernel\\_busy.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:163
+msgid "The kernel's execution state is 'busy'."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:166
+msgid "kernel\\_killed.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:168
+msgid "The kernel has been manually killed through ``/api/kernels``."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:171
+msgid "kernel\\_killed.Session"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:173
+msgid "The kernel has been manually killed through ``/api/sessions``."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:176
+msgid "kernel\\_dead.Kernel"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:178
+msgid ""
+"This is triggered if the kernel dies, and the kernel manager attempts to "
+"restart it, but is unable to. For example, the following code run in the "
+"notebook will cause the kernel to die and for the kernel manager to be "
+"unable to restart it:"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:192
+msgid "kernel\\_dead.Session"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:194
+msgid ""
+"The kernel could not be started through ``/api/sessions``. This might be "
+"because the requested kernel type isn't installed. Another reason for "
+"this message is that the kernel died or was killed, but the session "
+"wasn't."
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:200
+msgid "Notebook-related events"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:202
+msgid "`app\\_initialized.NotebookApp <#app_initializednotebookapp>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:203
+msgid "`autosave\\_disabled.Notebook <#autosave_disablednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:204
+msgid "`autosave\\_enabled.Notebook <#autosave_enablednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:205
+msgid "`checkpoint\\_created.Notebook <#checkpoint_creatednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:206
+msgid ""
+"`checkpoint\\_delete\\_failed.Notebook "
+"<#checkpoint_delete_failednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:207
+msgid "`checkpoint\\_deleted.Notebook <#checkpoint_deletednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:208
+msgid "`checkpoint\\_failed.Notebook <#checkpoint_failednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:209
+msgid ""
+"`checkpoint\\_restore\\_failed.Notebook "
+"<#checkpoint_restore_failednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:210
+msgid "`checkpoint\\_restored.Notebook <#checkpoint_restorednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:211
+msgid "`checkpoints\\_listed.Notebook <#checkpoints_listednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:212
+msgid "`command\\_mode.Notebook <#command_modenotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:213
+msgid "`edit\\_mode.Notebook <#edit_modenotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:214
+msgid ""
+"`list\\_checkpoints\\_failed.Notebook "
+"<#list_checkpoints_failednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:215
+msgid "`notebook\\_load\\_failed.Notebook <#notebook_load_failednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:216
+msgid "`notebook\\_loaded.Notebook <#notebook_loadednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:217
+msgid "`notebook\\_loading.Notebook <#notebook_loadingnotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:218
+msgid "`notebook\\_rename\\_failed.Notebook <#notebook_rename_failednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:219
+msgid "`notebook\\_renamed.Notebook <#notebook_renamednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:220
+msgid "`notebook\\_restoring.Notebook <#notebook_restoringnotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:221
+msgid "`notebook\\_save\\_failed.Notebook <#notebook_save_failednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:222
+msgid "`notebook\\_saved.Notebook <#notebook_savednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:223
+msgid "`notebook\\_saving.Notebook <#notebook_savingnotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:224
+msgid "`rename\\_notebook.Notebook <#rename_notebooknotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:225
+msgid ""
+"`selected\\_cell\\_type\\_changed.Notebook "
+"<#selected_cell_type_changednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:226
+msgid "`set\\_dirty.Notebook <#set_dirtynotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:227
+msgid "`set\\_next\\_input.Notebook <#set_next_inputnotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:228
+msgid "`trust\\_changed.Notebook <#trust_changednotebook>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:231
+msgid "Other"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:233
+msgid "`open\\_with\\_text.Pager <#open_with_textpager>`__"
+msgstr ""
+
+#: ../../source/development_guide/js_events.rst:234
+msgid "`rebuild.QuickHelp <#rebuildquickhelp>`__"
+msgstr ""
+

@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/contrib_docs/getting-started.rst:2
+msgid "Getting started"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:8
+msgid "Preparing for your first contribution"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:9
+msgid "Our documentation uses reStructured Text as well as Jupyter notebooks."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:10
+msgid "We use Sphinx extensively to build documentation."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:11
+msgid "We host our documentation on Read the Docs."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:14
+msgid "Developing your contribution"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:16
+msgid ""
+"Jupyter's documentation is split across several projects, listed on the "
+"`Jupyter documentation home page "
+"<https://jupyter.readthedocs.io/en/latest/>`_. These instructions apply "
+"to all Jupyter projects, though some projects have further contribution "
+"guidelines."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:19
+msgid "Clone the repository"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:20
+msgid ""
+"Fork the appropriate project repository on GitHub, depending on which "
+"project's documentation you want to contribute to."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:21
+msgid "Clone the repository to your system."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:24
+msgid "Edit the documentation source file"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:26
+msgid ""
+"Source files for projects are typically found in the project's "
+"``docs/source`` directory. The reStructured text filenames end with "
+"``.rst``, and Jupyter notebook files end with ``.ipynb``."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:30
+msgid ""
+"In your favorite text editor, make desired changes to the ``.rst`` file "
+"when working with a reStructured text source file."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:32
+msgid ""
+"If a notebook file requires editing, you will need to install Jupyter "
+"notebook according to the :ref:`Installation <install>` document. Then, "
+"run the Jupyter notebook and edit the desired file. Before saving the "
+"Jupyter ``.ipynb`` file, please clear the output cells. Save the file and"
+" test your change."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:39
+msgid "Testing changes"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:41
+msgid ""
+"Sphinx should be installed to test your documentation changes. For best "
+"results, we recommend that you install the stable development version "
+"Sphinx (``pip install git+https://github.com/sphinx-doc/sphinx@stable``) "
+"or the current released version of Sphinx (``pip install sphinx``)."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:46
+msgid ""
+"In addition, you may need the following packages: sphinxcontrib-spelling,"
+" sphinx_rtd_theme, nbsphinx, pyenchant, recommonmark and "
+"jupyter_sphinx_theme, which can be installed via ``pip install "
+"sphinxcontrib-spelling sphinx_rtd_theme nbsphinx pyenchant recommonmark "
+"jupyter_sphinx_theme``."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:48
+msgid ""
+"If you are on Linux, you may also need to install the Enchant C library "
+"by running ``sudo apt-get install enchant``."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:50
+msgid ""
+"Once everything is installed, the following commands should be executed "
+"using the Terminal/command line from the ``docs`` directory:"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:53
+msgid ""
+"``make html`` builds a local html version of the documentation. The "
+"output message will either display errors or provide the location of the "
+"html documents. For example, the location provided may be ``build/html`` "
+"and to view these documents in your browser enter ``open "
+"build/html/index.html``."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:58
+msgid ""
+"``make linkcheck`` will check whether the external links in the "
+"documentation are valid or if they are not longer current (i.e. cause a "
+"500 not found error)."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:62
+msgid ""
+"Note: We recommend using Python 3.4+ for building the documentation. If "
+"you are editing the documentation, you can use Python 2.7.9+ or the "
+"Github editor."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:65
+msgid "Creating a pull request"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:66
+msgid ""
+"Once you are satisfied with your changes, submit a GitHub pull request, "
+"per the instructions above. If the documentation change is related to an "
+"open GitHub issue, please mention the issue number in the pull request "
+"message."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:70
+msgid ""
+"A project reviewer will look over your changes and provide feedback or "
+"merge your changes into the documentation."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:74
+msgid "Asking questions"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:75
+msgid ""
+"Feel free to ask questions in the Google Group for Jupyter or on an open "
+"issue on GitHub."
+msgstr ""
+

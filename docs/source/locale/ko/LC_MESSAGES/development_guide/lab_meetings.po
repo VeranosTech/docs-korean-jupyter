@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/lab_meetings.rst:4
+msgid "Lab Meetings on Air"
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:9
+msgid ""
+"Academic labs have long had the tradition of the weekly lab meeting, "
+"where all topics of interest to the lab are discussed. IPython has strong"
+" roots in academia, but it is also an open source project that needs to "
+"engage an active international community. So while our goal with IPython "
+"is not to publish the next paper, we've been thinking about the value "
+"these regular discussions bring to how teams work on sustained efforts "
+"involving difficult problems, and wanted to bring that bit of academic "
+"practice into the open source workflow. So we have decided to conduct "
+"weekly \"lab meetings\" for IPython, that will be held publicly using a "
+"Google Hangout on Air."
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:21
+msgid "Logistics"
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:23
+msgid ""
+"We are trying to keep things simple and with a minimum of new moving "
+"parts:"
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:26
+msgid ""
+"Meetings happen on Tuesdays at 10am California time (i.e. UTC-8 or -7 "
+"depending on the time of year)."
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:28
+msgid ""
+"We broadcast the meeting as it happens via G+ and leave the public "
+"YouTube link afterwards."
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:30
+msgid ""
+"During the meeting, all chat that needs to happen by typing can be done "
+"on our `Gitter chat room <https://gitter.im/ipython/ipython>`__."
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:33
+msgid ""
+"We keep a running document with `minutes of the meeting on HackPad "
+"<https://ipython.hackpad.com/>`__ where we summarize main points. (`2015 "
+"part 1 <https://ipython.hackpad.com/3YJG5lv2Hws>`__)"
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:37
+msgid ""
+"We welcome and encourage help from others in updating these minutes "
+"during the meeting, but we'll make no major effort in ensuring that they "
+"are a detailed and accurate record of the whole discussion. We simply "
+"don't have the time for that."
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:43
+msgid "Prior meetings"
+msgstr ""
+
+#: ../../source/development_guide/lab_meetings.rst:45
+msgid ""
+"You can find a list of the videos on the `ipythondev YouTube user page "
+"<https://www.youtube.com/user/ipythondev>`__."
+msgstr ""
+

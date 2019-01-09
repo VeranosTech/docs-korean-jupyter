@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/contrib_docs/doc-new-repos.md:1
+msgid "Setting up a README"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:3
+msgid ""
+"Providing users and developers consistency across repos is a valuable "
+"time saver and improves user productivity."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:6
+msgid ""
+"On a larger scope, having the Jupyter name appear prominently in a repo's"
+" README.md file improves the project's name awareness."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:9
+msgid "Recommended elements in Jupyter project repos"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:11
+msgid "Link in repo description"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:12
+msgid "Please include a link to the documentation in the repo's description."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:14
+msgid "Repo description and documentation link"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:16
+msgid "Badges in README"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:17
+msgid ""
+"One common way that individuals find documentation is to look for and "
+"click on the doc badge that commonly is found right after the title. "
+"Another benefit is an easy visual indication if the docs are not "
+"rendering properly."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:21
+msgid "Badges in README.md"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:23
+msgid "Resources section in README"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:25
+msgid ""
+"A Resources section at the end of the README.md gives useful links and "
+"information to users about the individual project and the larger Project "
+"Jupyter organization. Make sure to include any links to the individual "
+"project's demo notebooks, if available."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:30
+msgid "The Resources section includes:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:32
+msgid "Resources section in"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:35
+msgid "Checklist adding docs to a new or existing GitHub Repo"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:42
+msgid "Dated: 1-4-2016 Revised: 1-7-2016"
+msgstr ""
+

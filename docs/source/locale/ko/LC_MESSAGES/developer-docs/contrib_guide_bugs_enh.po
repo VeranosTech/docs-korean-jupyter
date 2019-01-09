@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/developer-docs/contrib_guide_bugs_enh.rst:3
+msgid "Submitting a Bug"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_bugs_enh.rst:4
+msgid ""
+"While using the Notebook, you might experience a bug that manifests "
+"itself in unexpected behavior.  If so, we encourage you  to open issues "
+"on GitHub. To make the navigating issues easier for both developers and "
+"users, we ask that you take the following steps before submitting an "
+"issue."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_bugs_enh.rst:9
+msgid ""
+"Search through StackOverflow and existing GitHub issues to ensure that "
+"the issue has not already been reported by another user. If so, provide "
+"your input on the existing issue if you think it would be valuable."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_bugs_enh.rst:13
+msgid ""
+"Prepare a small, self-contained snippet of code that will allow others to"
+" reproduce the issue that you are experiencing."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_bugs_enh.rst:16
+msgid ""
+"Prepare information about the environment that you are executing the code"
+" in, in order to aid in the debugging of the issue. You will need to "
+"provide information about the Python version, Jupyter version, operating "
+"system, and browser that you are using when submitting bugs. You can also"
+" use ``pip list`` or  ``conda list`` and ``grep`` in order to identify "
+"the versions of the libraries that are relevant to the issue that you are"
+" submitting."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_bugs_enh.rst:24
+msgid ""
+"Prepare a simple test that outlines the expected behavior of the code or "
+"a description of the what the expected behavior should be."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_bugs_enh.rst:27
+msgid ""
+"Prepare an explanation of why the current behavior is not desired and "
+"what it should be."
+msgstr ""
+

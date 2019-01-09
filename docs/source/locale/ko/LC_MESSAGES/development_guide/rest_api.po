@@ -1,0 +1,528 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/rest_api.rst:4
+msgid "Architecture of IPython notebook's Dashboard"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:9
+msgid ""
+"The tables below show the current RESTful web service architecture "
+"implemented in IPython notebook. The listed URL's use the HTTP verbs to "
+"return representations of the desired resource."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:13
+msgid ""
+"We are in the process of creating a new dashboard architecture for the "
+"IPython notebook, which will allow the user to navigate through multiple "
+"directory files to find desired notebooks."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:18
+msgid "Current Architecture"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:20
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:23
+#: ../../source/development_guide/rest_api.rst:38
+#: ../../source/development_guide/rest_api.rst:112
+#: ../../source/development_guide/rest_api.rst:145
+#: ../../source/development_guide/rest_api.rst:169
+#: ../../source/development_guide/rest_api.rst:189
+#: ../../source/development_guide/rest_api.rst:242
+msgid "HTTP verb"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:23
+#: ../../source/development_guide/rest_api.rst:38
+#: ../../source/development_guide/rest_api.rst:145
+#: ../../source/development_guide/rest_api.rst:169
+#: ../../source/development_guide/rest_api.rst:189
+#: ../../source/development_guide/rest_api.rst:242
+msgid "URL"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:23
+#: ../../source/development_guide/rest_api.rst:38
+#: ../../source/development_guide/rest_api.rst:112
+#: ../../source/development_guide/rest_api.rst:145
+#: ../../source/development_guide/rest_api.rst:169
+#: ../../source/development_guide/rest_api.rst:189
+#: ../../source/development_guide/rest_api.rst:242
+msgid "Action"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:26
+#: ../../source/development_guide/rest_api.rst:28
+#: ../../source/development_guide/rest_api.rst:32
+#: ../../source/development_guide/rest_api.rst:41
+#: ../../source/development_guide/rest_api.rst:44
+#: ../../source/development_guide/rest_api.rst:48
+#: ../../source/development_guide/rest_api.rst:88
+#: ../../source/development_guide/rest_api.rst:115
+#: ../../source/development_guide/rest_api.rst:117
+#: ../../source/development_guide/rest_api.rst:134
+#: ../../source/development_guide/rest_api.rst:137
+#: ../../source/development_guide/rest_api.rst:148
+#: ../../source/development_guide/rest_api.rst:155
+#: ../../source/development_guide/rest_api.rst:172
+#: ../../source/development_guide/rest_api.rst:174
+#: ../../source/development_guide/rest_api.rst:192
+#: ../../source/development_guide/rest_api.rst:199
+#: ../../source/development_guide/rest_api.rst:245
+#: ../../source/development_guide/rest_api.rst:248
+#: ../../source/development_guide/rest_api.rst:251
+#: ../../source/development_guide/rest_api.rst:255
+#: ../../source/development_guide/rest_api.rst:259
+#: ../../source/development_guide/rest_api.rst:263
+#: ../../source/development_guide/rest_api.rst:266
+#: ../../source/development_guide/rest_api.rst:268
+#: ../../source/development_guide/rest_api.rst:276
+msgid "``GET``"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:26
+msgid "/.\\*/\\"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:26
+msgid "Strips trailing slashes."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:28
+msgid "\\/api\\"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:28
+msgid "Returns api version information."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:30
+msgid "``*``"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:30
+msgid "\\/api/notebooks"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:30
+msgid "Deprecated: redirect to /api/contents"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:32
+msgid "\\/api/nbconvert"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:35
+msgid "Notebook contents API."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:41
+msgid "/api/contents"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:41
+msgid "Return a model for the base directory. See /api/contents/<path>/<file>."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:44
+msgid "/api/contents/ <file>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:44
+msgid ""
+"Return a model for the given file in the base directory. See "
+"/api/contents/<path>/<file>."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:48
+#: ../../source/development_guide/rest_api.rst:53
+#: ../../source/development_guide/rest_api.rst:70
+#: ../../source/development_guide/rest_api.rst:73
+#: ../../source/development_guide/rest_api.rst:85
+msgid "/api/contents/ <path>/<file>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:48
+msgid ""
+"Return a model for a file or directory. A directory model contains a list"
+" of models (without content) of the files and directories it contains."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:53
+#: ../../source/development_guide/rest_api.rst:202
+msgid "``PUT``"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:53
+msgid ""
+"Saves the file in the location specified by name and path. PUT is very "
+"similar to POST, but the requester specifies the name, where as with "
+"POST, the server picks the name. PUT /api/contents/path/Name.ipynb Save "
+"notebook at ``path/Name.ipynb``. Notebook structure is specified in "
+"``content`` key of JSON request body. If content is not specified, create"
+" a new empty notebook. PUT /api/contents/path/Name.ipynb with JSON body "
+"{\"copy\\_from\" : \"[path/to/] OtherNotebook.ipynb\"} Copy OtherNotebook"
+" to Name"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:70
+#: ../../source/development_guide/rest_api.rst:158
+msgid "``PATCH``"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:70
+msgid "Renames a notebook without re-uploading content."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:73
+#: ../../source/development_guide/rest_api.rst:92
+#: ../../source/development_guide/rest_api.rst:96
+#: ../../source/development_guide/rest_api.rst:120
+#: ../../source/development_guide/rest_api.rst:126
+#: ../../source/development_guide/rest_api.rst:150
+#: ../../source/development_guide/rest_api.rst:177
+#: ../../source/development_guide/rest_api.rst:195
+#: ../../source/development_guide/rest_api.rst:271
+msgid "``POST``"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:73
+msgid ""
+"Creates a new file or directory in the specified path. POST creates new "
+"files or directories. The server always decides on the name. POST "
+"/api/contents/path New untitled notebook in path. If content specified, "
+"upload a notebook, otherwise start empty. POST /api/contents/path with "
+"body {\"copy\\_from\":\"OtherNotebook.ipynb\"} New copy of OtherNotebook "
+"in path"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:85
+#: ../../source/development_guide/rest_api.rst:102
+#: ../../source/development_guide/rest_api.rst:123
+#: ../../source/development_guide/rest_api.rst:162
+#: ../../source/development_guide/rest_api.rst:205
+msgid "``DELETE``"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:85
+msgid "delete a file in the given path."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:88
+#: ../../source/development_guide/rest_api.rst:92
+msgid "/api/contents/ <path>/<file> /checkpoints"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:88
+msgid "get lists checkpoint for a file."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:92
+msgid "post creates a new checkpoint."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:96
+#: ../../source/development_guide/rest_api.rst:102
+msgid "/api/contents/ <path>/<file> /checkpoints/ <checkpoint\\_ id>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:96
+msgid "post restores a file from a checkpoint."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:102
+msgid "delete clears a checkpoint for a given file."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:109
+msgid "Kernel API"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:112
+msgid "URI"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:115
+#: ../../source/development_guide/rest_api.rst:120
+msgid "/api/kernels"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:115
+msgid "Return a model of all kernels."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:117
+#: ../../source/development_guide/rest_api.rst:123
+msgid "/api/kernels /<kernel\\_id>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:117
+msgid "Return a model of kernel with given kernel id."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:120
+msgid "Start a new kernel with default or given name."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:123
+msgid "Shutdown the given kernel."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:126
+msgid "/api/kernels /<kernel\\_id> /<action>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:126
+msgid ""
+"Perform action on kernel with given kernel id. Actions can be "
+"\"interrupt\" or \"restart\"."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:130
+msgid "``WS``"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:130
+msgid "/api/kernels /<kernel\\_id> /channels"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:130
+msgid "Websocket stream"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:134
+msgid "/api/kernel specs"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:134
+msgid "Return a spec model of all available kernels."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:137
+msgid "/api/kernel specs/ <kernel\\_name>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:137
+msgid "Return a spec model of all available kernels with a given kernel name."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:142
+msgid "Sessions API"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:148
+msgid "/api/sesions"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:148
+msgid "Return model of active sessions."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:150
+msgid "/api/sessions"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:150
+msgid ""
+"If session does not already exist, create a new session with given "
+"notebook name and path and given kernel name. Return active sesssion."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:155
+#: ../../source/development_guide/rest_api.rst:158
+#: ../../source/development_guide/rest_api.rst:162
+msgid "/api/sessions /<session\\_id>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:155
+msgid "Return model of active session with given session id."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:158
+msgid ""
+"Return model of active session with notebook name or path of session with"
+" given session id."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:162
+msgid "Delete model of active session with given session id."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:166
+msgid "Clusters API"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:172
+msgid "/api/clusters"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:172
+msgid "Return model of clusters."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:174
+msgid "/api/clusters <cluster\\_id>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:174
+msgid "Return model of given cluster."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:177
+msgid "/api/clusters <cluster\\_id> <action>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:177
+msgid ""
+"Perform action with given clusters. Valid actions are \"start\" and "
+"\"stop\""
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:183
+msgid "Old Architecture"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:185
+msgid ""
+"This chart shows the web-services in the single directory IPython "
+"notebook."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:192
+#: ../../source/development_guide/rest_api.rst:195
+msgid "/notebooks"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:192
+msgid "return list of dicts with each notebook's info"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:195
+msgid ""
+"if sending a body, saving that body as a new notebook; if no body, create"
+" a a new notebook."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:199
+#: ../../source/development_guide/rest_api.rst:202
+#: ../../source/development_guide/rest_api.rst:205
+msgid "/notebooks /<notebook\\_id>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:199
+msgid "get JSON data for notebook"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:202
+msgid "saves an existing notebook with body data"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:205
+msgid "deletes the notebook with the given ID"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:209
+msgid "This chart shows the architecture for the IPython notebook website."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:239
+msgid "This chart shows the Web services that act on the kernels and clusters."
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:245
+msgid "/kernels"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:245
+msgid "return the list of kernel IDs currently running"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:248
+msgid "/kernels /<kernel\\_id>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:248
+#: ../../source/development_guide/rest_api.rst:255
+#: ../../source/development_guide/rest_api.rst:259
+#: ../../source/development_guide/rest_api.rst:263
+#: ../../source/development_guide/rest_api.rst:266
+msgid "---"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:251
+msgid "/kernels /<kernel\\_id> <action>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:251
+msgid "performs action (restart/kill) kernel with given ID"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:255
+msgid "/kernels /<kernel\\_id> /iopub"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:259
+msgid "/kernels /<kernel\\_id> /shell"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:263
+msgid "/rstservice/ render"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:266
+msgid "/files/(.\\*)"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:268
+msgid "/clusters"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:268
+msgid "returns a list of dicts with each cluster's information"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:271
+msgid "/clusters /<profile\\_id> /<cluster\\_ action>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:271
+msgid "performs action (start/stop) on cluster with given profile ID"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:276
+msgid "/clusters /<profile\\_id>"
+msgstr ""
+
+#: ../../source/development_guide/rest_api.rst:276
+msgid "returns the JSON data for cluster with given profile ID"
+msgstr ""
+

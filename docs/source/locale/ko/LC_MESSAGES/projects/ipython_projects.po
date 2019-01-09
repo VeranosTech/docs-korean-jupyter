@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/projects/ipython_projects.rst:2
+msgid "IPython Projects"
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:8
+msgid "Description"
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:10
+msgid ""
+"`IPython <https://ipython.org>`_ provides a rich architecture for "
+"interactive computing with:"
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:13
+msgid "A powerful interactive shell."
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:14
+msgid "A kernel for Jupyter."
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:15
+msgid "Support for interactive data visualization and use of GUI toolkits."
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:16
+msgid "Flexible, embeddable interpreters to load into your own projects."
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:17
+msgid "Easy to use, high performance tools for parallel computing."
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:20
+msgid "Background"
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:22
+msgid ""
+"IPython is a growing project, with increasingly language-agnostic "
+"components. IPython 3.x was the last monolithic release of IPython, "
+"containing the notebook server, qtconsole, etc. As of IPython 4.0, the "
+"language-agnostic parts of the project: the notebook format, message "
+"protocol, qtconsole, notebook web application, etc. have moved to new "
+"projects under the name Jupyter. IPython itself is focused on interactive"
+" Python, part of which is providing a Python kernel for Jupyter."
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:31
+msgid "Resources"
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:33
+msgid "The projects with repos in the IPython organization on GitHub include:"
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:35
+msgid ""
+"IPython `ipykernel <https://ipython.readthedocs.io/en/stable/>`_ "
+"interactive computing in Python."
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:37
+msgid ""
+"`ipyparallel <https://ipyparallel.readthedocs.io/en/latest/>`_ "
+"lightweight parallel computing in Python offering seamless notebook "
+"integration"
+msgstr ""
+
+#: ../../source/projects/ipython_projects.rst:39
+msgid ""
+"`ipywidgets <https://ipywidgets.readthedocs.io/en/latest/>`_ interactive "
+"widgets for Python in the Jupyter Notebook"
+msgstr ""
+

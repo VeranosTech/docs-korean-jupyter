@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/boot2docker.rst:4
+msgid "Setup IPython development environment using boot2docker"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:9
+msgid ""
+"The following are instructions on how to get an IPython development "
+"environment up and running without having to install anything on your "
+"host machine, other than ```boot2docker`` "
+"<https://github.com/boot2docker/boot2docker>`__ and ```docker`` "
+"<https://www.docker.com/>`__."
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:16
+msgid "Install ``boot2docker``"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:18
+msgid ""
+"Install `boot2docker <https://github.com/boot2docker/boot2docker>`__. "
+"There are multiple ways to install, depending on your environment. See "
+"the `boot2docker docs <https://github.com/boot2docker/boot2docker>`__."
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:24
+msgid "Mac OS X"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:26
+msgid "On a Mac OS X host with `Homebrew <http://brew.sh>`__ installed:"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:33
+msgid "Initialize ``boot2docker`` VM"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:40
+msgid "Start VM"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:46
+msgid ""
+"The ``boot2docker`` CLI communicates with the docker daemon on the "
+"``boot2docker`` VM. To do this, we must set some environment variables, "
+"e.g. ``DOCKER_HOST``,"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:54
+msgid "To view the IP address of the VM:"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:62
+msgid "Install ``ipython`` from Development Branch"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:69
+msgid "Build Docker Image"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:71
+msgid ""
+"Use the Dockerfile in the cloned ``ipython`` directory to build a Docker "
+"image."
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:80
+msgid "Run Docker Container"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:82
+msgid ""
+"Run a container using the new image. We mount the entire ``ipython`` "
+"source tree on the host into the container at ``/srv/ipython`` to enable "
+"changes we make to the source on the host immediately reflected in the "
+"container."
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:93
+msgid "To list the running container from another shell on the host:"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:103
+msgid "Install IPython in Editable Mode"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:105
+msgid ""
+"Once in the container, you'll need to uninstall the ``ipython`` package "
+"and re-install in editable mode to enable your dev changes to be "
+"reflected in your environment."
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:120
+msgid "Run Notebook Server"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:127
+msgid "Visit Notebook Server"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:129
+msgid ""
+"On your host, run the following command to get the IP of the boot2docker "
+"VM if you forgot:"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:138
+msgid "Then visit it in your browser:"
+msgstr ""
+
+#: ../../source/development_guide/boot2docker.rst:145
+msgid ""
+"As a shortcut on a Mac, you can run the following in a terminal window "
+"(or make it a bash alias):"
+msgstr ""
+

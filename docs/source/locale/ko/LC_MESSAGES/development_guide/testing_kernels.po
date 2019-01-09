@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/testing_kernels.rst:4
+msgid "Testing Kernels"
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:9
+msgid ""
+"IPython makes it very easy to create wrapper kernels using its kernel "
+"framework. It requires extending the Kernel class and implementing a set "
+"of methods for the core functions like execute, history etc. Its also "
+"possible to write a full blown kernel in a language of your choice "
+"implementing listeners for all the zmq ports."
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:15
+msgid ""
+"The key problem for any kernel implemented by these methods is to ensure "
+"that it meets the message specification. The kerneltest command is a "
+"means to test the installed kernel against the message spec and validate "
+"the results."
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:21
+msgid "The kerneltest tool"
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:23
+msgid ""
+"The kerneltest tool is part of IPython.testing and is also included in "
+"the scripts similar to iptest. This takes 2 parameters - the name of the "
+"kernel to test and the test script file. The test script file should be "
+"in json format as described in the next section."
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:32
+msgid ""
+"You can also pass in an optional message spec version to the command. At "
+"the moment only the version 5 is supported, but as newer versions are "
+"released this can be used to test the kernel against a specific version "
+"of the kernel."
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:41
+msgid ""
+"The kernel to be tested needs to be installed and the kernelspec "
+"available in the user IPython directory. The tool will instantiate the "
+"kernel and send the commands over ZMQ. For each command executed on the "
+"kernel, the tool will validate the reply to ensure that it matches the "
+"message specification. In some cases the output is also checked, but the "
+"reply is always returned and printed out on the console. This can be used"
+" to validate that apart from meeting the message spec the kernel also "
+"produced the correct output."
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:51
+msgid "The test script file"
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:53
+msgid ""
+"The test script file is a simple json file that specifies the command to "
+"execute and the test code to execute for the command."
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:64
+msgid ""
+"For some commands in the message specification like kernel\\_info there "
+"is no need to specify the test\\_code parameter. The tool validates if it"
+" has all the inputs needed to execute the command and will print out an "
+"error to the console if it finds a missing parameter. Since the "
+"validation is built in, and only required parameters are passed, it is "
+"possible to add additional fields in the json file for test "
+"documentation."
+msgstr ""
+
+#: ../../source/development_guide/testing_kernels.rst:82
+msgid "A sample test script for the redis kernel will look like this"
+msgstr ""
+

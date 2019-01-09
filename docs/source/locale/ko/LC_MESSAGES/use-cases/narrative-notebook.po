@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/use-cases/narrative-notebook.rst:2
+msgid "Notebook Narratives"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:8
+msgid "Description"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:10
+msgid ""
+"The Notebook Narratives explore uses of the Jupyter Notebook in a variety"
+" of applications."
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:14
+msgid "Narrative examples"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:16
+msgid "Using the Notebook for data exploration"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:17
+msgid "Using extensions and widgets"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:18
+msgid "Using nbconvert for code execution and workflow simplification"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:19
+msgid "Using nbconvert for publishing"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:20
+msgid "Using multiple language kernels"
+msgstr ""
+
+#: ../../source/use-cases/narrative-notebook.rst:24
+msgid ""
+"We're actively working on this section of the documentation to improve it"
+" for you. Thanks for your patience."
+msgstr ""
+

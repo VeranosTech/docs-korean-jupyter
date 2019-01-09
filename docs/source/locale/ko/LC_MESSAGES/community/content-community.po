@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/community/content-community.rst:3
+msgid "Community Guides"
+msgstr ""
+
+#: ../../source/community/content-community.rst:6
+msgid ""
+"Welcome to the Community Guides for Jupyter. These guides are intended to"
+" provide information about the Jupyter community such as background, "
+"events, and communication channels. As our community is highly dynamic, "
+"information may change, and we will do our best to keep it up to date."
+msgstr ""
+
+#: ../../source/community/content-community.rst:12
+msgid "Weekly Dev meeting"
+msgstr ""
+
+#: ../../source/community/content-community.rst:14
+msgid ""
+"The core developers have weekly meetings to discuss and demo what they "
+"have been working on, discuss future plans, and bootstrap conversation. "
+"These meetings are public. The direct link to attend the meeting will be "
+"posted to the `Hackpad <https://jupyter.hackpad.com>`_ before the "
+"meeting. Afterwards, the recording of the meeting will be posted to the "
+"`IPython channel "
+"<https://www.youtube.com/channel/UCUuzz1eYiKIzu_Uw1ZQLNoQ>`_ on YouTube."
+msgstr ""
+
+#: ../../source/community/content-community.rst:21
+msgid "**Jupyter/IPython meetings:**"
+msgstr ""
+
+#: ../../source/community/content-community.rst:23
+msgid "Tuesdays at 9am PST"
+msgstr ""
+
+#: ../../source/community/content-community.rst:25
+msgid "**JupyterLab meetings:**"
+msgstr ""
+
+#: ../../source/community/content-community.rst:27
+msgid "Fridays at 9am PST"
+msgstr ""
+
+#: ../../source/community/content-community.rst:29
+msgid ""
+"Collaborative notes are taken before/during the meeting on `Hackpad "
+"<https://jupyter.hackpad.com>`_. Hackpads are organized by month."
+msgstr ""
+
+#: ../../source/community/content-community.rst:32
+msgid ""
+"We will ping the `dev-meeting-attendance Gitter channel "
+"<https://gitter.im/jupyter/dev-meeting-attendance>`_ 1-2 days before each"
+" meeting to know who is likely going to attend."
+msgstr ""
+
+#: ../../source/community/content-community.rst:39
+msgid "Jupyter communications"
+msgstr ""
+
+#: ../../source/community/content-community.rst:41
+msgid "Blog `<https://blog.jupyter.org/>`_"
+msgstr ""
+
+#: ../../source/community/content-community.rst:42
+msgid "Newsletter `<https://newsletter.jupyter.org/>`_"
+msgstr ""
+
+#: ../../source/community/content-community.rst:43
+msgid "Website `<https://jupyter.org>`_"
+msgstr ""
+
+#: ../../source/community/content-community.rst:44
+msgid "Twitter `<https://twitter.com/ProjectJupyter>`_"
+msgstr ""
+
+#: ../../source/community/content-community.rst:45
+msgid ""
+"Mailing lists (Jupyter, Jupyter in Education) "
+"`<https://jupyter.org/community.html>`_"
+msgstr ""
+
+#: ../../source/community/content-community.rst:48
+msgid "Governance"
+msgstr ""
+
+#: ../../source/community/content-community.rst:50
+msgid ""
+"Steering council: Information about the steering council and its members "
+"can be found on the `Jupyter website <https://jupyter.org>`_."
+msgstr ""
+
+#: ../../source/community/content-community.rst:52
+msgid ""
+"Jupyter Enhancement Proposal (JEP) process: Details about the process can"
+" be found in the `jupyter/enhancement-proposals GitHub repo "
+"<https://github.com/jupyter/enhancement-proposals>`_."
+msgstr ""
+
+#: ../../source/community/content-community.rst:56
+msgid "Code of conduct"
+msgstr ""
+
+#: ../../source/community/content-community.rst:58
+msgid ""
+"Information can be found in the `Jupyter Governance repo on GitHub "
+"<https://github.com/jupyter/governance>`_."
+msgstr ""
+

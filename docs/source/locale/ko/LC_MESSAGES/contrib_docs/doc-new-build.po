@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/contrib_docs/doc-new-build.md:1
+msgid "Building automatically on ReadTheDocs"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:3
+msgid ""
+"This explains how to automatically rebuild documentation on ReadtheDocs "
+"every time a pull request is merged into its corresponding GitHub repo."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:6
+msgid "Using the ReadTheDocs service"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:8
+msgid ""
+"Webhooks and services can be enabled in GitHub repo settings to allow "
+"third party services such as ReadTheDocs. The ReadTheDocs service "
+"rebuilds the project documentation whenever a pull request is merged into"
+" the GitHub repo."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:12
+msgid "Navigate to Settings"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:14
+msgid ""
+"Each GitHub repo has a Settings tab at the far right of the repo menubar."
+" Navigate to Settings and then the Webhooks & services submenu tab."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:16
+msgid "Settings and Webhooks & services submenu"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:18
+msgid "Add the ReadTheDocs service"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:20
+msgid ""
+"Select Add service and enter ReadTheDocs in the Available Services input "
+"box."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:22
+msgid ""
+"The Services/Add ReadTheDocs window will open. Press the green Add "
+"service button to activate the ReadTheDocs service."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:24
+msgid "Add ReadTheDocs service"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:26
+msgid "Success"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:28
+msgid ""
+"The ReadTheDocs service is added successfully. The service will take "
+"effect on the next merged pull request to the project repo."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:30
+msgid "Service successfully added"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:33
+msgid "Created: 01-07-2016"
+msgstr ""
+

@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/projects/jupyter-directories.rst:4
+msgid "Common Directories and File Locations"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:7
+msgid "Contents"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:9
+msgid ""
+"Jupyter stores different files (i.e. configuration, data, runtime) in a "
+"number of different locations. Environment variables may be set to "
+"customize for the location of each file type."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:16
+msgid "Configuration files"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:18
+msgid "Config files are stored by default in the :file:`~/.jupyter` directory."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:22
+msgid ""
+"Set this environment variable to use a particular directory, other than "
+"the default, for Jupyter config files."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:25
+msgid ""
+"Besides the user config directory mentioned above, Jupyter has a search "
+"path of additional locations from which a config file will be loaded. "
+"Here's a table of the locations to be searched, in order of preference:"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:30
+msgid "Unix"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:30
+#: ../../source/projects/jupyter-directories.rst:67
+msgid "Windows"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:32
+msgid ":envvar:`JUPYTER_CONFIG_DIR`"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:34
+msgid "``{sys.prefix}/etc/jupyter/``"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:36
+msgid "``/usr/local/etc/jupyter/`` ``/etc/jupyter/``"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:36
+msgid "``%PROGRAMDATA%\\jupyter\\``"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:40
+msgid ""
+"To list the config directories currrently being used you can run the "
+"below command from the :term:`command line`::"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:48
+msgid "Data files"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:50
+msgid ""
+"Jupyter uses a search path to find installable data files, such as "
+":ref:`kernelspecs <kernelspecs>` and notebook extensions. When searching "
+"for a resource, the code will search the search path starting at the "
+"first directory until it finds where the resource is contained."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:55
+msgid ""
+"Each category of file is in a subdirectory of each directory of the "
+"search path. For example, kernel specs are in ``kernels`` subdirectories."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:60
+msgid ""
+"Set this environment variable to provide extra directories for the data "
+"search path. :envvar:`JUPYTER_PATH` should contain a series of "
+"directories, separated by ``os.pathsep`` (``;`` on Windows, ``:`` on "
+"Unix). Directories given in :envvar:`JUPYTER_PATH` are searched before "
+"other locations."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:67
+msgid "Linux (& other free desktops)"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:67
+msgid "Mac"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:69
+msgid ":envvar:`JUPYTER_PATH`"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:71
+msgid "``~/.local/share/jupyter/`` (respects ``$XDG_DATA_HOME``)"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:71
+msgid "``~/Library/Jupyter``"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:71
+msgid "``%APPDATA%\\jupyter``"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:74
+msgid "``{sys.prefix}/share/jupyter/``"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:76
+msgid "``/usr/local/share/jupyter`` ``/usr/share/jupyter``"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:76
+msgid "``%PROGRAMDATA\\jupyter``"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:83
+msgid "Runtime files"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:85
+msgid ""
+"Things like connection files, which are only useful for the lifetime of a"
+" particular process, have a runtime directory."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:88
+msgid ""
+"On Linux and other free desktop platforms, these runtime files are stored"
+" in ``$XDG_RUNTIME_DIR/jupyter`` by default. On other platforms, it's a "
+"``runtime/`` subdirectory of the user's data directory (second row of the"
+" table above)."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:93
+msgid "An environment variable may also be used to set the runtime directory."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:97
+msgid "Set this to override where Jupyter stores runtime files."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:100
+msgid "Summary"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:102
+msgid ":envvar:`JUPYTER_CONFIG_DIR` for config file location"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:104
+msgid ":envvar:`JUPYTER_PATH` for datafile directory locations"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:106
+msgid ":envvar:`JUPYTER_RUNTIME_DIR` for runtime file location"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:112
+msgid ":mod:`jupyter_core.paths`"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:112
+msgid "The Python API to locate these directories."
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:114
+msgid ":ref:`jupyter_command`"
+msgstr ""
+
+#: ../../source/projects/jupyter-directories.rst:115
+msgid "Locate these directories from the command line."
+msgstr ""
+

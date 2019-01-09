@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/projects/subprojects.rst:5
+msgid "Jupyter Projects"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:8
+msgid "Contents"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:10
+msgid ""
+"Project Jupyter is developed as a set of subprojects. This section "
+"describes the subprojects with links to their documentation or GitHub "
+"repositories."
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:14
+msgid "Jupyter User Interfaces"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:15
+msgid ""
+"The Jupyter user interfaces offer a foundation of interactive computing "
+"environments where scientific computing, data science, and analytics can "
+"be performed using a wide range of programming languages."
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:20
+msgid "`Jupyter Notebook <https://jupyter-notebook.readthedocs.io/en/latest/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:22
+msgid ""
+"Web-based application for authoring documents that combine live-code with"
+" narrative text, equations and visualizations. `Documentation <https"
+"://jupyter-notebook.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/jupyter/notebook>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:26
+msgid "`Jupyter Console <https://jupyter-console.readthedocs.io/en/latest/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:28
+msgid ""
+"Terminal based console for interactive computing. `Documentation <https"
+"://jupyter-console.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/jupyter/jupyter_console>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:31
+msgid "`Jupyter QtConsole <https://jupyter.org/qtconsole/stable/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:33
+msgid ""
+"Qt application for interactive computing with rich output. `Documentation"
+" <https://jupyter.org/qtconsole/stable/>`__ | `Repo "
+"<https://github.com/jupyter/qtconsole>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:39
+msgid "Kernels"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:40
+msgid ""
+"Kernels are `programming language specific` processes that run "
+"independently and interact with the Jupyter Applications and their user "
+"interfaces. `IPython <https://ipython.org>`__ is the reference Jupyter "
+"kernel, providing a powerful environment for interactive computing in "
+"Python."
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:46
+msgid "`IPython <https://ipython.org>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:48
+msgid ""
+"interactive computing in Python. `Documentation "
+"<http://ipython.readthedocs.io/en/stable/>`__ | `Repo "
+"<https://github.com/ipython/ipython>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:51
+msgid "`ipywidgets <https://ipywidgets.readthedocs.io/en/latest/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:53
+msgid ""
+"interactive widgets for Python in the Jupyter Notebook. `Documentation "
+"<https://ipywidgets.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/ipython/ipywidgets>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:56
+msgid "`ipyparallel <https://ipyparallel.readthedocs.io/en/latest/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:58
+msgid ""
+"lightweight parallel computing in Python offering seamless notebook "
+"integration. `Documentation "
+"<https://ipyparallel.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/ipython/ipyparallel>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:64
+msgid ""
+"`Jupyter kernels <https://github.com/ipython/ipython/wiki/IPython-"
+"kernels-for-other-languages>`_"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:66
+msgid ""
+"A full list of kernels available for other languages. Many of these "
+"kernels are developed by third parties and may or may not be stable."
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:70
+msgid "Formatting and Conversion"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:71
+msgid ""
+"Notebooks are rich interactive documents that combine live code, "
+"narrative text (using markdown), visualizations, and other rich media. "
+"The following utility subprojects allow programmatic format conversion "
+"and manipulation of notebook documents."
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:77
+msgid "`nbconvert <https://nbconvert.readthedocs.io/en/latest/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:79
+msgid ""
+"Convert dynamic notebooks to static formats such as HTML, Markdown, "
+"LaTeX/PDF, and reStrucuredText. `Documentation "
+"<https://nbconvert.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/jupyter/nbconvert>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:83
+msgid "`nbformat <https://nbformat.readthedocs.io/en/latest/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:85
+msgid ""
+"Work with notebook documents programmatically. `Documentation "
+"<https://nbformat.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/jupyter/nbformat>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:91
+msgid "Education"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:92
+msgid ""
+"Jupyter Notebooks offer exciting and creative possibilities in education."
+" The following subprojects are focused on supporting the use of Jupyter "
+"Notebook in a variety of educational settings."
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:97
+msgid "`nbgrader <https://nbgrader.readthedocs.io/en/stable/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:99
+msgid ""
+"tools for managing, grading, and reporting of notebook based assignments."
+" `Documentation <https://nbgrader.readthedocs.io/en/stable/>`__ | `Repo "
+"<https://github.com/jupyter/nbgrader>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:106
+msgid "Deployment"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:107
+msgid ""
+"To serve a variety of users and use cases, these subprojects are being "
+"developed to support notebook deployment in various contexts, including "
+"multiuser capabilities and secure, scalable cloud deployments."
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:112
+msgid "`jupyterhub <https://github.com/jupyterhub/jupyterhub>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:114
+msgid ""
+"Multi-user notebook for organizations with pluggable authentication and "
+"scalability. `Documentation "
+"<https://jupyterhub.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/jupyterhub/jupyterhub>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:118
+msgid "`jupyter-drive <https://github.com/jupyter/jupyter-drive>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:120
+msgid ""
+"Store notebooks on Google Drive. `Documentation "
+"<https://github.com/jupyter/jupyter-drive>`__ | `Repo "
+"<https://github.com/jupyter/jupyter-drive>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:123
+msgid "`nbviewer <https://nbviewer.jupyter.org/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:125
+msgid ""
+"Share notebooks as static HTML on the web. `Documentation "
+"<https://github.com/jupyter/nbviewer>`__ | `Repo "
+"<https://github.com/jupyter/nbviewer>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:128
+msgid "`tmpnb <https://github.com/jupyter/tmpnb>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:130
+msgid ""
+"Create temporary, transient notebooks in the cloud. `Documentation "
+"<https://github.com/jupyter/tmpnb>`__ | `Repo "
+"<https://github.com/jupyter/tmpnb>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:133
+msgid "`tmpnb-deploy <https://github.com/jupyter/tmpnb-deploy>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:135
+msgid ""
+"Deployment tools for tmpnb. `Documentation <https://github.com/jupyter"
+"/tmpnb-deploy>`__ | `Repo <https://github.com/jupyter/tmpnb-deploy>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:138
+msgid "`dockerspawner <https://github.com/jupyterhub/dockerspawner>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:140
+msgid ""
+"Deploy notebooks for 'jupyterhub' inside Docker containers. "
+"`Documentation <https://github.com/jupyterhub/dockerspawner>`__ | `Repo "
+"<https://github.com/jupyterhub/dockerspawner>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:143
+msgid "`docker-stacks <https://github.com/jupyter/docker-stacks>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:145
+msgid ""
+"Stacks of Jupyter applications and kernels as Docker containers. "
+"`Documentation <https://github.com/jupyter/docker-stacks>`__ | `Repo "
+"<https://github.com/jupyter/docker-stacks>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:151
+msgid "Architecture"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:152
+msgid ""
+"The Jupyter architecture relies on these projects' specifications and "
+"implementation."
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:156
+msgid "`jupyter_client <https://jupyter-client.readthedocs.io/en/latest/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:158
+msgid ""
+"The specification of the Jupyter message protocol and a client library in"
+" Python. `Documentation <https://jupyter-"
+"client.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/jupyter/jupyter_client>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:162
+msgid "`jupyter_core <https://jupyter-core.readthedocs.io/en/latest/>`__"
+msgstr ""
+
+#: ../../source/projects/subprojects.rst:164
+msgid ""
+"Core functionality and miscellaneous utilities. `Documentation <https"
+"://jupyter-core.readthedocs.io/en/latest/>`__ | `Repo "
+"<https://github.com/jupyter/jupyter_core>`__"
+msgstr ""
+

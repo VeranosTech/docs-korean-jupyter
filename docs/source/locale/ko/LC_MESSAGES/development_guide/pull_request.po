@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/pull_request.rst:4
+msgid "The Perfect Pull Request"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:9
+msgid "A brief guide to making and reviewing pull requests."
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:12
+msgid "1. It works"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:14
+msgid "The code does what it's supposed to!"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:17
+msgid "2. It works on all of the platforms that IPython officially supports"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:19
+msgid "IPython has to work on:"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:21
+msgid "Linux of various kinds, Windows & Mac"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:22
+msgid "Python 2 & 3"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:25
+msgid "3. Handles unicode issues properly"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:27
+msgid ""
+"Much of our code base deals with strings and unicode. This needs to be "
+"done in a manner that is unicode aware and works on Python 2 and 3. [This"
+" article] (http://www.joelonsoftware.com/articles/Unicode.html) is a good"
+" intro to unicode."
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:33
+msgid "4. Adheres to our coding style"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:35
+msgid ""
+"Coding style refers to how source code is formatted and how variables, "
+"functions, methods and classes are named. Your code should follow our "
+"coding style, which is described [[here\\|Dev: Coding style]]."
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:40
+msgid "5. Clean & commented"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:42
+msgid ""
+"The code should be well organized, and have inline comments where "
+"appropriate. When we look at the code, it should be clear what it's doing"
+" and why. It should not break abstractions that we have established in "
+"the project."
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:48
+msgid "6. Tested"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:50
+msgid ""
+"If it fixes a bug, the pull request should ideally add an automated test "
+"that fails without the fix, and passes with it. Normally it should be "
+"sufficient to copy an existing test and tweak it. New functionality "
+"should come with its own tests as well. Details about testing IPython can"
+" be found [[here\\|Dev: Testing]]."
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:57
+msgid "7. Well documented"
+msgstr ""
+
+#: ../../source/development_guide/pull_request.rst:59
+msgid ""
+"Don't forget to update docstrings, and any relevant parts of `the "
+"official documentation <https://ipython.readthedocs.io/en/stable/>`__. "
+"New features or significant changes warrant an entry in the *What's New* "
+"section too. Details about documenting IPython can be found [[here\\|Dev:"
+" Documenting IPython]]."
+msgstr ""
+

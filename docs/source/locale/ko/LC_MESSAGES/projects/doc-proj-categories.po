@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/projects/doc-proj-categories.rst:3
+msgid "Project Documentation"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:6
+msgid "Contents"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:8
+msgid ""
+"Links to **information on usage, configuration and development** hosted "
+"on Read The Docs or in the GitHub project repo."
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:12
+msgid "Jupyter User Interfaces"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:13
+msgid "`Jupyter Notebook <http://jupyter-notebook.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:14
+msgid "`jupyter_console <http://jupyter-console.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:15
+msgid "`qtconsole <https://qtconsole.readthedocs.io/en/stable/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:18
+msgid "JupyterHub"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:19
+msgid "`JupyterHub <http://jupyterhub.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:20
+msgid ""
+"`configurable-http-proxy <https://github.com/jupyterhub/configurable-"
+"http-proxy>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:21
+msgid "`dockerspawner <https://github.com/jupyterhub/dockerspawner>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:22
+msgid "`ldapauthenticator <https://github.com/jupyterhub/ldapauthenticator>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:23
+msgid "`oauthenticator <https://github.com/jupyterhub/oauthenticator>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:24
+msgid "`sudospawner <https://github.com/jupyterhub/sudospawner>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:27
+msgid "Education"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:28
+msgid "`nbgrader <http://nbgrader.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:31
+msgid "Notebook Conversion and Formatting"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:32
+msgid "`nbconvert <http://nbconvert.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:33
+msgid "`nbformat <http://nbformat.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:36
+msgid "Kernels"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:37
+msgid "`IPython <https://ipython.readthedocs.io/en/stable/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:38
+msgid "`IRkernel <https://irkernel.github.io/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:39
+msgid "`IJulia <https://github.com/JuliaLang/IJulia.jl>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:40
+msgid ""
+"`List of community maintained language kernels "
+"<https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-"
+"languages>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:43
+msgid "IPython"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:44
+msgid "`IPython`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:45
+msgid "`ipykernel <https://ipython.readthedocs.io/en/stable/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:46
+msgid "`ipyparallel <https://ipyparallel.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:49
+msgid "Deployment"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:50
+msgid "`docker-stacks <https://github.com/jupyter/docker-stacks>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:51
+msgid "`ipywidgets <https://ipywidgets.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:52
+msgid "`jupyter-drive <https://github.com/jupyter/jupyter-drive>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:53
+msgid "`jupyter-sphinx-theme <https://github.com/jupyter/jupyter-sphinx-theme>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:54
+msgid ""
+"`kernel_gateway <http://jupyter-kernel-"
+"gateway.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:55
+msgid "`nbviewer <https://github.com/jupyter/nbviewer>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:56
+msgid "`tmpnb <https://github.com/jupyter/tmpnb>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:57
+msgid "`traitlets <http://traitlets.readthedocs.io/en/stable/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:60
+msgid "JupyterLab"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:61
+msgid "`jupyter-js-notebook <https://github.com/jupyter/jupyter-js-notebook>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:62
+msgid "`jupyter-js-phosphide <https://github.com/jupyter/jupyter-js-phosphide>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:63
+msgid "`jupyter-js-plugins <https://github.com/jupyter/jupyter-js-plugins>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:64
+msgid "`jupyter-js-services <http://jupyter.org/jupyter-js-services/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:65
+msgid "`jupyter-js-ui <http://jupyter.org/jupyter-js-ui/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:66
+msgid "`jupyter-js-utils <http://jupyter.org/jupyter-js-utils/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:69
+msgid "Architecture"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:70
+msgid "`jupyter_client <http://jupyter-client.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../source/projects/doc-proj-categories.rst:71
+msgid "`jupyter_core <http://jupyter-core.readthedocs.io/en/latest/>`_"
+msgstr ""
+

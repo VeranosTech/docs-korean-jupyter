@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/developer-docs/contrib_guide_code.rst:3
+msgid "Developer Guide"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:6
+msgid "Contents"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:9
+msgid "A Note on Contributing to Open Source"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:11
+msgid ""
+"Contributing to open source can be a nerve-wrecking process, but don't "
+"worry everyone on the Jupyter team is dedicated to making sure that your "
+"open source experience is as fun as possible. At any time during the "
+"process described below, you can reach out to the Jupyter team on Gitter "
+"or the mailing list for assistance. If you are nervous about asking "
+"questions in public, you can also reach out to one of the Jupyter "
+"developers in private. You can use the public Gitter to find someone who "
+"has the best knowledge about the code you are working with and interact "
+"with the in a personal chat."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:20
+msgid ""
+"As you begin your open source journey, remember that it's OK if you don't"
+" understand something, it's OK to make mistakes, and it's OK to only "
+"contribute a small amount of the code necessary to fix the issue you are "
+"tackling. Any and all help is welcome and any and all people are "
+"encouraged to contribute."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:26
+msgid "How can I help?"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:28
+msgid ""
+"Individuals are welcome, and encouraged, to submit pull requests and "
+"contribute to the Jupyter source. If you are a first-time contributor "
+"looking to get involved with Jupyter, you can use the following query in "
+"a GitHub search to find beginner-friendly issues to tackle across the "
+"Jupyter codebase. This query is particularly useful because the Jupyter "
+"codebase is scattered across several repositories within the jupyter "
+"organization, as opposed to a single repository. You can click the link "
+"below to find sprint-friendly issues."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:36
+msgid ""
+"`is:issue is:open is:sprint-friendly user:jupyter "
+"<https://github.com/search?q=is%3Aissue+is%3Aopen+is%3Asprint-"
+"friendly+user%3Ajupyter&type=Issues&ref=searchresults>`_"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:39
+msgid ""
+"Once you've found an issue that you are eager to solve, you can use the "
+"guide below to get started. If you experience any problems while working "
+"on the issue, leave a comment on the issue page in GitHub and someone on "
+"the core team will be able to lend you assistance."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:44
+msgid ""
+"Please keep in mind that what follows are guidelines. If you work through"
+" the steps and have questions or run into time constraints, please submit"
+" what you already have worked on as a pull request and ask questions on "
+"it. Your effort, including partial or in-progress work, is appreciated."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:49
+msgid ""
+"Fork the repository associated with the issue you are addressing and "
+"clone it to a local directory on your machine."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:52
+msgid ""
+"``cd`` into the directory and create a new branch using ``git checkout -b"
+" insert-branch-name-here``. Pick a branch name that gives some insight "
+"into what the issue you are fixing is. For example, if you are updating "
+"the text that is logged out by the program when a certain error happens "
+"you might name your branch `update-error-text`."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:58
+msgid ""
+"Refer to the repository's README and documentation for details on "
+"configuring your system for development."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:61
+msgid ""
+"Identify the module or class where the code change you will make will "
+"reside and leave a comment in the file describing what issue you are "
+"trying to address."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:65
+msgid ""
+"Open a pull request to the repository with ``[WIP]`` appended to the "
+"front so that the core team is aware that you are actively pursuing the "
+"issue. When creating a pull request, make sure that the title clearly and"
+" concisely described what your code does. For example, we might use the "
+"title \"Updated error message on ExampleException\". In the body of the "
+"pull request, make sure that you include the phrase \"Closes #issue-"
+"number-here\", where the issue number is the issue number of the issue "
+"that you are addressing in this PR."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:74
+msgid ""
+"Feel free to open a PR as early as possible. Getting early feedback on "
+"your approach will save you time and prevent the need for an extensive "
+"refactor later."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:78
+msgid ""
+"Run the test suite locally in order to ensure that everything is properly"
+" configured on your system. Refer to the repository's README for "
+"information on how to run the test suite. This will typically require "
+"that you run the ``nosetests`` command on the commandline. Alternatively,"
+" you may submit a pull request. Our Continuous Integration system will "
+"test your code and report test results."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:85
+msgid ""
+"Find the test file associated with the module that you will be changing. "
+"In the test file, add some tests that outline what you expect the "
+"behavior of the change should be. If we continue with our example of "
+"updating the text that is logged on error, we might write test cases that"
+" check to see if the exception raised when you induce the error contains "
+"the appropriate string. When writing test cases, make sure that you test "
+"for the following things."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:93
+msgid "What is the simplest test case I can write for this issue?"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:94
+msgid "What will happen if your code is given messy inputs?"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:95
+msgid "What will happen if your code is given no inputs?"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:96
+msgid "What will happen if your code is given too few inputs?"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:97
+msgid "What will happen if your code is given too many inputs?"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:99
+msgid ""
+"If you need assistance writing test cases, you can place a comment on the"
+" pull request that was opened earlier and one of the core team members "
+"will be able to help you."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:103
+msgid ""
+"Go back to the file that you are updating and begin adding the code for "
+"your pull request."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:106
+msgid ""
+"Run the test suite again to see if your changes have caused any of the "
+"test cases to pass. If any of the test cases have failed, go back to your"
+" code and make the updates necessary to have them pass."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:110
+msgid ""
+"Once all of your test cases have passed, commit both the test cases and "
+"the updated module and push the updates to the branch on your forked "
+"repository."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:113
+msgid ""
+"Once you are ready for your pull request to be reviewed, remove the [WIP]"
+" tag from the front of issue, a project reviewer will review your code "
+"for quality. You can expect the reviewer to check for the documentation "
+"provided in the changes you made, how thorough the test cases you "
+"provided are, and how efficient your code is. Your reviewer will provide "
+"feedback on your code and you will have the chance to edit your code and "
+"apply fixes."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:120
+msgid ""
+"Once your PR is ready to become a part of the code base, it will be "
+"merged by a member of the core team."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:124
+msgid "Contribution Workflow"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:130
+msgid "Core Developer Workflow"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:132
+msgid ""
+"To help you understand our review process by core developers after you "
+"submit a pull request, here's a guide that outlines the general process "
+"(specifics may vary a bit across our repositories). Here is an example "
+"for Jupyter notebook 4.x:"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:139
+msgid ""
+"In general, Pull Requests are against ``master`` unless they only affect "
+"a backport branch. If a PR affects master and should be backported, the "
+"general flow is:"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:143
+msgid "mark the PR with milestone for the next backport release (4.3)"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:144
+msgid "merge into master"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:145
+msgid "backport to 4.x"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:146
+msgid "push updated 4.x branch"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:148
+msgid ""
+"Backports can be done in a variety of ways, but we have `a script "
+"<https://github.com/ipython/ipython/blob/master/tools/backport_pr.py>`_ "
+"for automating the common process to:"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:152
+msgid ""
+"download the patch ` e.g. <https://patch-"
+"diff.githubusercontent.com/raw/jupyter/notebook/pull/1645.patch>`"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:153
+msgid "checkout the 4.x branch"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:154
+msgid "apply the patch"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:155
+msgid "make a commit"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:157
+msgid "which works for simple cases, at least."
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:159
+msgid "In this case, it would be:"
+msgstr ""
+
+#: ../../source/developer-docs/contrib_guide_code.rst:161
+msgid ""
+"python /path/to/ipython-repo/tools/backport_pr.py jupyter/notebook 4.x "
+"1645"
+msgstr ""
+

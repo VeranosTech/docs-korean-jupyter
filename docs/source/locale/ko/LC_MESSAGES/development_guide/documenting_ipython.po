@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/development_guide/documenting_ipython.rst:4
+msgid "Documenting IPython"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:7
+msgid ""
+"This is copied verbatim from the old IPython wiki and is currently under "
+"development. Much of the information in this part of the development "
+"guide is out of date."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:9
+msgid ""
+"When contributing code to IPython, you should strive for clarity and "
+"consistency, without falling prey to a style straitjacket. Basically, "
+"'document everything, try to be consistent, do what makes sense.'"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:13
+msgid ""
+"By and large we follow existing Python practices in major projects like "
+"Python itself or NumPy, this document provides some additional detail for"
+" IPython."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:18
+msgid "Standalone documentation"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:20
+msgid ""
+"All standalone documentation should be written in plain text (``.txt``) "
+"files using reStructuredText [reStructuredText]\\_ for markup and "
+"formatting. All such documentation should be placed in the directory "
+"docs/source of the IPython source tree. Or, when appropriate, a suitably "
+"named subdirectory should be used. The documentation in this location "
+"will serve as the main source for IPython documentation."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:27
+msgid ""
+"The actual HTML and PDF docs are built using the Sphinx [Sphinx]\\_ "
+"documentation generation tool. Once you have Sphinx installed, you can "
+"build the html docs yourself by doing:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:36
+msgid ""
+"Our usage of Sphinx follows that of matplotlib [Matplotlib]\\_ closely. "
+"We are using a number of Sphinx tools and extensions written by the "
+"matplotlib team and will mostly follow their conventions, which are "
+"nicely spelled out in their documentation guide [MatplotlibDocGuide]\\_. "
+"What follows is thus a abridged version of the matplotlib documentation "
+"guide, taken with permission from the matplotlib team."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:43
+msgid ""
+"If you are reading this in a web browser, you can click on the \"Show "
+"Source\" link to see the original reStricturedText for the following "
+"examples."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:47
+msgid "A bit of Python code:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:55
+msgid "An interactive Python session:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:63
+msgid "An IPython session:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:75
+msgid "A bit of shell code:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:84
+msgid "Docstring format"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:86
+msgid ""
+"Good docstrings are very important. Unfortunately, Python itself only "
+"provides a rather loose standard for docstrings [PEP257]\\_, and there is"
+" no universally accepted convention for all the different parts of a "
+"complete docstring. However, the NumPy project has established a very "
+"reasonable standard, and has developed some tools to support the smooth "
+"inclusion of such docstrings in Sphinx-generated manuals. Rather than "
+"inventing yet another pseudo-standard, IPython will be henceforth "
+"documented using the NumPy conventions; we carry copies of some of the "
+"NumPy support tools to remain self-contained, but share back upstream "
+"with NumPy any improvements or fixes we may make to the tools."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:97
+msgid ""
+"The NumPy documentation guidelines [NumPyDocGuide]\\_ contain detailed "
+"information on this standard, and for a quick overview, the NumPy example"
+" docstring [NumPyExampleDocstring]\\_ is a useful read."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:101
+msgid ""
+"For user-facing APIs, we try to be fairly strict about following the "
+"above standards (even though they mean more verbose and detailed "
+"docstrings). Wherever you can reasonably expect people to do "
+"introspection with:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:110
+msgid "the docstring should follow the NumPy style and be fairly detailed."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:112
+msgid ""
+"For purely internal methods that are only likely to be read by others "
+"extending IPython itself we are a bit more relaxed, especially for "
+"small/short methods and functions whose intent is reasonably obvious. We "
+"still expect docstrings to be written, but they can be simpler. For very "
+"short functions with a single-line docstring you can use something like:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:125
+msgid "and for longer multiline strings:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:136
+msgid ""
+"Here are two additional PEPs of interest regarding documentation of code."
+" While both of these were rejected, the ideas therein form much of the "
+"basis of docutils (the machinery to process reStructuredText):"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:140
+msgid ""
+"`Docstring Processing System Framework "
+"<https://www.python.org/dev/peps/pep-0256/>`__"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:142
+msgid ""
+"`Docutils Design Specification "
+"<https://www.python.org/dev/peps/pep-0258/>`__"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:145
+msgid "**note**"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:147
+msgid ""
+"In the past IPython used epydoc so currently many docstrings still use "
+"epydoc conventions. We will update them as we go, but all new code should"
+" be documented using the NumPy standard."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:152
+msgid "Building and uploading"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:154
+msgid ""
+"The built docs are stored in a separate repository. Through some github "
+"magic, they're automatically exposed as a website. It works like this:"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:157
+msgid ""
+"You will need to have sphinx and latex installed. In Ubuntu, install "
+"``texlive-latex-recommended texlive-latex-extra texlive-fonts-"
+"recommended``. Install the latest version of sphinx from PyPI (``pip "
+"install sphinx``)."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:161
+msgid ""
+"Ensure that the development version of IPython is the first in your "
+"system path. You can either use a virtualenv, or modify your PYTHONPATH."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:164
+msgid ""
+"Switch into the docs directory, and run ``make gh-pages``. This will "
+"build your updated docs as html and pdf, then automatically check out the"
+" latest version of the docs repository, copy the built docs into it, and "
+"commit your changes."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:168
+msgid "Open the built docs in a web browser, and check that they're as expected."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:170
+msgid ""
+"(When building the docs for a new tagged release, you will have to add "
+"its link to index.rst, then run ``python build_index.py`` to update "
+"index.html. Commit the change.)"
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:173
+msgid ""
+"Upload the docs with ``git push``. This only works if you have write "
+"access to the docs repository."
+msgstr ""
+
+#: ../../source/development_guide/documenting_ipython.rst:175
+msgid ""
+"If you are building a version that is not the current dev branch, nor a "
+"tagged release, then you must run gh-pages.py directly with ``python gh-"
+"pages.py <version>``, and *not* with ``make gh-pages``."
+msgstr ""
+

@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 11:48+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/use-cases/data_science.rst:5
+msgid "Jupyter for Data Science"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:7
+msgid ""
+"The purpose of this page is to highlight kernels and other projects that "
+"are central to the usage of Jupyter in data science. This page is not "
+"meant to be comprehensive or unbiased, but rather to provide an "
+"opinionated view of the usage of Jupyter in data science based on our "
+"interactions with users."
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:12
+msgid "The following Jupyter kernels are widely used in data science:"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:14
+msgid "python"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:15
+msgid "IPython (`GitHub Repo <https://github.com/ipython/ipykernel>`__)"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:18
+msgid "R"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:17
+msgid ""
+"IRkernel (`Documentation <https://irkernel.github.io/>`__, `GitHub Repo "
+"<https://github.com/IRkernel/IRkernel>`__)"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:18
+msgid "IRdisplay (`GitHub Repo <https://github.com/IRkernel/IRdisplay>`__)"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:19
+msgid "repr (`GitHub Repo <https://github.com/IRkernel/repr>`__)"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:21
+msgid "Julia"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:21
+msgid "IJulia Kernel (`GitHub Repo <https://github.com/JuliaLang/IJulia.jl>`__)"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:22
+msgid ""
+"Interactive Widgets (`GitHub Repo "
+"<https://github.com/JuliaLang/Interact.jl>`__)"
+msgstr ""
+
+#: ../../source/use-cases/data_science.rst:23
+msgid "Bash (`GitHub Repo <https://github.com/takluyver/bash_kernel>`__)"
+msgstr ""
+
