@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 10:09+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/_templates/index.html:2
+msgid "Overview"
+msgstr ""
+
+#: ../../source/_templates/index.html:4
+msgid "Welcome"
+msgstr ""
+
+#: ../../source/_templates/index.html:7
+msgid "Start Here"
+msgstr ""
+
+#: ../../source/_templates/index.html:13
+msgid "Jupyter Notebook Quickstart"
+msgstr ""
+
+#: ../../source/_templates/index.html:14
+msgid "Try the notebook"
+msgstr ""
+
+#: ../../source/_templates/index.html:15
+msgid "Architecture"
+msgstr ""
+
+#: ../../source/_templates/index.html:16
+msgid "What is Jupyter?"
+msgstr ""
+
+#: ../../source/_templates/index.html:17
+msgid "Narratives and Use Cases"
+msgstr ""
+
+#: ../../source/_templates/index.html:18
+msgid "Narratives of common deployment scenarios"
+msgstr ""
+
+#: ../../source/_templates/index.html:19 ../../source/_templates/index.html:61
+#: ../../source/_templates/index.html:67
+msgid "IPython"
+msgstr ""
+
+#: ../../source/_templates/index.html:20
+msgid "An interactive Python kernel and REPL"
+msgstr ""
+
+#: ../../source/_templates/index.html:21
+msgid "Installation, Configuration, and Usage"
+msgstr ""
+
+#: ../../source/_templates/index.html:22
+msgid "Documentation for users"
+msgstr ""
+
+#: ../../source/_templates/index.html:25
+msgid "Community"
+msgstr ""
+
+#: ../../source/_templates/index.html:26
+msgid "Sustainability and growth"
+msgstr ""
+
+#: ../../source/_templates/index.html:27
+msgid "Contributor Guides"
+msgstr ""
+
+#: ../../source/_templates/index.html:28
+msgid "How to contribute to the projects"
+msgstr ""
+
+#: ../../source/_templates/index.html:29
+msgid "Release Notes"
+msgstr ""
+
+#: ../../source/_templates/index.html:30
+msgid "New features, upgrades, deprecation notes, and bug fixes"
+msgstr ""
+
+#: ../../source/_templates/index.html:31
+msgid "Reference"
+msgstr ""
+
+#: ../../source/_templates/index.html:32
+msgid "APIs"
+msgstr ""
+
+#: ../../source/_templates/index.html:33
+msgid "Contents"
+msgstr ""
+
+#: ../../source/_templates/index.html:34
+msgid "Full table of contents"
+msgstr ""
+
+#: ../../source/_templates/index.html:40
+msgid "Project Documentation"
+msgstr ""
+
+#: ../../source/_templates/index.html:45
+msgid "Jupyter Notebook"
+msgstr ""
+
+#: ../../source/_templates/index.html:46
+msgid "Jupyter console"
+msgstr ""
+
+#: ../../source/_templates/index.html:47
+msgid "Qt console"
+msgstr ""
+
+#: ../../source/_templates/index.html:49
+msgid "JupyterHub"
+msgstr ""
+
+#: ../../source/_templates/index.html:50
+msgid "configurable HTTP proxy"
+msgstr ""
+
+#: ../../source/_templates/index.html:51
+msgid "dockerspawner"
+msgstr ""
+
+#: ../../source/_templates/index.html:52
+msgid "ldapauthenticator"
+msgstr ""
+
+#: ../../source/_templates/index.html:53
+msgid "oauthenticator"
+msgstr ""
+
+#: ../../source/_templates/index.html:54
+msgid "sudospawner"
+msgstr ""
+
+#: ../../source/_templates/index.html:56
+msgid "nbgrader"
+msgstr ""
+
+#: ../../source/_templates/index.html:58
+msgid "nbconvert"
+msgstr ""
+
+#: ../../source/_templates/index.html:59
+msgid "nbformat"
+msgstr ""
+
+#: ../../source/_templates/index.html:62
+msgid "IRkernel"
+msgstr ""
+
+#: ../../source/_templates/index.html:63
+msgid "IJulia"
+msgstr ""
+
+#: ../../source/_templates/index.html:64
+msgid "Community maintained kernels"
+msgstr ""
+
+#: ../../source/_templates/index.html:68
+msgid "ipykernel"
+msgstr ""
+
+#: ../../source/_templates/index.html:69
+msgid "ipyparallel"
+msgstr ""
+
+#: ../../source/_templates/index.html:71
+msgid "jupyter_client"
+msgstr ""
+
+#: ../../source/_templates/index.html:72
+msgid "jupyter_core"
+msgstr ""
+
+#: ../../source/_templates/index.html:74
+msgid "docker-stacks"
+msgstr ""
+
+#: ../../source/_templates/index.html:75
+msgid "ipywidgets"
+msgstr ""
+
+#: ../../source/_templates/index.html:76
+msgid "jupyter-drive"
+msgstr ""
+
+#: ../../source/_templates/index.html:77
+msgid "jupyter-sphinx-theme"
+msgstr ""
+
+#: ../../source/_templates/index.html:78
+msgid "kernel_gateway"
+msgstr ""
+
+#: ../../source/_templates/index.html:79
+msgid "nbviewer"
+msgstr ""
+
+#: ../../source/_templates/index.html:80
+msgid "tmpnb"
+msgstr ""
+
+#: ../../source/_templates/index.html:81
+msgid "traitlets"
+msgstr ""
+
+#: ../../source/_templates/index.html:83
+msgid "jupyter-js-services"
+msgstr ""
+

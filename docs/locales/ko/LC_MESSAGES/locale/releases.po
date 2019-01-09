@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 10:09+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/releases/content-releases.rst:2
+msgid "Release Notes"
+msgstr ""
+
+#: ../../source/releases/content-releases.rst:4
+msgid ""
+"Each project's documentation and GitHub repository has information about "
+"releases and changes from the prior release."
+msgstr ""
+
+#: ../../source/releases/content-releases.rst:7
+msgid "Coming Soon"
+msgstr ""
+
+#: ../../source/releases/content-releases.rst:9
+msgid ""
+"We're actively working on a graphic that displays each project, their "
+"current release, and a link to the changelog. Thanks for your patience."
+msgstr ""
+

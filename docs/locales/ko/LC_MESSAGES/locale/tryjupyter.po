@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 10:09+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/tryjupyter.rst:5
+msgid "Try Jupyter"
+msgstr ""
+
+#: ../../source/tryjupyter.rst:8
+msgid "Contents"
+msgstr ""
+
+#: ../../source/tryjupyter.rst:11
+msgid "Try in Your Browser. No Installation Needed."
+msgstr ""
+
+#: ../../source/tryjupyter.rst:13
+msgid "Go to https://try.jupyter.org. No installation is needed."
+msgstr ""
+
+#: ../../source/tryjupyter.rst:15
+msgid "**Notebook Dashboard**"
+msgstr ""
+
+#: ../../source/tryjupyter.rst:19
+msgid "**Notebook Editor**"
+msgstr ""
+
+#: ../../source/tryjupyter.rst:25
+msgid "Are You Ready to Install Jupyter?"
+msgstr ""
+
+#: ../../source/tryjupyter.rst:27
+msgid ""
+"If you have tried Jupyter and like it, please use our detailed "
+":ref:`Installation Guide <install>` to install Jupyter on your computer."
+msgstr ""
+

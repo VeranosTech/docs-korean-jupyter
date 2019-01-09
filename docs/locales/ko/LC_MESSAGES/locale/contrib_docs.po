@@ -1,0 +1,565 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 10:09+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/contrib_docs/doc-future-index.rst:2
+msgid "Setting up a project's documentation infrastructure"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-future-index.rst:4
+msgid "Contents:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-future-index.rst:13
+msgid ""
+"This section helps a contributor set up the documentation infrastructure "
+"for a new project or an existing project without Sphinx documentation."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:1
+msgid "Building automatically on ReadTheDocs"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:3
+msgid ""
+"This explains how to automatically rebuild documentation on ReadtheDocs "
+"every time a pull request is merged into its corresponding GitHub repo."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:6
+msgid "Using the ReadTheDocs service"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:8
+msgid ""
+"Webhooks and services can be enabled in GitHub repo settings to allow "
+"third party services such as ReadTheDocs. The ReadTheDocs service "
+"rebuilds the project documentation whenever a pull request is merged into"
+" the GitHub repo."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:12
+msgid "Navigate to Settings"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:14
+msgid ""
+"Each GitHub repo has a Settings tab at the far right of the repo menubar."
+" Navigate to Settings and then the Webhooks & services submenu tab."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:16
+msgid "Settings and Webhooks & services submenu"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:18
+msgid "Add the ReadTheDocs service"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:20
+msgid ""
+"Select Add service and enter ReadTheDocs in the Available Services input "
+"box."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:22
+msgid ""
+"The Services/Add ReadTheDocs window will open. Press the green Add "
+"service button to activate the ReadTheDocs service."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:24
+msgid "Add ReadTheDocs service"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:26
+msgid "Success"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:28
+msgid ""
+"The ReadTheDocs service is added successfully. The service will take "
+"effect on the next merged pull request to the project repo."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:30
+msgid "Service successfully added"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-build.md:33
+msgid "Created: 01-07-2016"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:1
+msgid "Setting up a README"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:3
+msgid ""
+"Providing users and developers consistency across repos is a valuable "
+"time saver and improves user productivity."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:6
+msgid ""
+"On a larger scope, having the Jupyter name appear prominently in a repo's"
+" README.md file improves the project's name awareness."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:9
+msgid "Recommended elements in Jupyter project repos"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:11
+msgid "Link in repo description"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:12
+msgid "Please include a link to the documentation in the repo's description."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:14
+msgid "Repo description and documentation link"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:16
+msgid "Badges in README"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:17
+msgid ""
+"One common way that individuals find documentation is to look for and "
+"click on the doc badge that commonly is found right after the title. "
+"Another benefit is an easy visual indication if the docs are not "
+"rendering properly."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:21
+msgid "Badges in README.md"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:23
+msgid "Resources section in README"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:25
+msgid ""
+"A Resources section at the end of the README.md gives useful links and "
+"information to users about the individual project and the larger Project "
+"Jupyter organization. Make sure to include any links to the individual "
+"project's demo notebooks, if available."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:30
+msgid "The Resources section includes:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:32
+msgid "Resources section in"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:35
+msgid "Checklist adding docs to a new or existing GitHub Repo"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-new-repos.md:42
+msgid "Dated: 1-4-2016 Revised: 1-7-2016"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:2
+msgid "Tools for documentation"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:5
+#: ../../source/contrib_docs/getting-started.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:8
+msgid "Packages"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:9
+msgid ""
+"For user documentation, contributor guides, and communications content, "
+"we use:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:12
+msgid "`Sphinx <http://www.sphinx-doc.org/en/stable>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:14
+msgid ""
+"For developer API documentation (especially for JupyterLab js repos), we "
+"use:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:16
+msgid "`swagger <http://swagger.io/>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:19
+msgid "Source file formats"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:20
+msgid ""
+"We use the following input source file formats when developing Sphinx "
+"documentation:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:23
+msgid "reStructuredText (``.rst``)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:24
+msgid "Markdown (``.md``)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:25
+msgid "Notebook (``.ipynb``)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:27
+msgid ""
+"A modern code editor should be used. Many are available including Atom, "
+"SublimeText, gedit, vim, emacs. `Atom <https://atom.io/>`_ is a good "
+"choice for new contributors."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:32
+msgid "Sphinx themes"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:33
+msgid "Our projects use the following themes:"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:35
+msgid "sphinx_rtd_theme (currently used by Jupyter projects)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:36
+msgid "jupyter_sphinx_theme (used by ipywidgets)"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:39
+msgid "Git and Github Resources"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:40
+msgid ""
+"If this is your first time working with Github or git, you can leverage "
+"the following resources to learn about the tools."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:43
+msgid "`Try Git  <https://try.github.io/levels/1/challenges/1>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:44
+msgid "`Github Guides  <https://guides.github.com>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:45
+msgid "`Git Real  <https://www.codeschool.com/courses/git-real>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:46
+msgid "`Git Documentation <https://git-scm.com/documentation>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-tools.rst:47
+msgid ""
+"`Git Rebase <https://github.com/pydata/pandas/wiki/Git-Workflows#user-"
+"content-git-rebase>`_"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:2
+msgid "Understanding our workflow"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:4
+msgid "**High level documentation workflow**"
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:6
+msgid "Identify a documentation change."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:8
+msgid "*Typos:* please go ahead and fix it (or report as a bug)."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:9
+msgid ""
+"*Open issues:* leave a note in the issue comments that you are working on"
+" the issue."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:11
+msgid ""
+"*New documentation:* open an issue with your idea or suggestion. We'll "
+"review the issue and work with you to identify next steps."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:14
+msgid "Update the source file."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:16
+msgid "Commit the change."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:18
+msgid "Test changes locally."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:20
+msgid "Open a pull request."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:22
+msgid "Check response of automated tests."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:24
+msgid ""
+"If tests pass: Nice job. Wait for reviewer feedback and/ or your pull "
+"request to be merged."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:27
+msgid ""
+"If tests show an error: Revise and resubmit your pull request. You do not"
+" need to open a new pull request. If needed, please ask for assistance."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:31
+msgid "Celebrate your documentation contribution."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:33
+msgid ""
+"Repeat. If you would like suggestions for a new documentation issue to "
+"work on, please ask."
+msgstr ""
+
+#: ../../source/contrib_docs/doc-workflow.rst:37
+msgid "Thanks for contributing!"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:2
+msgid "Getting started"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:8
+msgid "Preparing for your first contribution"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:9
+msgid "Our documentation uses reStructured Text as well as Jupyter notebooks."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:10
+msgid "We use Sphinx extensively to build documentation."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:11
+msgid "We host our documentation on Read the Docs."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:14
+msgid "Developing your contribution"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:16
+msgid ""
+"Jupyter's documentation is split across several projects, listed on the "
+"`Jupyter documentation home page "
+"<https://jupyter.readthedocs.io/en/latest/>`_. These instructions apply "
+"to all Jupyter projects, though some projects have further contribution "
+"guidelines."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:19
+msgid "Clone the repository"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:20
+msgid ""
+"Fork the appropriate project repository on GitHub, depending on which "
+"project's documentation you want to contribute to."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:21
+msgid "Clone the repository to your system."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:24
+msgid "Edit the documentation source file"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:26
+msgid ""
+"Source files for projects are typically found in the project's "
+"``docs/source`` directory. The reStructured text filenames end with "
+"``.rst``, and Jupyter notebook files end with ``.ipynb``."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:30
+msgid ""
+"In your favorite text editor, make desired changes to the ``.rst`` file "
+"when working with a reStructured text source file."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:32
+msgid ""
+"If a notebook file requires editing, you will need to install Jupyter "
+"notebook according to the :ref:`Installation <install>` document. Then, "
+"run the Jupyter notebook and edit the desired file. Before saving the "
+"Jupyter ``.ipynb`` file, please clear the output cells. Save the file and"
+" test your change."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:39
+msgid "Testing changes"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:41
+msgid ""
+"Sphinx should be installed to test your documentation changes. For best "
+"results, we recommend that you install the stable development version "
+"Sphinx (``pip install git+https://github.com/sphinx-doc/sphinx@stable``) "
+"or the current released version of Sphinx (``pip install sphinx``)."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:46
+msgid ""
+"In addition, you may need the following packages: sphinxcontrib-spelling,"
+" sphinx_rtd_theme, nbsphinx, pyenchant, recommonmark and "
+"jupyter_sphinx_theme, which can be installed via ``pip install "
+"sphinxcontrib-spelling sphinx_rtd_theme nbsphinx pyenchant recommonmark "
+"jupyter_sphinx_theme``."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:48
+msgid ""
+"If you are on Linux, you may also need to install the Enchant C library "
+"by running ``sudo apt-get install enchant``."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:50
+msgid ""
+"Once everything is installed, the following commands should be executed "
+"using the Terminal/command line from the ``docs`` directory:"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:53
+msgid ""
+"``make html`` builds a local html version of the documentation. The "
+"output message will either display errors or provide the location of the "
+"html documents. For example, the location provided may be ``build/html`` "
+"and to view these documents in your browser enter ``open "
+"build/html/index.html``."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:58
+msgid ""
+"``make linkcheck`` will check whether the external links in the "
+"documentation are valid or if they are not longer current (i.e. cause a "
+"500 not found error)."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:62
+msgid ""
+"Note: We recommend using Python 3.4+ for building the documentation. If "
+"you are editing the documentation, you can use Python 2.7.9+ or the "
+"Github editor."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:65
+msgid "Creating a pull request"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:66
+msgid ""
+"Once you are satisfied with your changes, submit a GitHub pull request, "
+"per the instructions above. If the documentation change is related to an "
+"open GitHub issue, please mention the issue number in the pull request "
+"message."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:70
+msgid ""
+"A project reviewer will look over your changes and provide feedback or "
+"merge your changes into the documentation."
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:74
+msgid "Asking questions"
+msgstr ""
+
+#: ../../source/contrib_docs/getting-started.rst:75
+msgid ""
+"Feel free to ask questions in the Google Group for Jupyter or on an open "
+"issue on GitHub."
+msgstr ""
+
+#: ../../source/contrib_docs/index.rst:3
+msgid "Documentation Guide"
+msgstr ""
+
+#: ../../source/contrib_docs/index.rst:5
+msgid "**Contents**"
+msgstr ""
+
+#: ../../source/contrib_docs/index.rst:15
+msgid ""
+"Documentation helps guide new users, fosters communication between "
+"developers, and shares tips and best practices with other community "
+"members. That's why the Jupyter project is focused on documenting new "
+"features and to keeping the documentation up-to-date."
+msgstr ""
+
+#: ../../source/contrib_docs/repo-structure.md:1
+msgid "Structuring a repo for docs"
+msgstr ""
+
+#: ../../source/contrib_docs/repo-structure.md:4
+msgid "Root level of the repo"
+msgstr ""
+
+#: ../../source/contrib_docs/repo-structure.md:10
+msgid "Repo root directory"
+msgstr ""
+
+#: ../../source/contrib_docs/repo-structure.md:12
+msgid "Inside the docs directory"
+msgstr ""
+
+#: ../../source/contrib_docs/repo-structure.md:19
+msgid "directory"
+msgstr ""
+
+#: ../../source/contrib_docs/repo-structure.md:22
+msgid "Sphinx"
+msgstr ""
+

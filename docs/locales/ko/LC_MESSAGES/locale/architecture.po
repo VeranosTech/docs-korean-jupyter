@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, Jupyter Team, https://jupyter.org
+# This file is distributed under the same license as the Jupyter
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Jupyter Documentation 4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 10:09+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/architecture/content-architecture.rst:2
+msgid "Architecture Guides"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:2
+msgid "How IPython and Jupyter Notebook work"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:5
+msgid "Contents"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:8
+msgid "Abstract"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:9
+msgid ""
+"This section focuses on IPython and Jupyter notebook and how they "
+"interact. When we discuss ``IPython``, we talk about two fundamental "
+"roles:"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:12
+msgid "Terminal IPython as the familiar REPL"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:13
+msgid ""
+"The IPython kernel that provides computation and communication with the "
+"frontend interfaces, like the notebook"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:16
+msgid ""
+"Jupyter Notebook and its flexible interface extends the notebook beyond "
+"code to visualization, multimedia, collaboration, and more."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:20
+msgid "Terminal IPython"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:22
+msgid ""
+"When you type ``ipython``, you get the original IPython interface, "
+"running in the terminal. It does something like this::"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:29
+msgid ""
+"Of course, it's much more complex, because it has to deal with multi-line"
+" code, tab completion using :mod:`readline`, magic commands, and so on. "
+"But the model is like code example: prompt the user for some code, and "
+"when they've entered it, execute it in the same process. This model is "
+"often called a :term:`REPL`, or Read-Eval-Print-Loop."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:36
+msgid "The IPython Kernel"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:38
+msgid ""
+"All the other interfaces —- the Notebook, the Qt console, ``ipython "
+"console`` in the terminal, and third party interfaces —- use the IPython "
+"Kernel. The IPython Kernel is a separate process which is responsible for"
+" running user code, and things like computing possible completions. "
+"Frontends, like the notebook or the Qt console, communicate with the "
+"IPython Kernel using JSON messages sent over `ZeroMQ "
+"<http://zeromq.org/>`_ sockets; the protocol used between the frontends "
+"and the IPython Kernel is described in :ref:`jupyterclient:messaging`."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:47
+msgid ""
+"The core execution machinery for the kernel is shared with terminal "
+"IPython:"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:51
+msgid ""
+"A kernel process can be connected to more than one frontend "
+"simultaneously. In this case, the different frontends will have access to"
+" the same variables."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:56
+msgid ""
+"This design was intended to allow easy development of different frontends"
+" based on the same kernel, but it also made it possible to support new "
+"languages in the same frontends, by developing kernels in those "
+"languages, and we are refining IPython to make that more practical."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:61
+msgid ""
+"Today, there are two ways to develop a kernel for another language. "
+"Wrapper kernels reuse the communications machinery from IPython, and "
+"implement only the core execution part. Native kernels implement "
+"execution and communications in the target language:"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:68
+msgid ""
+"Wrapper kernels are easier to write quickly for languages that have good "
+"Python wrappers, like `octave_kernel "
+"<https://pypi.python.org/pypi/octave_kernel>`_, or languages where it's "
+"impractical to implement the communications machinery, like `bash_kernel "
+"<https://pypi.python.org/pypi/bash_kernel>`_. Native kernels are likely "
+"to be better maintained by the community using them, like `IJulia "
+"<https://github.com/JuliaLang/IJulia.jl>`_ or `IHaskell "
+"<https://github.com/gibiansky/IHaskell>`_."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:78
+msgid ":ref:`jupyterclient:kernels`"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:80
+msgid ":ref:`Kernels <kernels-langs>`"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:83
+msgid "Notebooks"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:85
+msgid ""
+"The Notebook frontend does something extra. In addition to running your "
+"code, it stores code and output, together with markdown notes, in an "
+"editable document called a notebook. When you save it, this is sent from "
+"your browser to the notebook server, which saves it on disk as a JSON "
+"file with a ``.ipynb`` extension."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:93
+msgid ""
+"The notebook server, not the kernel, is responsible for saving and "
+"loading notebooks, so you can edit notebooks even if you don't have the "
+"kernel for that language—you just won't be able to run code. The kernel "
+"doesn't know anything about the notebook document: it just gets sent "
+"cells of code to execute when the user runs them."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:100
+msgid "Exporting notebooks to other formats"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:102
+msgid ""
+"The Nbconvert tool in Jupyter converts notebook files to other formats, "
+"such as HTML, LaTeX, or reStructuredText. This conversion goes through a "
+"series of steps:"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:108
+msgid ""
+"Preprocessors modify the notebook in memory. E.g. ExecutePreprocessor "
+"runs the code in the notebook and updates the output."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:110
+msgid ""
+"An exporter converts the notebook to another file format. Most of the "
+"exporters use templates for this."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:112
+msgid "Postprocessors work on the file produced by exporting."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:114
+msgid ""
+"The `nbviewer <http://nbviewer.jupyter.org/>`_ website uses nbconvert "
+"with the HTML exporter. When you give it a URL, it fetches the notebook "
+"from that URL, converts it to HTML, and serves that HTML to you."
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:119
+msgid "IPython.parallel"
+msgstr ""
+
+#: ../../source/architecture/how_jupyter_ipython_work.rst:121
+msgid ""
+"IPython also includes a parallel computing framework, `IPython.parallel "
+"<https://ipyparallel.readthedocs.io/en/latest/>`_. This allows you to "
+"control many individual engines, which are an extended version of the "
+"IPython kernel described above."
+msgstr ""
+
+#: ../../source/architecture/visual_overview.rst:2
+msgid "A Visual Overview of Projects"
+msgstr ""
+
+#: ../../source/architecture/visual_overview.rst:4
+msgid "**A high level visual overview of project relationships**"
+msgstr ""
+
