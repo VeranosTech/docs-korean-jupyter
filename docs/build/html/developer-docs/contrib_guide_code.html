@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Developer Guide &#8212; Jupyter Documentation 4.1.1 alpha documentation</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.3.4/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="Submitting a Bug" href="contrib_guide_bugs_enh.html" />
+    <link rel="prev" title="Developer Guide" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; width=100%; height=auto">
+<a href="../index.html"><img src="../_static/_images/jupyter.svg" border="0" alt="jupyter" width=600></a>
+</div>
+
+
+
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        Jupyter Documentation</a>
+      <span class="navbar-text navbar-version pull-left"><b>4.1</b></span>
+    </div>
+
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          
+        </ul>
+
+        
+          
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+        
+          
+            <ul class='nav navbar-nav navbar-right'>
+                
+  <li>
+    <a href="index.html" title="Previous Chapter: Developer Guide"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Developer Guide</span>
+    </a>
+  </li>
+  <li>
+    <a href="contrib_guide_bugs_enh.html" title="Next Chapter: Submitting a Bug"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Submitting a Bug &raquo;</span>
+    </a>
+  </li>
+            </ul>
+          
+        
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../content-quickstart.html">Jupyter Notebook Quickstart</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/content-architecture.html">Architecture Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/content-user.html">Narratives and Use Cases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ipython/content-ipython.html">IPython</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/content-projects.html">Installation, Configuration, and Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/content-community.html">Community Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../contributor/content-contributor.html">Contributor Guides</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Developer Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../development_guide/index.html">IPython Development Guide (source: old IPython wiki)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib_docs/index.html">Documentation Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/contrib_guide_blog.html">Communications Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/content-releases.html">Release Notes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/content-reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="developer-guide">
+<h1>Developer Guide<a class="headerlink" href="#developer-guide" title="제목 주소">¶</a></h1>
+<div class="contents local topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#a-note-on-contributing-to-open-source" id="id1">A Note on Contributing to Open Source</a></li>
+<li><a class="reference internal" href="#how-can-i-help" id="id2">How can I help?</a></li>
+<li><a class="reference internal" href="#contribution-workflow" id="id3">Contribution Workflow</a></li>
+<li><a class="reference internal" href="#core-developer-workflow" id="id4">Core Developer Workflow</a></li>
+</ul>
+</div>
+<div class="section" id="a-note-on-contributing-to-open-source">
+<h2><a class="toc-backref" href="#id1">A Note on Contributing to Open Source</a><a class="headerlink" href="#a-note-on-contributing-to-open-source" title="제목 주소">¶</a></h2>
+<p>Contributing to open source can be a nerve-wrecking process, but don't worry
+everyone on the Jupyter team is dedicated to making sure that your open source
+experience is as fun as possible. At any time during the process described
+below, you can reach out to the Jupyter team on Gitter or the mailing list for
+assistance. If you are nervous about asking questions in public, you can also
+reach out to one of the Jupyter developers in private. You can use the public
+Gitter to find someone who has the best knowledge about the code you are
+working with and interact with the in a personal chat.</p>
+<p>As you begin your open source journey, remember that it's OK if you don't
+understand something, it's OK to make mistakes, and it's OK to only contribute
+a small amount of the code necessary to fix the issue you are tackling. Any and
+all help is welcome and any and all people are encouraged to contribute.</p>
+</div>
+<div class="section" id="how-can-i-help">
+<h2><a class="toc-backref" href="#id2">How can I help?</a><a class="headerlink" href="#how-can-i-help" title="제목 주소">¶</a></h2>
+<p>Individuals are welcome, and encouraged, to submit pull requests and contribute
+to the Jupyter source. If you are a first-time contributor looking to get
+involved with Jupyter, you can use the following query in a GitHub search to
+find beginner-friendly issues to tackle across the Jupyter codebase. This query
+is particularly useful because the Jupyter codebase is scattered across several
+repositories within the jupyter organization, as opposed to a single
+repository. You can click the link below to find sprint-friendly issues.</p>
+<p><a class="reference external" href="https://github.com/search?q=is%3Aissue+is%3Aopen+is%3Asprint-friendly+user%3Ajupyter&amp;type=Issues&amp;ref=searchresults">is:issue is:open is:sprint-friendly user:jupyter</a></p>
+<p>Once you've found an issue that you are eager to solve, you can use the guide
+below to get started. If you experience any problems while working on the
+issue, leave a comment on the issue page in GitHub and someone on the core team
+will be able to lend you assistance.</p>
+<p>Please keep in mind that what follows are guidelines. If you work through the
+steps and have questions or run into time constraints, please submit what you
+already have worked on as a pull request and ask questions on it. Your effort,
+including partial or in-progress work, is appreciated.</p>
+<ol class="arabic">
+<li><p class="first">Fork the repository associated with the issue you are addressing and clone
+it to a local directory on your machine.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">cd</span></code> into the directory and create a new branch using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span>
+<span class="pre">insert-branch-name-here</span></code>. Pick a branch name that gives some insight into
+what the issue you are fixing is. For example, if you are updating the text
+that is logged out by the program when a certain error happens you might
+name your branch <cite>update-error-text</cite>.</p>
+</li>
+<li><p class="first">Refer to the repository's README and documentation for details on
+configuring your system for development.</p>
+</li>
+<li><p class="first">Identify the module or class where the code change you will make will
+reside and leave a comment in the file describing what issue you are trying
+to address.</p>
+</li>
+<li><p class="first">Open a pull request to the repository with <code class="docutils literal notranslate"><span class="pre">[WIP]</span></code> appended to the front
+so that the core team is aware that you are actively pursuing the issue.
+When creating a pull request, make sure that the title clearly and concisely
+described what your code does. For example, we might use the title &quot;Updated
+error message on ExampleException&quot;. In the body of the pull request, make
+sure that you include the phrase &quot;Closes #issue-number-here&quot;, where the
+issue number is the issue number of the issue that you are addressing in
+this PR.</p>
+<p>Feel free to open a PR as early as possible. Getting early feedback on your
+approach will save you time and prevent the need for an extensive refactor
+later.</p>
+</li>
+<li><p class="first">Run the test suite locally in order to ensure that everything is properly
+configured on your system. Refer to the repository's README for information
+on how to run the test suite. This will typically require that you run the
+<code class="docutils literal notranslate"><span class="pre">nosetests</span></code> command on the commandline. Alternatively, you may submit a
+pull request. Our Continuous Integration system will test your code and
+report test results.</p>
+</li>
+<li><p class="first">Find the test file associated with the module that you will be changing.
+In the test file, add some tests that outline what you expect the behavior
+of the change should be. If we continue with our example of updating the
+text that is logged on error, we might write test cases that check to see
+if the exception raised when you induce the error contains the appropriate
+string. When writing test cases, make sure that you test for the following
+things.</p>
+<ul class="simple">
+<li>What is the simplest test case I can write for this issue?</li>
+<li>What will happen if your code is given messy inputs?</li>
+<li>What will happen if your code is given no inputs?</li>
+<li>What will happen if your code is given too few inputs?</li>
+<li>What will happen if your code is given too many inputs?</li>
+</ul>
+<p>If you need assistance writing test cases, you can place a comment on the
+pull request that was opened earlier and one of the core team members will
+be able to help you.</p>
+</li>
+<li><p class="first">Go back to the file that you are updating and begin adding the code for your
+pull request.</p>
+</li>
+<li><p class="first">Run the test suite again to see if your changes have caused any of the test
+cases to pass. If any of the test cases have failed, go back to your code
+and make the updates necessary to have them pass.</p>
+</li>
+<li><p class="first">Once all of your test cases have passed, commit both the test cases and the
+updated module and push the updates to the branch on your forked repository.</p>
+</li>
+<li><p class="first">Once you are ready for your pull request to be reviewed, remove the [WIP]
+tag from the front of issue, a project reviewer will review your code for
+quality. You can expect the reviewer to check for the documentation
+provided in the changes you made, how thorough the test cases you provided
+are, and how efficient your code is. Your reviewer will provide feedback on
+your code and you will have the chance to edit your code and apply fixes.</p>
+</li>
+<li><p class="first">Once your PR is ready to become a part of the code base, it will be merged
+by a member of the core team.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="contribution-workflow">
+<h2><a class="toc-backref" href="#id3">Contribution Workflow</a><a class="headerlink" href="#contribution-workflow" title="제목 주소">¶</a></h2>
+<img alt="../_images/contribution_workflow.png" src="../_images/contribution_workflow.png" />
+</div>
+<div class="section" id="core-developer-workflow">
+<h2><a class="toc-backref" href="#id4">Core Developer Workflow</a><a class="headerlink" href="#core-developer-workflow" title="제목 주소">¶</a></h2>
+<p>To help you understand our review process by core developers after you submit a
+pull request, here's a guide that outlines the general process (specifics may
+vary a bit across our repositories). Here is an example for Jupyter notebook
+4.x:</p>
+<p>In general, Pull Requests are against <code class="docutils literal notranslate"><span class="pre">master</span></code> unless they only affect a
+backport branch. If a PR affects master and should be backported, the general
+flow is:</p>
+<blockquote>
+<div><ol class="arabic simple" start="0">
+<li>mark the PR with milestone for the next backport release (4.3)</li>
+<li>merge into master</li>
+<li>backport to 4.x</li>
+<li>push updated 4.x branch</li>
+</ol>
+</div></blockquote>
+<p>Backports can be done in a variety of ways, but we have <a class="reference external" href="https://github.com/ipython/ipython/blob/master/tools/backport_pr.py">a script</a> for
+automating the common process to:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>download the patch ` e.g. &lt;<a class="reference external" href="https://patch-diff.githubusercontent.com/raw/jupyter/notebook/pull/1645.patch">https://patch-diff.githubusercontent.com/raw/jupyter/notebook/pull/1645.patch</a>&gt;`</li>
+<li>checkout the 4.x branch</li>
+<li>apply the patch</li>
+<li>make a commit</li>
+</ol>
+</div></blockquote>
+<p>which works for simple cases, at least.</p>
+<p>In this case, it would be:</p>
+<blockquote>
+<div>python /path/to/ipython-repo/tools/backport_pr.py jupyter/notebook 4.x 1645</div></blockquote>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<div class="pull-center">
+	<ul class="pager">
+	  
+	  <li class="previous"><a href="index.html">&larr; Previous</a></li>
+	  
+	  
+	  <li class="next"><a href="contrib_guide_bugs_enh.html">Next &rarr;</a></li>
+	  
+	</ul>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Jupyter Team, https://jupyter.org.<br/>
+      최종 업데이트: 2019-01-09<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

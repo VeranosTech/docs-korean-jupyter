@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tools for documentation &#8212; Jupyter Documentation 4.1.1 alpha documentation</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.3.4/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="Setting up a project&#39;s documentation infrastructure" href="doc-future-index.html" />
+    <link rel="prev" title="Understanding our workflow" href="doc-workflow.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; width=100%; height=auto">
+<a href="../index.html"><img src="../_static/_images/jupyter.svg" border="0" alt="jupyter" width=600></a>
+</div>
+
+
+
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        Jupyter Documentation</a>
+      <span class="navbar-text navbar-version pull-left"><b>4.1</b></span>
+    </div>
+
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          
+        </ul>
+
+        
+          
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+        
+          
+            <ul class='nav navbar-nav navbar-right'>
+                
+  <li>
+    <a href="doc-workflow.html" title="Previous Chapter: Understanding our workflow"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Understanding our workflow</span>
+    </a>
+  </li>
+  <li>
+    <a href="doc-future-index.html" title="Next Chapter: Setting up a project's documentation infrastructure"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Setting up a project's ... &raquo;</span>
+    </a>
+  </li>
+            </ul>
+          
+        
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../content-quickstart.html">Jupyter Notebook Quickstart</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/content-architecture.html">Architecture Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/content-user.html">Narratives and Use Cases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ipython/content-ipython.html">IPython</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/content-projects.html">Installation, Configuration, and Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/content-community.html">Community Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../contributor/content-contributor.html">Contributor Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../developer-docs/index.html">Developer Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../development_guide/index.html">IPython Development Guide (source: old IPython wiki)</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Documentation Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/contrib_guide_blog.html">Communications Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/content-releases.html">Release Notes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/content-reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="tools-for-documentation">
+<h1>Tools for documentation<a class="headerlink" href="#tools-for-documentation" title="제목 주소">¶</a></h1>
+<div class="contents local topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#packages" id="id1">Packages</a></li>
+<li><a class="reference internal" href="#source-file-formats" id="id2">Source file formats</a></li>
+<li><a class="reference internal" href="#sphinx-themes" id="id3">Sphinx themes</a></li>
+<li><a class="reference internal" href="#git-and-github-resources" id="id4">Git and Github Resources</a></li>
+</ul>
+</div>
+<div class="section" id="packages">
+<h2><a class="toc-backref" href="#id1">Packages</a><a class="headerlink" href="#packages" title="제목 주소">¶</a></h2>
+<p>For user documentation, contributor guides, and communications content, we
+use:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.sphinx-doc.org/en/stable">Sphinx</a></li>
+</ul>
+<p>For developer API documentation (especially for JupyterLab js repos), we use:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://swagger.io/">swagger</a></li>
+</ul>
+</div>
+<div class="section" id="source-file-formats">
+<h2><a class="toc-backref" href="#id2">Source file formats</a><a class="headerlink" href="#source-file-formats" title="제목 주소">¶</a></h2>
+<p>We use the following input source file formats when developing Sphinx
+documentation:</p>
+<ul class="simple">
+<li>reStructuredText (<code class="docutils literal notranslate"><span class="pre">.rst</span></code>)</li>
+<li>Markdown (<code class="docutils literal notranslate"><span class="pre">.md</span></code>)</li>
+<li>Notebook (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>)</li>
+</ul>
+<p>A modern code editor should be used. Many are available including Atom,
+SublimeText, gedit, vim, emacs. <a class="reference external" href="https://atom.io/">Atom</a> is a good choice for
+new contributors.</p>
+</div>
+<div class="section" id="sphinx-themes">
+<h2><a class="toc-backref" href="#id3">Sphinx themes</a><a class="headerlink" href="#sphinx-themes" title="제목 주소">¶</a></h2>
+<p>Our projects use the following themes:</p>
+<ul class="simple">
+<li>sphinx_rtd_theme (currently used by Jupyter projects)</li>
+<li>jupyter_sphinx_theme (used by ipywidgets)</li>
+</ul>
+</div>
+<div class="section" id="git-and-github-resources">
+<h2><a class="toc-backref" href="#id4">Git and Github Resources</a><a class="headerlink" href="#git-and-github-resources" title="제목 주소">¶</a></h2>
+<p>If this is your first time working with Github or git, you can leverage the following
+resources to learn about the tools.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://try.github.io/levels/1/challenges/1">Try Git</a></li>
+<li><a class="reference external" href="https://guides.github.com">Github Guides</a></li>
+<li><a class="reference external" href="https://www.codeschool.com/courses/git-real">Git Real</a></li>
+<li><a class="reference external" href="https://git-scm.com/documentation">Git Documentation</a></li>
+<li><a class="reference external" href="https://github.com/pydata/pandas/wiki/Git-Workflows#user-content-git-rebase">Git Rebase</a></li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<div class="pull-center">
+	<ul class="pager">
+	  
+	  <li class="previous"><a href="doc-workflow.html">&larr; Previous</a></li>
+	  
+	  
+	  <li class="next"><a href="doc-future-index.html">Next &rarr;</a></li>
+	  
+	</ul>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Jupyter Team, https://jupyter.org.<br/>
+      최종 업데이트: 2019-01-09<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

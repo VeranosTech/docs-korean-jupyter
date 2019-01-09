@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Coding Style &#8212; Jupyter Documentation 4.1.1 alpha documentation</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.3.4/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="Documenting IPython" href="documenting_ipython.html" />
+    <link rel="prev" title="The Perfect Pull Request" href="pull_request.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; width=100%; height=auto">
+<a href="../index.html"><img src="../_static/_images/jupyter.svg" border="0" alt="jupyter" width=600></a>
+</div>
+
+
+
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        Jupyter Documentation</a>
+      <span class="navbar-text navbar-version pull-left"><b>4.1</b></span>
+    </div>
+
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          
+        </ul>
+
+        
+          
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+        
+          
+            <ul class='nav navbar-nav navbar-right'>
+                
+  <li>
+    <a href="pull_request.html" title="Previous Chapter: The Perfect Pull Request"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; The Perfect Pull Request</span>
+    </a>
+  </li>
+  <li>
+    <a href="documenting_ipython.html" title="Next Chapter: Documenting IPython"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Documenting IPython &raquo;</span>
+    </a>
+  </li>
+            </ul>
+          
+        
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../content-quickstart.html">Jupyter Notebook Quickstart</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/content-architecture.html">Architecture Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/content-user.html">Narratives and Use Cases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ipython/content-ipython.html">IPython</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/content-projects.html">Installation, Configuration, and Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/content-community.html">Community Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../contributor/content-contributor.html">Contributor Guides</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../developer-docs/index.html">Developer Guide</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">IPython Development Guide (source: old IPython wiki)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib_docs/index.html">Documentation Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/contrib_guide_blog.html">Communications Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/content-releases.html">Release Notes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/content-reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="coding-style">
+<span id="id1"></span><h1>Coding Style<a class="headerlink" href="#coding-style" title="제목 주소">¶</a></h1>
+<div class="admonition attention">
+<p class="first admonition-title">주의</p>
+<p class="last">This is copied verbatim from the old IPython wiki and is currently under development. Much of the information in this part of the development guide is out of date.</p>
+</div>
+<p>This document describes our coding style. Coding style refers to the
+following:</p>
+<ul class="simple">
+<li>How source code is formatted (indentation, spacing, etc.)</li>
+<li>How things are named (variables, functions, classes, modules, etc.)</li>
+</ul>
+<div class="section" id="general-coding-conventions">
+<h2>General coding conventions<a class="headerlink" href="#general-coding-conventions" title="제목 주소">¶</a></h2>
+<p>In general, we follow the standard Python style conventions as described
+in Python's <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a>, the
+official Python Style Guide.</p>
+<p>Other general comments:</p>
+<ul class="simple">
+<li>In a large file, top level classes and functions should be separated
+by 2 lines to make it easier to separate them visually.</li>
+<li>Use 4 spaces for indentation, <strong>never</strong> use hard tabs.</li>
+<li>Keep the ordering of methods the same in classes that have the same
+methods. This is particularly true for classes that implement similar
+interfaces and for interfaces that are similar.</li>
+</ul>
+</div>
+<div class="section" id="naming-conventions">
+<h2>Naming conventions<a class="headerlink" href="#naming-conventions" title="제목 주소">¶</a></h2>
+<p>For naming conventions, we also follow the guidelines of <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP
+8</a>. Some of the existing
+code doesn't honor this perfectly, but for all new and refactored
+IPython code, we'll use:</p>
+<ul class="simple">
+<li>All <code class="docutils literal notranslate"><span class="pre">lowercase</span></code> module names. Long module names can have words
+separated by underscores (<code class="docutils literal notranslate"><span class="pre">really_long_module_name.py</span></code>), but this
+is not required. Try to use the convention of nearby files.</li>
+<li><code class="docutils literal notranslate"><span class="pre">CamelCase</span></code> for class names.</li>
+<li><code class="docutils literal notranslate"><span class="pre">lowercase_with_underscores</span></code> for methods, functions, variables and
+attributes.</li>
+<li>Implementation-specific <em>private</em> methods will use
+<code class="docutils literal notranslate"><span class="pre">_single_underscore_prefix</span></code>. Names with a leading double underscore
+will <em>only</em> be used in special cases, as they makes subclassing
+difficult (such names are not easily seen by child classes).</li>
+<li>Occasionally some run-in lowercase names are used, but mostly for
+very short names or where we are implementing methods very similar to
+existing ones in a base class (like <code class="docutils literal notranslate"><span class="pre">runlines()</span></code> where
+<code class="docutils literal notranslate"><span class="pre">runsource()</span></code> and <code class="docutils literal notranslate"><span class="pre">runcode()</span></code> had established precedent).</li>
+<li>The old IPython codebase has a big mix of classes and modules
+prefixed with an explicit <code class="docutils literal notranslate"><span class="pre">IP</span></code> of <code class="docutils literal notranslate"><span class="pre">ip</span></code>. This is not necessary and
+all new code should not use this prefix. The only case where this
+approach is justified is for classes or functions which are expected
+to be imported into external namespaces and a very generic name (like
+Shell) that is likely to clash with something else. However, if a
+prefix seems absolutely necessary the more specific <code class="docutils literal notranslate"><span class="pre">IPY</span></code> or
+<code class="docutils literal notranslate"><span class="pre">ipy</span></code> are preferred.</li>
+<li>All JavaScript code should follow these naming conventions as well.</li>
+</ul>
+</div>
+<div class="section" id="attribute-declarations-for-objects">
+<h2>Attribute declarations for objects<a class="headerlink" href="#attribute-declarations-for-objects" title="제목 주소">¶</a></h2>
+<p>In general, objects should declare, in their <em>class</em>, all attributes the
+object is meant to hold throughout its life. While Python allows you to
+add an attribute to an instance at any point in time, this makes the
+code harder to read and requires methods to constantly use checks with
+hasattr() or try/except calls. By declaring all attributes of the object
+in the class header, there is a single place one can refer to for
+understanding the object's data interface, where comments can explain
+the role of each variable and when possible, sensible deafaults can be
+assigned.</p>
+<p>If an attribute is meant to contain a mutable object, it should be set
+to <code class="docutils literal notranslate"><span class="pre">None</span></code> in the class and its mutable value should be set in the
+object's constructor. Since class attributes are shared by all
+instances, failure to do this can lead to difficult to track bugs. But
+you should still set it in the class declaration so the interface
+specification is complete and documented in one place.</p>
+<p>A simple example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="c1"># X does..., sensible default given:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="c1"># y does..., default will be set by constructor</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="c1"># z starts as an empty list, must be set in constructor</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="new-files">
+<h2>New files<a class="headerlink" href="#new-files" title="제목 주소">¶</a></h2>
+<p>When starting a new Python file for IPython, you can use the <a class="reference external" href="./template.py">following
+template</a> as a starting point that has a few common
+things pre-written for you.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<div class="pull-center">
+	<ul class="pager">
+	  
+	  <li class="previous"><a href="pull_request.html">&larr; Previous</a></li>
+	  
+	  
+	  <li class="next"><a href="documenting_ipython.html">Next &rarr;</a></li>
+	  
+	</ul>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Jupyter Team, https://jupyter.org.<br/>
+      최종 업데이트: 2019-01-09<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

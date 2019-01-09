@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Communications Guide &#8212; Jupyter Documentation 4.1.1 alpha documentation</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.3.4/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="Release Notes" href="../releases/content-releases.html" />
+    <link rel="prev" title="Building automatically on ReadTheDocs" href="../contrib_docs/doc-new-build.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; width=100%; height=auto">
+<a href="../index.html"><img src="../_static/_images/jupyter.svg" border="0" alt="jupyter" width=600></a>
+</div>
+
+
+
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        Jupyter Documentation</a>
+      <span class="navbar-text navbar-version pull-left"><b>4.1</b></span>
+    </div>
+
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          
+        </ul>
+
+        
+          
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+        
+          
+            <ul class='nav navbar-nav navbar-right'>
+                
+  <li>
+    <a href="../contrib_docs/doc-new-build.html" title="Previous Chapter: Building automatically on ReadTheDocs"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Building automatically ...</span>
+    </a>
+  </li>
+  <li>
+    <a href="../releases/content-releases.html" title="Next Chapter: Release Notes"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Release Notes &raquo;</span>
+    </a>
+  </li>
+            </ul>
+          
+        
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../content-quickstart.html">Jupyter Notebook Quickstart</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/content-architecture.html">Architecture Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/content-user.html">Narratives and Use Cases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ipython/content-ipython.html">IPython</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/content-projects.html">Installation, Configuration, and Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/content-community.html">Community Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="content-contributor.html">Contributor Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../developer-docs/index.html">Developer Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../development_guide/index.html">IPython Development Guide (source: old IPython wiki)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib_docs/index.html">Documentation Guide</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Communications Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/content-releases.html">Release Notes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/content-reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="communications-guide">
+<h1>Communications Guide<a class="headerlink" href="#communications-guide" title="제목 주소">¶</a></h1>
+<div class="contents local topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#blog" id="id2">Blog</a><ul>
+<li><a class="reference internal" href="#technical-overview" id="id3">Technical overview</a></li>
+<li><a class="reference internal" href="#basic-workflow-from-blog-idea-to-published-post" id="id4">Basic workflow from blog idea to published post</a></li>
+<li><a class="reference internal" href="#creating-a-draft" id="id5">Creating a draft</a><ul>
+<li><a class="reference internal" href="#title-and-metadata" id="id6">Title and metadata</a></li>
+<li><a class="reference internal" href="#working-with-images" id="id7">Working with images</a></li>
+<li><a class="reference internal" href="#links" id="id8">Links</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#draft-review" id="id9">Draft review</a><ul>
+<li><a class="reference internal" href="#ask-for-a-review" id="id10">Ask for a review</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#editorial-acceptance" id="id11">Editorial acceptance</a><ul>
+<li><a class="reference internal" href="#publishing-the-post" id="id12">Publishing the post</a></li>
+<li><a class="reference internal" href="#changing-an-existing-post" id="id13">Changing an existing post</a><ul>
+<li><a class="reference internal" href="#posts-updates" id="id14">Posts Updates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#newsletter" id="id15">Newsletter</a></li>
+<li><a class="reference internal" href="#website" id="id16">Website</a></li>
+</ul>
+</div>
+<div class="section" id="blog">
+<h2><a class="toc-backref" href="#id2">Blog</a><a class="headerlink" href="#blog" title="제목 주소">¶</a></h2>
+<p>We publish our blog at <a class="reference external" href="https://blog.jupyter.org">https://blog.jupyter.org</a>. We welcome ideas for posts
+or guest posts to the Jupyter blog. If you have a suggestion for a future post,
+please feel free to share your idea with us. We would like to discuss the idea
+with you.</p>
+<p>Do you enjoy writing? Please contact us about becoming a guest blogger. We can
+help guide you through the process of creating a post.</p>
+<div class="section" id="technical-overview">
+<h3><a class="toc-backref" href="#id3">Technical overview</a><a class="headerlink" href="#technical-overview" title="제목 주소">¶</a></h3>
+<p>Jupyter's blog uses the Ghost blog platform for its contributor flexibility and
+ease of use. Jupyter's blog is deployed at <a class="reference external" href="https://blog.jupyter.org">https://blog.jupyter.org</a>.</p>
+</div>
+<div class="section" id="basic-workflow-from-blog-idea-to-published-post">
+<h3><a class="toc-backref" href="#id4">Basic workflow from blog idea to published post</a><a class="headerlink" href="#basic-workflow-from-blog-idea-to-published-post" title="제목 주소">¶</a></h3>
+<p>There are several major steps in the workflow from blog idea to a published post
+including:</p>
+<ul class="simple">
+<li>Be inspired to write a post</li>
+<li>Send us a message on the Jupyter mailing list and ask us for an author account on our blog</li>
+<li>Creating a draft</li>
+<li>Draft Review</li>
+<li>Editorial acceptance</li>
+<li>Publishing the post</li>
+</ul>
+<p>We'll cover each of these as well as how to update a post once it has been
+published.</p>
+</div>
+<div class="section" id="creating-a-draft">
+<h3><a class="toc-backref" href="#id5">Creating a draft</a><a class="headerlink" href="#creating-a-draft" title="제목 주소">¶</a></h3>
+<div class="section" id="title-and-metadata">
+<h4><a class="toc-backref" href="#id6">Title and metadata</a><a class="headerlink" href="#title-and-metadata" title="제목 주소">¶</a></h4>
+<p>Alway check in the metadata fields that a blog post has a title and a canonical
+URL. It is possible to put the date in the canonical URL, in particular for events
+like jupyter-day, that can occur several times. The date of the event can differ
+from the date of the blog post.</p>
+<p>Once a post is published, <strong>never</strong> change the post's title or the url. These
+changes will break links of tweets and RSS feeds that have already referenced
+the existing, published URL. Keep in mind that when publishing some platforms
+cache the url immediately; as a result changing the title will direct people to
+a 404 page.</p>
+<p>Title and metadata can always be refined after the actual content of the blog
+is written, but should not be changed after publication. As a guest you do not
+have to worry about metadata, the editor or admins will take care of that.</p>
+</div>
+<div class="section" id="working-with-images">
+<h4><a class="toc-backref" href="#id7">Working with images</a><a class="headerlink" href="#working-with-images" title="제목 주소">¶</a></h4>
+<p>Try not to link to external images. If you want to put an image in the post,
+insert <code class="docutils literal notranslate"><span class="pre">![]()</span></code> in the editor view and drag and drop an image from your
+desktop into the newly created field in the preview. External images can
+change, and can break the blog post if they are taken down. This cannot append
+if you drag and drop images. Moreover, these images  will be served from the
+same CDN (Content Delivery Network) as the blog, which will insure the best
+overall experience for our readers.</p>
+<p>The featured image you see at the top of a blog posts is set from within the
+metadata field, not using the <cite>![]()</cite>. The featured image is treated differently
+than inlined images by many feedreaders (especially on mobile) and allows a user
+on a slow connection to read the content of the blog earlier, which is a much
+better experience for the user than waiting for the featured image to render.</p>
+</div>
+<div class="section" id="links">
+<h4><a class="toc-backref" href="#id8">Links</a><a class="headerlink" href="#links" title="제목 주소">¶</a></h4>
+<p>Do not use minified links when possible. The multiple redirects of minified
+links degrades the mobile browsing experience. If you need analytics of
+the number of page views, this information is tracked by Google Analytics.</p>
+</div>
+</div>
+<div class="section" id="draft-review">
+<h3><a class="toc-backref" href="#id9">Draft review</a><a class="headerlink" href="#draft-review" title="제목 주소">¶</a></h3>
+<div class="section" id="ask-for-a-review">
+<h4><a class="toc-backref" href="#id10">Ask for a review</a><a class="headerlink" href="#ask-for-a-review" title="제목 주소">¶</a></h4>
+<p>Once you think you are done, ask someone else to reread your post, and check
+the various parameters that you might have forgotten before publishing.
+You are not on your own, this is teamwork, we are here to help you.
+If we do things in a hurry you will probably spend more time fixing mistakes
+that actually doing things right in a first place.</p>
+</div>
+</div>
+<div class="section" id="editorial-acceptance">
+<h3><a class="toc-backref" href="#id11">Editorial acceptance</a><a class="headerlink" href="#editorial-acceptance" title="제목 주소">¶</a></h3>
+<div class="section" id="publishing-the-post">
+<h4><a class="toc-backref" href="#id12">Publishing the post</a><a class="headerlink" href="#publishing-the-post" title="제목 주소">¶</a></h4>
+<p>Usually an editor or admin will take care of publishing the post. The task of
+the Editor/Admin is to check all metadata are correctly set, that no external
+images are used, as well as all other quality check describe before.</p>
+<p>It is then just a matter of making th post visible to everyone.</p>
+</div>
+<div class="section" id="changing-an-existing-post">
+<h4><a class="toc-backref" href="#id13">Changing an existing post</a><a class="headerlink" href="#changing-an-existing-post" title="제목 주소">¶</a></h4>
+<div class="section" id="posts-updates">
+<h5><a class="toc-backref" href="#id14">Posts Updates</a><a class="headerlink" href="#posts-updates" title="제목 주소">¶</a></h5>
+<p>Blog subscribers may receive notification at every update. So use updates and
+fixes parsimoniously. It is OK to wait a few hours to fix a typo.</p>
+<p>If some substantial updates have to be made, like change of location, time etc,
+please insert an <cite>[Update]</cite> section at top (or bottom of the blog post
+depending on importance) with the Date/Time of the update. If the information
+in the body of the blog is wrong, try not to replace it, and just use
+strike-through to mark it as obsolete. This would help reader determine which
+information is correct when dealing with multiple source giving different
+informations.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="newsletter">
+<h2><a class="toc-backref" href="#id15">Newsletter</a><a class="headerlink" href="#newsletter" title="제목 주소">¶</a></h2>
+<p>Documentation in progress.</p>
+</div>
+<div class="section" id="website">
+<h2><a class="toc-backref" href="#id16">Website</a><a class="headerlink" href="#website" title="제목 주소">¶</a></h2>
+<p>Documentation in progress.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<div class="pull-center">
+	<ul class="pager">
+	  
+	  <li class="previous"><a href="../contrib_docs/doc-new-build.html">&larr; Previous</a></li>
+	  
+	  
+	  <li class="next"><a href="../releases/content-releases.html">Next &rarr;</a></li>
+	  
+	</ul>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Jupyter Team, https://jupyter.org.<br/>
+      최종 업데이트: 2019-01-09<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

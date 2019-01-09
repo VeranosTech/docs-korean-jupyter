@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Basic template for releasing a Jupyter project &#8212; Jupyter Documentation 4.1.1 alpha documentation</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.3.4/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="IPython Development Guide (source: old IPython wiki)" href="../development_guide/index.html" />
+    <link rel="prev" title="Jupyter Enhancement Proposals" href="jupyter_enhancement_proposals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; width=100%; height=auto">
+<a href="../index.html"><img src="../_static/_images/jupyter.svg" border="0" alt="jupyter" width=600></a>
+</div>
+
+
+
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        Jupyter Documentation</a>
+      <span class="navbar-text navbar-version pull-left"><b>4.1</b></span>
+    </div>
+
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          
+        </ul>
+
+        
+          
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+        
+          
+            <ul class='nav navbar-nav navbar-right'>
+                
+  <li>
+    <a href="jupyter_enhancement_proposals.html" title="Previous Chapter: Jupyter Enhancement Proposals"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Jupyter Enhancement Proposals</span>
+    </a>
+  </li>
+  <li>
+    <a href="../development_guide/index.html" title="Next Chapter: IPython Development Guide (source: old IPython wiki)"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">IPython Development Gui... &raquo;</span>
+    </a>
+  </li>
+            </ul>
+          
+        
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../content-quickstart.html">Jupyter Notebook Quickstart</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/content-architecture.html">Architecture Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/content-user.html">Narratives and Use Cases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ipython/content-ipython.html">IPython</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/content-projects.html">Installation, Configuration, and Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/content-community.html">Community Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../contributor/content-contributor.html">Contributor Guides</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Developer Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../development_guide/index.html">IPython Development Guide (source: old IPython wiki)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib_docs/index.html">Documentation Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/contrib_guide_blog.html">Communications Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/content-releases.html">Release Notes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/content-reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="basic-template-for-releasing-a-jupyter-project">
+<span id="releasing"></span><h1>Basic template for releasing a Jupyter project<a class="headerlink" href="#basic-template-for-releasing-a-jupyter-project" title="제목 주소">¶</a></h1>
+<p>Jupyter consists of a bunch of small projects, and a few larger ones.
+This lays out the basic process of releasing a smaller project,
+which should also apply to larger projects,
+though they may have some added steps.</p>
+<div class="section" id="milestones">
+<h2>Milestones<a class="headerlink" href="#milestones" title="제목 주소">¶</a></h2>
+<p>Most Jupyter projects use a GitHub milestone system for marking issues and pull requests in releases.
+Each release should have a milestone associated with it.
+The first step in preparing for a release is to make sure that every issue and pull request has the right milestone.</p>
+<ol class="arabic simple">
+<li>Go through any <strong>open</strong> Issues and Pull Requests marked with the current milestone.
+If there are any, they need to be resolved or bumped to the next milestone.
+It's fine to bump issues - they are typically marked with the earliest feasible milestone,
+but many such optimistically marked tasks aren't complete when it's time to release.
+There's always next time!</li>
+<li>Check <strong>closed</strong> Issues and Pull Requests,
+using the milestone filter &quot;Issues with no milestone&quot;.
+There should never be any closed issues or pull requests without a milestone.
+If you find any, go through and mark them with the current milestone or &quot;no action&quot;
+as appropriate.</li>
+</ol>
+<p>A release may be ready to go when it has zero open issues or pull requests.</p>
+</div>
+<div class="section" id="release-notes">
+<h2>Release notes<a class="headerlink" href="#release-notes" title="제목 주소">¶</a></h2>
+<p>Once all of the issues and pull requests are dealt with,
+it's time to make release notes.
+The smaller projects generally have a <code class="file docutils literal notranslate"><span class="pre">changelog.rst</span></code> in the docs directory,
+where you can add a section for the new release.
+Look through the pull requests merged for the current milestone (this is why we use milestones),
+and write a short summary of the highlights of the changes in this release.
+There should generally be a link to the milestone itself for more details.</p>
+<p>Make a pull requests with these notes.
+It's a good idea to cc &#64;willingc for review of this PR.
+Make sure to mark this PR with your release's milestone!</p>
+</div>
+<div class="section" id="making-the-release">
+<h2>Making the release<a class="headerlink" href="#making-the-release" title="제목 주소">¶</a></h2>
+<p>Now that your changelog is merged, we can actually build and publish the release.
+We'll assume that <code class="docutils literal notranslate"><span class="pre">V</span></code> has been declared as a shell variable containing the release version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">V</span><span class="o">=</span><span class="mf">5.1</span><span class="o">.</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>Start by making sure you have a clean checkout of master, with no extra files:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span>
+<span class="n">git</span> <span class="n">clean</span> <span class="o">-</span><span class="n">xfd</span>
+</pre></div>
+</div>
+<p>First, update the version of the package, often in the file <code class="file docutils literal notranslate"><span class="pre">&lt;pkg&gt;/_version.py</span></code> or similar.</p>
+<p>Commit that change:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">am</span> <span class="s2">&quot;release $V&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">At this point, I like to run the tests
+just to be sure that setting the version didn't confuse anything.</p>
+</div>
+<p>Build the distributions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">sdist</span> <span class="o">--</span><span class="n">formats</span><span class="o">=</span><span class="n">gztar</span>
+<span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">bdist_wheel</span>
+</pre></div>
+</div>
+<p>Tag the commit:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git tag -am &quot;release $V&quot; $V
+</pre></div>
+</div>
+<p>And finally, publish everything, to github and PyPI using <a class="reference external" href="https://github.com/pypa/twine">twine</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">twine</span> <span class="n">upload</span> <span class="n">dist</span><span class="o">/*</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="o">--</span><span class="n">tags</span>
+</pre></div>
+</div>
+<p>We have a release! You can now bump the version to the next '.dev' version,
+by editing <code class="file docutils literal notranslate"><span class="pre">&lt;pkg&gt;/_version.py</span></code> (or similar) again, and commit:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">am</span> <span class="s2">&quot;back to dev&quot;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">The pushes assume that <cite>origin</cite> points to the main jupyter/ipython repo.
+Depending how you use git, this could be <cite>upstream</cite> or something else.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<div class="pull-center">
+	<ul class="pager">
+	  
+	  <li class="previous"><a href="jupyter_enhancement_proposals.html">&larr; Previous</a></li>
+	  
+	  
+	  <li class="next"><a href="../development_guide/index.html">Next &rarr;</a></li>
+	  
+	</ul>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Jupyter Team, https://jupyter.org.<br/>
+      최종 업데이트: 2019-01-09<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

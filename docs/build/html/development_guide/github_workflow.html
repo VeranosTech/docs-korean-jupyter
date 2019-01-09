@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>IPython on GitHub &#8212; Jupyter Documentation 4.1.1 alpha documentation</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.3.4/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="The Perfect Pull Request" href="pull_request.html" />
+    <link rel="prev" title="IPython Development Guide (source: old IPython wiki)" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; width=100%; height=auto">
+<a href="../index.html"><img src="../_static/_images/jupyter.svg" border="0" alt="jupyter" width=600></a>
+</div>
+
+
+
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        Jupyter Documentation</a>
+      <span class="navbar-text navbar-version pull-left"><b>4.1</b></span>
+    </div>
+
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          
+        </ul>
+
+        
+          
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+        
+          
+            <ul class='nav navbar-nav navbar-right'>
+                
+  <li>
+    <a href="index.html" title="Previous Chapter: IPython Development Guide (source: old IPython wiki)"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; IPython Development Gui...</span>
+    </a>
+  </li>
+  <li>
+    <a href="pull_request.html" title="Next Chapter: The Perfect Pull Request"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">The Perfect Pull Request &raquo;</span>
+    </a>
+  </li>
+            </ul>
+          
+        
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../content-quickstart.html">Jupyter Notebook Quickstart</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/content-architecture.html">Architecture Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/content-user.html">Narratives and Use Cases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ipython/content-ipython.html">IPython</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/content-projects.html">Installation, Configuration, and Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/content-community.html">Community Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../contributor/content-contributor.html">Contributor Guides</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../developer-docs/index.html">Developer Guide</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">IPython Development Guide (source: old IPython wiki)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib_docs/index.html">Documentation Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/contrib_guide_blog.html">Communications Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/content-releases.html">Release Notes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/content-reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="ipython-on-github">
+<span id="github-workflow"></span><h1>IPython on GitHub<a class="headerlink" href="#ipython-on-github" title="제목 주소">¶</a></h1>
+<div class="admonition attention">
+<p class="first admonition-title">주의</p>
+<p class="last">This is copied verbatim from the old IPython wiki and is currently under development. Much of the information in this part of the development guide is out of date.</p>
+</div>
+<p>Notes on working with GitHub</p>
+<div class="section" id="milestones">
+<span id="github-workflow-milestones"></span><h2>Milestones<a class="headerlink" href="#milestones" title="제목 주소">¶</a></h2>
+<ul class="simple">
+<li>100% of confirmed issues should have a milestone.</li>
+<li>An issue should never be closed without a milestone.</li>
+<li>All pull requests should have a milestone.</li>
+<li>All issues closed should be marked with the next release milestone,
+next backport milestone, or <strong>no action</strong>.</li>
+<li>Open issues should only lack a milestone if:<ul>
+<li>more clarification is required (label: <code class="docutils literal notranslate"><span class="pre">needs-info</span></code>)</li>
+</ul>
+</li>
+<li>In general, there will be four milestones with open issues:<ul>
+<li><strong>next minor release</strong>. This milestone contains issues that should
+be backported for the next minor release. See
+<a class="reference external" href="#backporting">below</a> for information on backporting.</li>
+<li><strong>next major release</strong>. This should be the default milestone of
+all issues. As the release approaches, issues can be explicitly
+bumped to next release + 1.</li>
+<li><strong>next major release + 1</strong>. Only issues that we are confident will
+<em>not</em> be included in the next release go here. This milestone
+should be mostly empty until relatively close to release.</li>
+<li><strong>wishlist</strong>. This is the milestone for issues that we have no
+immediate plans to address.</li>
+</ul>
+</li>
+<li>The remaining milestone is <strong>no action</strong> for open or closed issues
+that require no action:<ul>
+<li>Not actually an issue (e.g. questions, discussion, etc.)</li>
+<li>Duplicate of an existing Issue</li>
+<li>Closed because we won't fix it</li>
+<li>When an issue is closed with <strong>no action</strong>, it means that the
+issue will not be fixed, or it was not an issue at all.</li>
+</ul>
+</li>
+<li>When closing an issue, it should always have one of these milestones:<ul>
+<li><strong>next minor release</strong> because the issue has been addressed</li>
+<li><strong>next major release</strong> because the issue has been addressed</li>
+<li><strong>no action</strong> because the issue <em>will not</em> be addressed, or it is
+a duplicate/non-issue.</li>
+</ul>
+</li>
+</ul>
+<p>In general: When in doubt, mark with <strong>next release</strong>. We can always
+push back when we get closer to a given release.</p>
+</div>
+<div class="section" id="labels-and-issues">
+<h2>Labels and issues<a class="headerlink" href="#labels-and-issues" title="제목 주소">¶</a></h2>
+<p>Issues should always be labeled once they are confirmed (not necessary
+for issues that are still being clarified, or may be duplicates or not
+issues at all).</p>
+<p>Some significant labels:</p>
+<ul>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">needs-info</span></code>: issue needs more information from submitter before
+progress can be made</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">bug</span></code>: errors are raised, or unintended behavior occurs</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">enhancement</span></code>: improvements that are not bugs</p>
+</li>
+<li><div class="first"><del></div><p>backport-X.Y.Z: Any fix for this issue should be backported to the
+maintenance branch. backports are expressed with milestones, starting
+with 2.1.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">prio-foo</span></code>: a priority level for ranking issues - nonessential, but
+prio-high/low are useful for explicitly promoting/demoting issues,
+particularly when nearing release.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">ClosedPR</span></code>: This issue is a reminder for a PR that was closed for
+going stale.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">sprint-friendly</span></code>: Obvious or easy fixes, where</p>
+</li>
+</ul>
+<p>All confirmed issues should at least have a <code class="docutils literal notranslate"><span class="pre">bug</span></code> or <code class="docutils literal notranslate"><span class="pre">enhancement</span></code>
+label, and be marked with any affected components (e.g <code class="docutils literal notranslate"><span class="pre">parallel</span></code>,
+<code class="docutils literal notranslate"><span class="pre">qtconsole</span></code>, <code class="docutils literal notranslate"><span class="pre">htmlnotebook</span></code>), or particular sources of error (e.g.
+<code class="docutils literal notranslate"><span class="pre">py3k</span></code> or <code class="docutils literal notranslate"><span class="pre">unicode</span></code>) if we have appropriate labels.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">sprint-friendly</span></code> label is probably the best place for new
+contributors to start.</p>
+</div>
+<div class="section" id="pull-requests">
+<h2>Pull Requests<a class="headerlink" href="#pull-requests" title="제목 주소">¶</a></h2>
+<ul class="simple">
+<li>All work is submitted via Pull Requests.</li>
+<li>Pull Requests can be submitted as soon as there is code worth
+discussing. Pull Requests track the branch, so you can continue to
+work after the PR is submitted. Review and discussion can begin well
+before the work is complete, and the more discussion the better. The
+worst case is that the PR is closed.</li>
+<li>Pull Requests that have stalled should be closed (see [[our policy on
+closing PRs|Dev: Closing Pull Requests]])</li>
+<li>Pull Requests should always be made against master (backporting PRs
+is described below).</li>
+<li>Pull Requests should be tested, if feasible:<ul>
+<li>bugfixes should include regression tests</li>
+<li>new behavior should at least get minimal exercise</li>
+</ul>
+</li>
+</ul>
+<p><a class="reference external" href="https://travis-ci.org/ipython/ipython">Travis</a> does a pretty good
+job testing IPython and Pull Requests, but it may make sense to manually
+perform tests (possibly with our <code class="docutils literal notranslate"><span class="pre">test_pr</span></code> script), particularly for
+PRs that affect <code class="docutils literal notranslate"><span class="pre">IPython.parallel</span></code> or Windows.</p>
+</div>
+<div class="section" id="opening-an-issue">
+<h2>Opening an Issue<a class="headerlink" href="#opening-an-issue" title="제목 주소">¶</a></h2>
+<p>When opening a new issue, please take the following steps:</p>
+<ol class="arabic">
+<li><p class="first">Search GitHub and/or Google for your issue to avoid duplicate
+reports. Keyword searches for your error messages are most helpful.</p>
+</li>
+<li><p class="first">If possible, try updating to master and reproducing your issue,
+because we may have already fixed it.</p>
+</li>
+<li><p class="first">Try to include a minimal reproducible test case</p>
+</li>
+<li><p class="first">Include relevant system information. Start with the output of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;import IPython; print(IPython.sys_info())&quot;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>And include any relevant package versions, depending on the issue, such
+as matplotlib, numpy, Qt, Qt bindings (PyQt/PySide), tornado, web
+browser, etc.</p>
+</div>
+<div class="section" id="backporting">
+<h2>Backporting<a class="headerlink" href="#backporting" title="제목 주소">¶</a></h2>
+<ul class="simple">
+<li>We should keep an <code class="docutils literal notranslate"><span class="pre">A.x</span></code> maintenance branch for backporting fixes
+from master.</li>
+<li>That branch shall be called <code class="docutils literal notranslate"><span class="pre">A.x</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">2.x</span></code>, not <code class="docutils literal notranslate"><span class="pre">2.1</span></code>. This
+way, there is only one maintenance branch per release series.</li>
+<li>When an Issue is determined to be appropriate for backporting, it
+should be marked with the <code class="docutils literal notranslate"><span class="pre">A.B</span></code> milestone.</li>
+<li>Any Pull Request which addresses a backport issue should also receive
+the same milestone.</li>
+<li>Patches are backported to the maintenance branch by applying the pull
+request patch to the maintenance branch (currently with the
+<a class="reference external" href="https://github.com/ipython/ipython/blob/master/tools/backport_pr.py">backport_pr</a>
+script).</li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<div class="pull-center">
+	<ul class="pager">
+	  
+	  <li class="previous"><a href="index.html">&larr; Previous</a></li>
+	  
+	  
+	  <li class="next"><a href="pull_request.html">Next &rarr;</a></li>
+	  
+	</ul>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Jupyter Team, https://jupyter.org.<br/>
+      최종 업데이트: 2019-01-09<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

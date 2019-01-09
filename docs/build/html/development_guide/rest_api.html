@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Architecture of IPython notebook&#39;s Dashboard &#8212; Jupyter Documentation 4.1.1 alpha documentation</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.3.4/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="JavaScript Events" href="js_events.html" />
+    <link rel="prev" title="Python 3 Compatibility Module" href="py3compat.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; width=100%; height=auto">
+<a href="../index.html"><img src="../_static/_images/jupyter.svg" border="0" alt="jupyter" width=600></a>
+</div>
+
+
+
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        Jupyter Documentation</a>
+      <span class="navbar-text navbar-version pull-left"><b>4.1</b></span>
+    </div>
+
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          
+        </ul>
+
+        
+          
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+        
+          
+            <ul class='nav navbar-nav navbar-right'>
+                
+  <li>
+    <a href="py3compat.html" title="Previous Chapter: Python 3 Compatibility Module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Python 3 Compatibility Module</span>
+    </a>
+  </li>
+  <li>
+    <a href="js_events.html" title="Next Chapter: JavaScript Events"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">JavaScript Events &raquo;</span>
+    </a>
+  </li>
+            </ul>
+          
+        
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../content-quickstart.html">Jupyter Notebook Quickstart</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/content-architecture.html">Architecture Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/content-user.html">Narratives and Use Cases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ipython/content-ipython.html">IPython</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/content-projects.html">Installation, Configuration, and Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/content-community.html">Community Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../contributor/content-contributor.html">Contributor Guides</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../developer-docs/index.html">Developer Guide</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">IPython Development Guide (source: old IPython wiki)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib_docs/index.html">Documentation Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/contrib_guide_blog.html">Communications Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/content-releases.html">Release Notes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/content-reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="architecture-of-ipython-notebook-s-dashboard">
+<span id="rest-api"></span><h1>Architecture of IPython notebook's Dashboard<a class="headerlink" href="#architecture-of-ipython-notebook-s-dashboard" title="제목 주소">¶</a></h1>
+<div class="admonition attention">
+<p class="first admonition-title">주의</p>
+<p class="last">This is copied verbatim from the old IPython wiki and is currently under development. Much of the information in this part of the development guide is out of date.</p>
+</div>
+<p>The tables below show the current RESTful web service architecture
+implemented in IPython notebook. The listed URL's use the HTTP verbs to
+return representations of the desired resource.</p>
+<p>We are in the process of creating a new dashboard architecture for the
+IPython notebook, which will allow the user to navigate through multiple
+directory files to find desired notebooks.</p>
+<div class="section" id="current-architecture">
+<h2>Current Architecture<a class="headerlink" href="#current-architecture" title="제목 주소">¶</a></h2>
+<p>Miscellaneous</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="25%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HTTP
+verb</th>
+<th class="head">URL</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/.*/</td>
+<td>Strips trailing slashes.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api</td>
+<td>Returns api version information.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">*</span></code></td>
+<td>/api/notebooks</td>
+<td>Deprecated: redirect to /api/contents</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/nbconvert</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Notebook contents API.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="25%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HTTP
+verb</th>
+<th class="head">URL</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/contents</td>
+<td>Return a model for the base directory.
+See /api/contents/&lt;path&gt;/&lt;file&gt;.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/contents/
+&lt;file&gt;</td>
+<td>Return a model for the given file in
+the base directory. See
+/api/contents/&lt;path&gt;/&lt;file&gt;.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;</td>
+<td>Return a model for a file or
+directory. A directory model contains
+a list of models (without content) of
+the files and directories it contains.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PUT</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;</td>
+<td>Saves the file in the location
+specified by name and path. PUT is
+very similar to POST, but the
+requester specifies the name, where as
+with POST, the server picks the name.
+PUT /api/contents/path/Name.ipynb Save
+notebook at <code class="docutils literal notranslate"><span class="pre">path/Name.ipynb</span></code>.
+Notebook structure is specified in
+<code class="docutils literal notranslate"><span class="pre">content</span></code> key of JSON request body.
+If content is not specified, create a
+new empty notebook.
+PUT /api/contents/path/Name.ipynb with
+JSON body
+{&quot;copy_from&quot; : &quot;[path/to/]
+OtherNotebook.ipynb&quot;} Copy
+OtherNotebook to Name</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">PATCH</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;</td>
+<td>Renames a notebook without
+re-uploading content.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;</td>
+<td>Creates a new file or directory in the
+specified path. POST creates new files
+or directories. The server always
+decides on the name.
+POST /api/contents/path New untitled
+notebook in path. If content
+specified, upload a notebook,
+otherwise start empty.
+POST /api/contents/path with body
+{&quot;copy_from&quot;:&quot;OtherNotebook.ipynb&quot;}
+New copy of OtherNotebook in path</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">DELETE</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;</td>
+<td>delete a file in the given path.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;
+/checkpoints</td>
+<td>get lists checkpoint for a file.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;
+/checkpoints</td>
+<td>post creates a new checkpoint.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;
+/checkpoints/
+&lt;checkpoint_
+id&gt;</td>
+<td>post restores a file from a
+checkpoint.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">DELETE</span></code></td>
+<td>/api/contents/
+&lt;path&gt;/&lt;file&gt;
+/checkpoints/
+&lt;checkpoint_
+id&gt;</td>
+<td>delete clears a checkpoint for a
+given file.</td>
+</tr>
+</tbody>
+</table>
+<p>Kernel API</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="25%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HTTP
+verb</th>
+<th class="head">URI</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/kernels</td>
+<td>Return a model of all kernels.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/kernels
+/&lt;kernel_id&gt;</td>
+<td>Return a model of kernel with given
+kernel id.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/api/kernels</td>
+<td>Start a new kernel with default or
+given name.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">DELETE</span></code></td>
+<td>/api/kernels
+/&lt;kernel_id&gt;</td>
+<td>Shutdown the given kernel.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/api/kernels
+/&lt;kernel_id&gt;
+/&lt;action&gt;</td>
+<td>Perform action on kernel with given
+kernel id. Actions can be
+&quot;interrupt&quot; or &quot;restart&quot;.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">WS</span></code></td>
+<td>/api/kernels
+/&lt;kernel_id&gt;
+/channels</td>
+<td>Websocket stream</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/kernel
+specs</td>
+<td>Return a spec model of all available
+kernels.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/kernel
+specs/
+&lt;kernel_name&gt;</td>
+<td>Return a spec model of all available
+kernels with a given kernel name.</td>
+</tr>
+</tbody>
+</table>
+<p>Sessions API</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="25%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HTTP
+verb</th>
+<th class="head">URL</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/sesions</td>
+<td>Return model of active sessions.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/api/sessions</td>
+<td>If session does not already exist,
+create a new session with given
+notebook name and path and given
+kernel name. Return active sesssion.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/sessions
+/&lt;session_id&gt;</td>
+<td>Return model of active session with
+given session id.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PATCH</span></code></td>
+<td>/api/sessions
+/&lt;session_id&gt;</td>
+<td>Return model of active session with
+notebook name or path of session with
+given session id.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">DELETE</span></code></td>
+<td>/api/sessions
+/&lt;session_id&gt;</td>
+<td>Delete model of active session with
+given session id.</td>
+</tr>
+</tbody>
+</table>
+<p>Clusters API</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="25%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HTTP
+verb</th>
+<th class="head">URL</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/clusters</td>
+<td>Return model of clusters.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/api/clusters
+&lt;cluster_id&gt;</td>
+<td>Return model of given cluster.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/api/clusters
+&lt;cluster_id&gt;
+&lt;action&gt;</td>
+<td>Perform action with given clusters.
+Valid actions are &quot;start&quot; and &quot;stop&quot;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="old-architecture">
+<h2>Old Architecture<a class="headerlink" href="#old-architecture" title="제목 주소">¶</a></h2>
+<p>This chart shows the web-services in the single directory IPython
+notebook.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="25%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HTTP
+verb</th>
+<th class="head">URL</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/notebooks</td>
+<td>return list of dicts with each
+notebook's info</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/notebooks</td>
+<td>if sending a body, saving that body as
+a new notebook; if no body, create a
+a new notebook.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/notebooks
+/&lt;notebook_id&gt;</td>
+<td>get JSON data for notebook</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PUT</span></code></td>
+<td>/notebooks
+/&lt;notebook_id&gt;</td>
+<td>saves an existing notebook with body
+data</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">DELETE</span></code></td>
+<td>/notebooks
+/&lt;notebook_id&gt;</td>
+<td>deletes the notebook with the given ID</td>
+</tr>
+</tbody>
+</table>
+<p>This chart shows the architecture for the IPython notebook website.</p>
+<p>This chart shows the Web services that act on the kernels and clusters.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="25%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">HTTP
+verb</th>
+<th class="head">URL</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/kernels</td>
+<td>return the list of kernel IDs
+currently running</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/kernels
+/&lt;kernel_id&gt;</td>
+<td>---</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/kernels
+/&lt;kernel_id&gt;
+&lt;action&gt;</td>
+<td>performs action (restart/kill) kernel
+with given ID</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/kernels
+/&lt;kernel_id&gt;
+/iopub</td>
+<td>---</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/kernels
+/&lt;kernel_id&gt;
+/shell</td>
+<td>---</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/rstservice/
+render</td>
+<td>---</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/files/(.*)</td>
+<td>---</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/clusters</td>
+<td>returns a list of dicts with each
+cluster's information</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">POST</span></code></td>
+<td>/clusters
+/&lt;profile_id&gt;
+/&lt;cluster_
+action&gt;</td>
+<td>performs action (start/stop) on
+cluster with given profile ID</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">GET</span></code></td>
+<td>/clusters
+/&lt;profile_id&gt;</td>
+<td>returns the JSON data for cluster with
+given profile ID</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<div class="pull-center">
+	<ul class="pager">
+	  
+	  <li class="previous"><a href="py3compat.html">&larr; Previous</a></li>
+	  
+	  
+	  <li class="next"><a href="js_events.html">Next &rarr;</a></li>
+	  
+	</ul>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Jupyter Team, https://jupyter.org.<br/>
+      최종 업데이트: 2019-01-09<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

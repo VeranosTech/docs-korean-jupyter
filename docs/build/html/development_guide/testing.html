@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Testing IPython for users and developers &#8212; Jupyter Documentation 4.1.1 alpha documentation</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootswatch-3.3.4/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="How to Compile .less Files" href="less.html" />
+    <link rel="prev" title="Policy on Closing Pull Requests" href="closing_prs.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; width=100%; height=auto">
+<a href="../index.html"><img src="../_static/_images/jupyter.svg" border="0" alt="jupyter" width=600></a>
+</div>
+
+
+
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+        Jupyter Documentation</a>
+      <span class="navbar-text navbar-version pull-left"><b>4.1</b></span>
+    </div>
+
+      <div class="collapse navbar-collapse nav-collapse">
+        <ul class="nav navbar-nav">
+          
+          
+          
+          
+        </ul>
+
+        
+          
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+        
+          
+            <ul class='nav navbar-nav navbar-right'>
+                
+  <li>
+    <a href="closing_prs.html" title="Previous Chapter: Policy on Closing Pull Requests"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Policy on Closing Pull Requests</span>
+    </a>
+  </li>
+  <li>
+    <a href="less.html" title="Next Chapter: How to Compile .less Files"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">How to Compile .less Files &raquo;</span>
+    </a>
+  </li>
+            </ul>
+          
+        
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../content-quickstart.html">Jupyter Notebook Quickstart</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/content-architecture.html">Architecture Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../use-cases/content-user.html">Narratives and Use Cases</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ipython/content-ipython.html">IPython</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../projects/content-projects.html">Installation, Configuration, and Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/content-community.html">Community Guides</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../contributor/content-contributor.html">Contributor Guides</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../developer-docs/index.html">Developer Guide</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">IPython Development Guide (source: old IPython wiki)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contrib_docs/index.html">Documentation Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributor/contrib_guide_blog.html">Communications Guide</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases/content-releases.html">Release Notes</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/content-reference.html">Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="testing-ipython-for-users-and-developers">
+<span id="testing"></span><h1>Testing IPython for users and developers<a class="headerlink" href="#testing-ipython-for-users-and-developers" title="제목 주소">¶</a></h1>
+<div class="admonition attention">
+<p class="first admonition-title">주의</p>
+<p class="last">This is copied verbatim from the old IPython wiki and is currently under development. Much of the information in this part of the development guide is out of date.</p>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="제목 주소">¶</a></h2>
+<p>It is extremely important that all code contributed to IPython has
+tests. Tests should be written as unittests, doctests or other entities
+that the IPython test system can detect. See below for more details on
+this.</p>
+<p>Each subpackage in IPython should have its own <code class="docutils literal notranslate"><span class="pre">tests</span></code> directory that
+contains all of the tests for that subpackage. All of the files in the
+<code class="docutils literal notranslate"><span class="pre">tests</span></code> directory should have the word &quot;tests&quot; in them to enable the
+testing framework to find them.</p>
+<p>In docstrings, examples (either using IPython prompts like <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>
+or 'classic' python <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> ones) can and should be included. The
+testing system will detect them as doctests and will run them; it offers
+control to skip parts or all of a specific doctest if the example is
+meant to be informative but shows non-reproducible information (like
+filesystem data).</p>
+<p>If a subpackage has any dependencies beyond the Python standard library,
+the tests for that subpackage should be skipped if the dependencies are
+not found. This is very important so users don't get tests failing
+simply because they don't have dependencies.</p>
+<p>The testing system we use is an extension of the
+<a class="reference external" href="https://code.google.com/archive/p/python-nose">nose</a> test runner. In
+particular we've developed a nose plugin that allows us to paste
+verbatim IPython sessions and test them as doctests, which is extremely
+important for us.</p>
+</div>
+<div class="section" id="running-the-test-suite">
+<h2>Running the test suite<a class="headerlink" href="#running-the-test-suite" title="제목 주소">¶</a></h2>
+<p>You can run IPython from the source download directory without even
+installing it system-wide or having configure anything, by typing at the
+terminal:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python2</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;import IPython; IPython.start_ipython();&quot;</span>
+</pre></div>
+</div>
+<p>To start the webbased notebook you can use:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python2</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;import IPython; IPython.start_ipython([&#39;notebook&#39;]);&quot;</span>
+</pre></div>
+</div>
+<p>In order to run the test suite, you must at least be able to import
+IPython, even if you haven't fully installed the user-facing scripts yet
+(common in a development environment). You can then run the tests with:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;import IPython; IPython.test()&quot;</span>
+</pre></div>
+</div>
+<p>Once you have installed IPython either via a full install or using:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">develop</span>
+</pre></div>
+</div>
+<p>you will have available a system-wide script called <code class="docutils literal notranslate"><span class="pre">iptest</span></code> that runs
+the full test suite. You can then run the suite with:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iptest</span>  <span class="p">[</span><span class="n">args</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>By default, this excludes the relatively slow tests for
+<code class="docutils literal notranslate"><span class="pre">IPython.parallel</span></code>. To run these, use <code class="docutils literal notranslate"><span class="pre">iptest</span> <span class="pre">--all</span></code>.</p>
+<p>Please note that the iptest tool will run tests against the code
+imported by the Python interpreter. If the command
+<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">symlink</span></code> has been previously run then this will
+always be the test code in the local directory via a symlink. However,
+if this command has not been run for the version of Python being tested,
+there is the possibility that iptest will run the tests against an
+installed version of IPython.</p>
+<p>Regardless of how you run things, you should eventually see something
+like:</p>
+<div class="code text highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**********************************************************************</span>
+<span class="n">Test</span> <span class="n">suite</span> <span class="n">completed</span> <span class="k">for</span> <span class="n">system</span> <span class="k">with</span> <span class="n">the</span> <span class="n">following</span> <span class="n">information</span><span class="p">:</span>
+<span class="p">{</span><span class="s1">&#39;commit_hash&#39;</span><span class="p">:</span> <span class="s1">&#39;144fdae&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;commit_source&#39;</span><span class="p">:</span> <span class="s1">&#39;repository&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;ipython_path&#39;</span><span class="p">:</span> <span class="s1">&#39;/home/fperez/usr/lib/python2.6/site-packages/IPython&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;ipython_version&#39;</span><span class="p">:</span> <span class="s1">&#39;0.11.dev&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;os_name&#39;</span><span class="p">:</span> <span class="s1">&#39;posix&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;platform&#39;</span><span class="p">:</span> <span class="s1">&#39;Linux-2.6.35-22-generic-i686-with-Ubuntu-10.10-maverick&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;sys_executable&#39;</span><span class="p">:</span> <span class="s1">&#39;/usr/bin/python&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;sys_platform&#39;</span><span class="p">:</span> <span class="s1">&#39;linux2&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;sys_version&#39;</span><span class="p">:</span> <span class="s1">&#39;2.6.6 (r266:84292, Sep 15 2010, 15:52:39) </span><span class="se">\n</span><span class="s1">[GCC 4.4.5]&#39;</span><span class="p">}</span>
+
+<span class="n">Tools</span> <span class="ow">and</span> <span class="n">libraries</span> <span class="n">available</span> <span class="n">at</span> <span class="n">test</span> <span class="n">time</span><span class="p">:</span>
+   <span class="n">curses</span> <span class="n">matplotlib</span> <span class="n">pymongo</span> <span class="n">qt</span> <span class="n">sqlite3</span> <span class="n">tornado</span> <span class="n">wx</span> <span class="n">wx</span><span class="o">.</span><span class="n">aui</span> <span class="n">zmq</span>
+
+<span class="n">Ran</span> <span class="mi">9</span> <span class="n">test</span> <span class="n">groups</span> <span class="ow">in</span> <span class="mf">67.213</span><span class="n">s</span>
+
+<span class="n">Status</span><span class="p">:</span>
+<span class="n">OK</span>
+</pre></div>
+</div>
+<p>If not, there will be a message indicating which test group failed and
+how to rerun that group individually. For example, this tests the
+<code class="docutils literal notranslate"><span class="pre">IPython.utils</span></code> subpackage, the <code class="docutils literal notranslate"><span class="pre">-v</span></code> option shows progress
+indicators:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ iptest IPython.utils -- -v
+..........................SS..SSS............................S.S...
+.........................................................
+----------------------------------------------------------------------
+Ran 125 tests in 0.119s
+
+OK (SKIP=7)
+</pre></div>
+</div>
+<p>Because the IPython test machinery is based on nose, you can use all
+nose syntax. Options after <code class="docutils literal notranslate"><span class="pre">--</span></code> are passed to nose. For example, this
+lets you run the specific test <code class="docutils literal notranslate"><span class="pre">test_rehashx</span></code> inside the
+<code class="docutils literal notranslate"><span class="pre">test_magic</span></code> module:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ iptest IPython.core.tests.test_magic:test_rehashx -- -vv
+IPython.core.tests.test_magic.test_rehashx(True,) ... ok
+IPython.core.tests.test_magic.test_rehashx(True,) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.100s
+
+OK
+</pre></div>
+</div>
+<p>When developing, the <code class="docutils literal notranslate"><span class="pre">--pdb</span></code> and <code class="docutils literal notranslate"><span class="pre">--pdb-failures</span></code> of nose are
+particularly useful, these drop you into an interactive pdb session at
+the point of the error or failure respectively:
+<code class="docutils literal notranslate"><span class="pre">iptest</span> <span class="pre">mymodule</span> <span class="pre">--</span> <span class="pre">--pdb</span></code>.</p>
+<p>The system information summary printed above is accessible from the top
+level package. If you encounter a problem with IPython, it's useful to
+include this information when reporting on the mailing list; use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">code</span><span class="p">::</span> <span class="n">python</span>
+</pre></div>
+</div>
+<blockquote>
+<div>from IPython import sys_info
+print sys_info()</div></blockquote>
+<p>and include the resulting information in your query.</p>
+</div>
+<div class="section" id="testing-pull-requests">
+<h2>Testing pull requests<a class="headerlink" href="#testing-pull-requests" title="제목 주소">¶</a></h2>
+<p>We have a script that fetches a pull request from Github, merges it with
+master, and runs the test suite on different versions of Python. This
+uses a separate copy of the repository, so you can keep working on the
+code while it runs. To run it:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">tools</span><span class="o">/</span><span class="n">test_pr</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">p</span> <span class="mi">1234</span>
+</pre></div>
+</div>
+<p>The number is the pull request number from Github; the <code class="docutils literal notranslate"><span class="pre">-p</span></code> flag makes
+it post the results to a comment on the pull request. Any further
+arguments are passed to <code class="docutils literal notranslate"><span class="pre">iptest</span></code>.</p>
+<p>This requires the <a class="reference external" href="https://pypi.python.org/pypi/requests">requests</a>
+and <a class="reference external" href="https://pypi.python.org/pypi/keyring">keyring</a> packages.</p>
+</div>
+<div class="section" id="for-developers-writing-tests">
+<h2>For developers: writing tests<a class="headerlink" href="#for-developers-writing-tests" title="제목 주소">¶</a></h2>
+<p>By now IPython has a reasonable test suite, so the best way to see
+what's available is to look at the <code class="docutils literal notranslate"><span class="pre">tests</span></code> directory in most
+subpackages. But here are a few pointers to make the process easier.</p>
+<div class="section" id="main-tools-ipython-testing">
+<h3>Main tools: <code class="docutils literal notranslate"><span class="pre">IPython.testing</span></code><a class="headerlink" href="#main-tools-ipython-testing" title="제목 주소">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">IPython.testing</span></code> package is where all of the machinery to test
+IPython (rather than the tests for its various parts) lives. In
+particular, the <code class="docutils literal notranslate"><span class="pre">iptest</span></code> module in there has all the smarts to control
+the test process. In there, the <code class="docutils literal notranslate"><span class="pre">make_exclude</span></code> function is used to
+build a blacklist of exclusions, these are modules that do not get even
+imported for tests. This is important so that things that would fail to
+even import because of missing dependencies don't give errors to end
+users, as we stated above.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">decorators</span></code> module contains a lot of useful decorators,
+especially useful to mark individual tests that should be skipped under
+certain conditions (rather than blacklisting the package altogether
+because of a missing major dependency).</p>
+</div>
+<div class="section" id="our-nose-plugin-for-doctests">
+<h3>Our nose plugin for doctests<a class="headerlink" href="#our-nose-plugin-for-doctests" title="제목 주소">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">plugin</span></code> subpackage in testing contains a nose plugin called
+<code class="docutils literal notranslate"><span class="pre">ipdoctest</span></code> that teaches nose about IPython syntax, so you can write
+doctests with IPython prompts. You can also mark doctest output with
+<code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">random</span></code> for the output corresponding to a single input to be
+ignored (stronger than using ellipsis and useful to keep it as an
+example). If you want the entire docstring to be executed but none of
+the output from any input to be checked, you can use the
+<code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">all-random</span></code> marker. The <code class="docutils literal notranslate"><span class="pre">IPython.testing.plugin.dtexample</span></code> module
+contains examples of how to use these; for reference here is how to use
+<code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">random</span></code>:</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ranfunc</span><span class="p">():</span>
+<span class="sd">&quot;&quot;&quot;A function with some random output.</span>
+
+<span class="sd">   Normal examples are verified as usual:</span>
+<span class="sd">   &gt;&gt;&gt; 1+3</span>
+<span class="sd">   4</span>
+
+<span class="sd">   But if you put &#39;# random&#39; in the output, it is ignored:</span>
+<span class="sd">   &gt;&gt;&gt; 1+3</span>
+<span class="sd">   junk goes here...  # random</span>
+
+<span class="sd">   &gt;&gt;&gt; 1+2</span>
+<span class="sd">   again,  anything goes #random</span>
+<span class="sd">   if multiline, the random mark is only needed once.</span>
+
+<span class="sd">   &gt;&gt;&gt; 1+2</span>
+<span class="sd">   You can also put the random marker at the end:</span>
+<span class="sd">   # random</span>
+
+<span class="sd">   &gt;&gt;&gt; 1+2</span>
+<span class="sd">   # random</span>
+<span class="sd">   .. or at the beginning.</span>
+
+<span class="sd">   More correct input is properly verified:</span>
+<span class="sd">   &gt;&gt;&gt; ranfunc()</span>
+<span class="sd">   &#39;ranfunc&#39;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="k">return</span> <span class="s1">&#39;ranfunc&#39;</span>
+</pre></div>
+</div>
+<p>and an example of <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">all-random</span></code>:</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">random_all</span><span class="p">():</span>
+<span class="sd">&quot;&quot;&quot;A function where we ignore the output of ALL examples.</span>
+
+<span class="sd">Examples:</span>
+
+<span class="sd">  # all-random</span>
+
+<span class="sd">  This mark tells the testing machinery that all subsequent examples</span>
+<span class="sd">  should be treated as random (ignoring their output).  They are still</span>
+<span class="sd">  executed, so if a they raise an error, it will be detected as such,</span>
+<span class="sd">  but their output is completely ignored.</span>
+
+<span class="sd">  &gt;&gt;&gt; 1+3</span>
+<span class="sd">  junk goes here...</span>
+
+<span class="sd">  &gt;&gt;&gt; 1+3</span>
+<span class="sd">  klasdfj;</span>
+
+<span class="sd">In [8]: print &#39;hello&#39;</span>
+<span class="sd">world  # random</span>
+
+<span class="sd">In [9]: iprand()</span>
+<span class="sd">Out[9]: &#39;iprand&#39;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="k">return</span> <span class="s1">&#39;iprand&#39;</span>
+</pre></div>
+</div>
+<p>When writing docstrings, you can use the <code class="docutils literal notranslate"><span class="pre">&#64;skip_doctest</span></code> decorator to
+indicate that a docstring should <em>not</em> be treated as a doctest at all.
+The difference between <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">all-random</span></code> and <code class="docutils literal notranslate"><span class="pre">&#64;skip_doctest</span></code> is that
+the former executes the example but ignores output, while the latter
+doesn't execute any code. <code class="docutils literal notranslate"><span class="pre">&#64;skip_doctest</span></code> should be used for
+docstrings whose examples are purely informational.</p>
+<p>If a given docstring fails under certain conditions but otherwise is a
+good doctest, you can use code like the following, that relies on the
+'null' decorator to leave the docstring intact where it works as a test:</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># The docstring for full_path doctests differently on win32 (different path</span>
+<span class="c1"># separator) so just skip the doctest there, and use a null decorator</span>
+<span class="c1"># elsewhere:</span>
+
+<span class="n">doctest_deco</span> <span class="o">=</span> <span class="n">dec</span><span class="o">.</span><span class="n">skip_doctest</span> <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;win32&#39;</span> <span class="k">else</span> <span class="n">dec</span><span class="o">.</span><span class="n">null_deco</span>
+
+<span class="nd">@doctest_deco</span>
+<span class="k">def</span> <span class="nf">full_path</span><span class="p">(</span><span class="n">startPath</span><span class="p">,</span><span class="n">files</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Make full paths for all the listed files, based on startPath...&quot;&quot;&quot;</span>
+
+    <span class="c1"># function body follows...</span>
+</pre></div>
+</div>
+<p>With our nose plugin that understands IPython syntax, an extremely
+effective way to write tests is to simply copy and paste an interactive
+session into a docstring. You can writing this type of test, where your
+docstring is meant <em>only</em> as a test, by prefixing the function name with
+<code class="docutils literal notranslate"><span class="pre">doctest_</span></code> and leaving its body <em>absolutely empty</em> other than the
+docstring. In <code class="docutils literal notranslate"><span class="pre">IPython.core.tests.test_magic</span></code> you can find several
+examples of this, but for completeness sake, your code should look like
+this (a simple case):</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">doctest_time</span><span class="p">():</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">In [10]: %time None</span>
+<span class="sd">CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s</span>
+<span class="sd">Wall time: 0.00 s</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>This function is only analyzed for its docstring but it is not
+considered a separate test, which is why its body should be empty.</p>
+</div>
+<div class="section" id="javascript-tests">
+<h3>JavaScript Tests<a class="headerlink" href="#javascript-tests" title="제목 주소">¶</a></h3>
+<p>We currently use <a class="reference external" href="http://casperjs.org/">casperjs</a> for testing the
+notebook javascript user interface.</p>
+<p>To run the JS test suite by itself, you can either use <code class="docutils literal notranslate"><span class="pre">iptest</span> <span class="pre">js</span></code>,
+which will start up a new notebook server and test against it, or you
+can open up a notebook server yourself, and then:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">IPython</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">tests</span><span class="o">/</span><span class="n">casperjs</span><span class="p">;</span>
+<span class="n">casperjs</span> <span class="n">test</span> <span class="o">--</span><span class="n">includes</span><span class="o">=</span><span class="n">util</span><span class="o">.</span><span class="n">js</span> <span class="n">test_cases</span>
+</pre></div>
+</div>
+<p>If your testing notebook server uses something other than the default
+port (8888), you will have to pass that as a parameter to the test suite
+as well.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">casperjs</span> <span class="n">test</span> <span class="o">--</span><span class="n">includes</span><span class="o">=</span><span class="n">util</span><span class="o">.</span><span class="n">js</span> <span class="o">--</span><span class="n">port</span><span class="o">=</span><span class="mi">8889</span> <span class="n">test_cases</span>
+</pre></div>
+</div>
+<div class="section" id="running-individual-tests">
+<h4>Running individual tests<a class="headerlink" href="#running-individual-tests" title="제목 주소">¶</a></h4>
+<p>To speed up development, you usually are working on getting one test
+passing at a time. To do this, just pass the filename directly to the
+<code class="docutils literal notranslate"><span class="pre">casperjs</span> <span class="pre">test</span></code> command like so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">casperjs</span> <span class="n">test</span> <span class="o">--</span><span class="n">includes</span><span class="o">=</span><span class="n">util</span><span class="o">.</span><span class="n">js</span>  <span class="n">test_cases</span><span class="o">/</span><span class="n">execute_code_cell</span><span class="o">.</span><span class="n">js</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="wrapping-your-head-around-the-javascript-within-javascript">
+<h4>Wrapping your head around the javascript within javascript:<a class="headerlink" href="#wrapping-your-head-around-the-javascript-within-javascript" title="제목 주소">¶</a></h4>
+<p>CasperJS is a browser that's written in javascript, so we write
+javascript code to drive it. The Casper browser itself also has a
+javascript implementation (like the ones that come with Firefox and
+Chrome), and in the test suite we get access to those using
+<code class="docutils literal notranslate"><span class="pre">this.evaluate</span></code>, and it's cousins (<code class="docutils literal notranslate"><span class="pre">this.theEvaluate</span></code>, etc).
+Additionally, because of the asynchronous / callback nature of
+everything, there are plenty of <code class="docutils literal notranslate"><span class="pre">this.then</span></code> calls which define steps
+in test suite. Part of the reason for this is that each step has a
+timeout (default of 5 or 10 seconds). Additionally, there are already
+convenience functions in <code class="docutils literal notranslate"><span class="pre">util.js</span></code> to help you wait for output in a
+given cell, etc. In our javascript tests, if you see functions which
+<code class="docutils literal notranslate"><span class="pre">look_like_pep8_naming_convention</span></code>, those are probably coming from
+<code class="docutils literal notranslate"><span class="pre">util.js</span></code>, whereas functions that come with casper
+<code class="docutils literal notranslate"><span class="pre">haveCamelCaseNamingConvention</span></code></p>
+<p>Each file in <code class="docutils literal notranslate"><span class="pre">test_cases</span></code> looks something like this (this is
+<code class="docutils literal notranslate"><span class="pre">test_cases/check_interrupt.js</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">casper</span><span class="o">.</span><span class="n">notebook_test</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">var</span> <span class="n">cell</span> <span class="o">=</span> <span class="n">IPython</span><span class="o">.</span><span class="n">notebook</span><span class="o">.</span><span class="n">get_cell</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="n">cell</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="s1">&#39;import time</span><span class="se">\n</span><span class="s1">for x in range(3):</span><span class="se">\n</span><span class="s1">    time.sleep(1)&#39;</span><span class="p">);</span>
+        <span class="n">cell</span><span class="o">.</span><span class="n">execute</span><span class="p">();</span>
+    <span class="p">});</span>
+
+
+    <span class="o">//</span> <span class="n">interrupt</span> <span class="n">using</span> <span class="n">menu</span> <span class="n">item</span> <span class="p">(</span><span class="n">Kernel</span> <span class="o">-&gt;</span> <span class="n">Interrupt</span><span class="p">)</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">thenClick</span><span class="p">(</span><span class="s1">&#39;li#int_kernel&#39;</span><span class="p">);</span>
+
+    <span class="n">this</span><span class="o">.</span><span class="n">wait_for_output</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="n">this</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">var</span> <span class="n">result</span> <span class="o">=</span> <span class="n">this</span><span class="o">.</span><span class="n">get_output_cell</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="n">this</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">assertEquals</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">ename</span><span class="p">,</span> <span class="s1">&#39;KeyboardInterrupt&#39;</span><span class="p">,</span> <span class="s1">&#39;keyboard interrupt (mouseclick)&#39;</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="o">//</span> <span class="n">run</span> <span class="n">cell</span> <span class="mi">0</span> <span class="n">again</span><span class="p">,</span> <span class="n">now</span> <span class="n">interrupting</span> <span class="n">using</span> <span class="n">keyboard</span> <span class="n">shortcut</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">thenEvaluate</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">cell</span><span class="o">.</span><span class="n">clear_output</span><span class="p">();</span>
+        <span class="n">cell</span><span class="o">.</span><span class="n">execute</span><span class="p">();</span>
+    <span class="p">});</span>
+
+    <span class="o">//</span> <span class="n">interrupt</span> <span class="n">using</span> <span class="n">Ctrl</span><span class="o">-</span><span class="n">M</span> <span class="n">I</span> <span class="n">keyboard</span> <span class="n">shortcut</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">thenEvaluate</span><span class="p">(</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">IPython</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">press_ghetto</span><span class="p">(</span><span class="n">IPython</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">keycodes</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+    <span class="p">});</span>
+
+    <span class="n">this</span><span class="o">.</span><span class="n">wait_for_output</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="n">this</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="n">var</span> <span class="n">result</span> <span class="o">=</span> <span class="n">this</span><span class="o">.</span><span class="n">get_output_cell</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="n">this</span><span class="o">.</span><span class="n">test</span><span class="o">.</span><span class="n">assertEquals</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">ename</span><span class="p">,</span> <span class="s1">&#39;KeyboardInterrupt&#39;</span><span class="p">,</span> <span class="s1">&#39;keyboard interrupt (shortcut)&#39;</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>For an example of how to pass parameters to the client-side javascript
+from casper test suite, see the <code class="docutils literal notranslate"><span class="pre">casper.wait_for_output</span></code>
+implementation in <code class="docutils literal notranslate"><span class="pre">IPython/html/tests/casperjs/util.js</span></code></p>
+</div>
+</div>
+</div>
+<div class="section" id="testing-system-design-notes">
+<h2>Testing system design notes<a class="headerlink" href="#testing-system-design-notes" title="제목 주소">¶</a></h2>
+<p>This section is a set of notes on the key points of the IPython testing
+needs, that were used when writing the system and should be kept for
+reference as it eveolves.</p>
+<p>Testing IPython in full requires modifications to the default behavior
+of nose and doctest, because the IPython prompt is not recognized to
+determine Python input, and because IPython admits user input that is
+not valid Python (things like <code class="docutils literal notranslate"><span class="pre">%magics</span></code> and <code class="docutils literal notranslate"><span class="pre">!system</span> <span class="pre">commands</span></code>.</p>
+<p>We basically need to be able to test the following types of code:</p>
+<ul class="simple">
+<li><ol class="first arabic">
+<li>Pure Python files containing normal tests. These are not a
+problem, since Nose will pick them up as long as they conform to
+the (flexible) conventions used by nose to recognize tests.</li>
+</ol>
+</li>
+<li><ol class="first arabic" start="2">
+<li>Python files containing doctests. Here, we have two
+possibilities:</li>
+</ol>
+</li>
+<li>The prompts are the usual <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> and the input is pure Python.</li>
+<li>The prompts are of the form <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code> and the input can contain
+extended IPython expressions.</li>
+</ul>
+<p>In the first case, Nose will recognize the doctests as long as it is
+called with the <code class="docutils literal notranslate"><span class="pre">--with-doctest</span></code> flag. But the second case will likely
+require modifications or the writing of a new doctest plugin for Nose
+that is IPython-aware.</p>
+<ul class="simple">
+<li><ol class="first arabic" start="3">
+<li>ReStructuredText files that contain code blocks. For this type of
+file, we have three distinct possibilities for the code blocks:</li>
+</ol>
+</li>
+<li>They use <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> prompts.</li>
+<li>They use <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code> prompts.</li>
+<li>They are standalone blocks of pure Python code without any prompts.</li>
+</ul>
+<p>The first two cases are similar to the situation #2 above, except that
+in this case the doctests must be extracted from input code blocks using
+docutils instead of from the Python docstrings.</p>
+<p>In the third case, we must have a convention for distinguishing code
+blocks that are meant for execution from others that may be snippets of
+shell code or other examples not meant to be run. One possibility is to
+assume that all indented code blocks are meant for execution, but to
+have a special docutils directive for input that should not be executed.</p>
+<p>For those code blocks that we will execute, the convention used will
+simply be that they get called and are considered successful if they run
+to completion without raising errors. This is similar to what Nose does
+for standalone test functions, and by putting asserts or other forms of
+exception-raising statements it becomes possible to have literate
+examples that double as lightweight tests.</p>
+<ul class="simple">
+<li><ol class="first arabic" start="4">
+<li>Extension modules with doctests in function and method
+docstrings. Currently Nose simply can't find these docstrings
+correctly, because the underlying doctest DocTestFinder object
+fails there. Similarly to #2 above, the docstrings could have
+either pure python or IPython prompts.</li>
+</ol>
+</li>
+</ul>
+<p>Of these, only 3-c (reST with standalone code blocks) is not implemented
+at this point.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<div class="pull-center">
+	<ul class="pager">
+	  
+	  <li class="previous"><a href="closing_prs.html">&larr; Previous</a></li>
+	  
+	  
+	  <li class="next"><a href="less.html">Next &rarr;</a></li>
+	  
+	</ul>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Jupyter Team, https://jupyter.org.<br/>
+      최종 업데이트: 2019-01-09<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
